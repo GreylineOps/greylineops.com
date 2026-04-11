@@ -5,11 +5,11 @@ theme: "hextra-main"
 
 menu:
   main:
-    - name: Documentation
-      pageRef: /docs
-      weight: 1
     - name: Services
       pageRef: /services
+      weight: 1
+    - name: CMMC
+      pageRef: /cmmc
       weight: 2
     - name: About
       pageRef: /about
