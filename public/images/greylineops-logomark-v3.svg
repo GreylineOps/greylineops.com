@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144 144" width="144" height="144">
+  <!-- Background: #1A2332, 1.5in x 1.5in at 96dpi -->
+  <rect width="144" height="144" fill="#1A2332"/>
+
+  <!-- Top dashed line: 3 short dashes, color #E8ECF0 -->
+  <rect x="20"  y="44" width="28" height="6" rx="3" fill="#E8ECF0"/>
+  <rect x="58"  y="44" width="28" height="6" rx="3" fill="#E8ECF0"/>
+  <rect x="96"  y="44" width="28" height="6" rx="3" fill="#E8ECF0"/>
+
+  <!-- Middle solid line: color #BDC3C7, with green dot centered -->
+  <rect x="20" y="69" width="104" height="6" rx="3" fill="#BDC3C7"/>
+  <circle cx="72" cy="72" r="10" fill="#27AE60"/>
+
+  <!-- Bottom dashed line: 3 short dashes, color #E8ECF0 -->
+  <rect x="20"  y="94" width="28" height="6" rx="3" fill="#E8ECF0"/>
+  <rect x="58"  y="94" width="28" height="6" rx="3" fill="#E8ECF0"/>
+  <rect x="96"  y="94" width="28" height="6" rx="3" fill="#E8ECF0"/>
+</svg>
