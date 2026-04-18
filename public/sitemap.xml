@@ -4,11 +4,19 @@
   <url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>
+    <loc>http://localhost:1313/offerings/cmmc/</loc>
+  </url><url>
     <loc>http://localhost:1313/docs/</loc>
   </url><url>
     <loc>http://localhost:1313/</loc>
   </url><url>
     <loc>http://localhost:1313/docs/guide/</loc>
+  </url><url>
+    <loc>http://localhost:1313/offerings/incident-response/</loc>
+  </url><url>
+    <loc>http://localhost:1313/offerings/managed-detection/</loc>
+  </url><url>
+    <loc>http://localhost:1313/offerings/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
   </url>
