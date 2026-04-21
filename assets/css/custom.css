@@ -305,3 +305,13 @@ html[class~="dark"] .card {
     grid-template-columns: 1fr !important;
   }
 }
+
+/* ============================================
+   Custom styles
+   ============================================ */
+
+.highlight-line {
+  color: #e63946;
+  font-family: "Georgia", serif;
+  font-weight: bold;
+}

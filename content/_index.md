@@ -21,6 +21,8 @@ GreylineOps delivers managed security and CMMC compliance for small businesses i
 
 {{< /hextra/feature-grid >}}
 
+<!-- below is a one line break -->
+
 {{< hextra/feature-grid >}}
 <br>
 {{< /hextra/feature-grid >}}
@@ -58,6 +60,8 @@ Markdown is **supported**.
 {{< tab name="TOML" >}}**TOML**: TOML aims to be a minimal configuration file format that's easy to read due to obvious semantics.{{< /tab >}}
 
 {{< /tabs >}}
+
+<!-- below is a one line break -->
 
 {{< hextra/feature-grid >}}
 <br>

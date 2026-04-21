@@ -4,6 +4,8 @@ title: "GreylineOps"
 theme: "hextra-main"
 
 params:
+  customCSS:
+    - assets/custom.css
   navbar:
     displayTitle: true
     displayLogo: true
@@ -32,7 +34,7 @@ menu:
       name: Go
       url: https://go.dev
       parent: services
-    - name: CMMC
+    - name: CMMC Level 3
       pageRef: /offerings/cmmc
       weight: 2
     - name: About
