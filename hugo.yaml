@@ -33,7 +33,7 @@ menu:
       url: https://go.dev
       parent: services
     - name: CMMC
-      pageRef: /cmmc
+      pageRef: /offerings/cmmc
       weight: 2
     - name: About
       pageRef: /about
