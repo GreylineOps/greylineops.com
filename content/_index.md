@@ -11,11 +11,26 @@ Your contracts demand compliance.
 We make sure you keep them.
 {{< /hextra/hero-headline >}}
 
+{{< hextra/hero-section heading="h3" >}}
+
 GreylineOps delivers managed security and CMMC compliance for small businesses in the Defense Industrial Base. Built by Veterans. Engineered for the Mission.
+
+{{< /hextra/hero-section >}}
+
+{{< hextra/hero-badge >}}
+<span>Free, open source</span>
+{{< icon name="arrow-circle-right" attributes="height=14" >}}
+{{< /hextra/hero-badge >}}
+
+<!-- below is a one line break -->
+
+{{< hextra/feature-grid >}}
+<br>
+{{< /hextra/feature-grid >}}
 
 {{< hextra/feature-grid cols="2" >}}
 
-{{< card link="/offerings/CMMC" title="Start your CMMC assessment" >}}
+{{< custom-card link="/offerings/CMMC" title="Start your CMMC assessment" >}}
 
 {{< card link="/offerings/incident-response" title="See how we work" >}}
 
@@ -69,8 +84,7 @@ Markdown is **supported**.
 
 {{< hextra/feature-grid >}}
 
-{{< hextra/feature-card
-title="CMMC Readiness"
+{{< hextra/feature-card title="CMMC Readiness"
 subtitle="Gap assessments, remediation, and audit prep for CMMC Level 3 certification."
 icon="shield-check" >}}
 
