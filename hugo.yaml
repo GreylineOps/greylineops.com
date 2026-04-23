@@ -24,7 +24,7 @@ menu:
   main:
     - identifier: services
       name: Services
-      pageRef: /services
+      pageRef: /offerings
       weight: 1
     #    - identifier: python
     #      name: Python ↗
