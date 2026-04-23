@@ -3,7 +3,19 @@ title: GreylineOps
 layout: hextra-home
 ---
 
+{{< callout type="info" >}}
+Site is currently under construction
+{{< /callout >}}
+
+<!-- below is a one line break -->
+
+{{< hextra/feature-grid >}}
+<br>
+{{< /hextra/feature-grid >}}
+
+{{< hextra/hero-subtitle style="color:#27AE60">}}
 --- Veteran-owned · CMMC Level 3 Specialists
+{{< /hextra/hero-subtitle >}}
 
 {{< hextra/hero-headline >}}
 Your contracts demand compliance.
@@ -12,15 +24,8 @@ We make sure you keep them.
 {{< /hextra/hero-headline >}}
 
 {{< hextra/hero-section heading="h3" >}}
-
 GreylineOps delivers managed security and CMMC compliance for small businesses in the Defense Industrial Base. Built by Veterans. Engineered for the Mission.
-
 {{< /hextra/hero-section >}}
-
-{{< hextra/hero-badge >}}
-<span>Free, open source</span>
-{{< icon name="arrow-circle-right" attributes="height=14" >}}
-{{< /hextra/hero-badge >}}
 
 <!-- below is a one line break -->
 
@@ -30,7 +35,7 @@ GreylineOps delivers managed security and CMMC compliance for small businesses i
 
 {{< hextra/feature-grid cols="2" >}}
 
-{{< custom-card link="/offerings/CMMC" title="Start your CMMC assessment" >}}
+{{< card link="/offerings/CMMC" title="Start your CMMC assessment" >}}
 
 {{< card link="/offerings/incident-response" title="See how we work" >}}
 
@@ -43,38 +48,33 @@ GreylineOps delivers managed security and CMMC compliance for small businesses i
 {{< /hextra/feature-grid >}}
 
 {{< hextra/feature-grid cols="3" >}}
-<span>Veteran-owned · CMMC Level 3 Specialists</span>
-<span>Veteran-owned · CMMC Level 3 Specialists</span>
-<span>Veteran-owned · CMMC Level 3 Specialists</span>
-{{< details title="Details" >}}
 
-This is the content of the details.
+{{< details title="CMMC L3" >}}
 
-Markdown is **supported**.
+Compliance ready
 
-{{< /details >}}{{< details title="Details" >}}
+{{< /details >}}{{< details title="DIB-focused" >}}
 
-This is the content of the details.
-
-Markdown is **supported**.
+Defense contractors only
 
 {{< /details >}}
-{{< details title="Details" >}}
+{{< details title="Vet-owned" >}}
 
-This is the content of the details.
-
-Markdown is **supported**.
+SBA certified
 
 {{< /details >}}
 
 {{< /hextra/feature-grid >}}
-{{< tabs >}}
 
-{{< tab name="JSON" >}}**JSON**: JavaScript Object Notation (JSON) is a standard text-based format for representing structured data based on JavaScript object syntax.{{< /tab >}}
-{{< tab name="YAML" selected=true >}}**YAML**: YAML is a human-readable data serialization language.{{< /tab >}}
-{{< tab name="TOML" >}}**TOML**: TOML aims to be a minimal configuration file format that's easy to read due to obvious semantics.{{< /tab >}}
+<!-- below is a one line break -->
 
-{{< /tabs >}}
+{{< hextra/feature-grid >}}
+<br>
+{{< /hextra/feature-grid >}}
+
+{{< hextra/hero-subtitle style="color:#27AE60">}}
+--- Core Services
+{{< /hextra/hero-subtitle >}}
 
 <!-- below is a one line break -->
 

@@ -26,14 +26,14 @@ menu:
       name: Services
       pageRef: /services
       weight: 1
-    - identifier: python
-      name: Python ↗
-      url: https://python.org
-      parent: services
-    - identifier: go
-      name: Go
-      url: https://go.dev
-      parent: services
+    #    - identifier: python
+    #      name: Python ↗
+    #      url: https://python.org
+    #      parent: services
+    #    - identifier: go
+    #      name: Go
+    #      url: https://go.dev
+    #      parent: services
     - name: CMMC Level 3
       pageRef: /offerings/cmmc
       weight: 2
