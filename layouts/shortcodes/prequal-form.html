@@ -1,0 +1,1145 @@
+<style>
+  /* ── Design tokens ─────────────────────────────────────────────── */
+  :root {
+    --glo-bg: #0b0f1a;
+    --glo-surface: #111827;
+    --glo-border: #1e2d45;
+    --glo-accent: #1d6fa4;
+    --glo-accent2: #0ea5e9;
+    --glo-text: #e2e8f0;
+    --glo-muted: #94a3b8;
+    --glo-error: #f87171;
+    --glo-success: #34d399;
+    --glo-radius: 6px;
+    --glo-font: "IBM Plex Mono", "Courier New", monospace;
+    --glo-font-body: "IBM Plex Sans", system-ui, sans-serif;
+  }
+
+  /* ── Wrapper ────────────────────────────────────────────────────── */
+  .glo-form-wrap {
+    background: var(--glo-surface);
+    border: 1px solid var(--glo-border);
+    border-top: 3px solid var(--glo-accent2);
+    border-radius: var(--glo-radius);
+    padding: 2.5rem 2rem;
+    max-width: 720px;
+    margin: 2rem auto;
+    font-family: var(--glo-font-body);
+    color: var(--glo-text);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .glo-form-wrap::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--glo-accent), var(--glo-accent2));
+    border-radius: var(--glo-radius) var(--glo-radius) 0 0;
+  }
+
+  /* ── Header ─────────────────────────────────────────────────────── */
+  .glo-form-header {
+    margin-bottom: 2rem;
+  }
+
+  .glo-form-badge {
+    display: inline-block;
+    font-family: var(--glo-font);
+    font-size: 0.65rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--glo-accent2);
+    border: 1px solid var(--glo-accent);
+    padding: 0.2rem 0.6rem;
+    border-radius: 2px;
+    margin-bottom: 0.75rem;
+  }
+
+  .glo-form-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--glo-text);
+    margin: 0 0 0.4rem;
+    letter-spacing: -0.01em;
+  }
+
+  .glo-form-subtitle {
+    font-size: 0.875rem;
+    color: var(--glo-muted);
+    margin: 0;
+    line-height: 1.5;
+  }
+
+  /* ── Step progress ──────────────────────────────────────────────── */
+  .glo-steps {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+    align-items: center;
+  }
+
+  .glo-step {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.75rem;
+    color: var(--glo-muted);
+    font-family: var(--glo-font);
+  }
+
+  .glo-step-num {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: 1px solid var(--glo-border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+    flex-shrink: 0;
+    transition: all 0.2s;
+  }
+
+  .glo-step.active .glo-step-num {
+    background: var(--glo-accent);
+    border-color: var(--glo-accent);
+    color: #fff;
+  }
+
+  .glo-step.done .glo-step-num {
+    background: var(--glo-success);
+    border-color: var(--glo-success);
+    color: #0b0f1a;
+  }
+
+  .glo-step.active {
+    color: var(--glo-text);
+  }
+
+  .glo-step-divider {
+    flex: 1;
+    height: 1px;
+    background: var(--glo-border);
+    max-width: 40px;
+  }
+
+  /* ── Form panels ────────────────────────────────────────────────── */
+  .glo-panel {
+    display: none;
+    animation: gloPanelIn 0.2s ease;
+  }
+
+  .glo-panel.active {
+    display: block;
+  }
+
+  @keyframes gloPanelIn {
+    from {
+      opacity: 0;
+      transform: translateY(6px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* ── Fields ─────────────────────────────────────────────────────── */
+  .glo-field-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .glo-field-group.full {
+    grid-template-columns: 1fr;
+  }
+
+  @media (max-width: 560px) {
+    .glo-field-group {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .glo-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+
+  .glo-label {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--glo-muted);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-family: var(--glo-font);
+  }
+
+  .glo-label .req {
+    color: var(--glo-accent2);
+    margin-left: 2px;
+  }
+
+  .glo-input,
+  .glo-select,
+  .glo-textarea {
+    background: var(--glo-bg);
+    border: 1px solid var(--glo-border);
+    border-radius: var(--glo-radius);
+    color: var(--glo-text);
+    font-family: var(--glo-font-body);
+    font-size: 0.9rem;
+    padding: 0.6rem 0.75rem;
+    transition:
+      border-color 0.15s,
+      box-shadow 0.15s;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .glo-input:focus,
+  .glo-select:focus,
+  .glo-textarea:focus {
+    border-color: var(--glo-accent2);
+    box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.12);
+  }
+
+  .glo-input.error,
+  .glo-select.error {
+    border-color: var(--glo-error);
+  }
+
+  .glo-select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%2394a3b8' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    padding-right: 2.2rem;
+    cursor: pointer;
+  }
+
+  .glo-select option {
+    background: var(--glo-surface);
+    color: var(--glo-text);
+  }
+
+  .glo-textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+
+  /* ── Checkbox group ─────────────────────────────────────────────── */
+  .glo-check-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 0.1rem;
+  }
+
+  .glo-check-label {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 0.875rem;
+    cursor: pointer;
+    color: var(--glo-text);
+    padding: 0.45rem 0.65rem;
+    border: 1px solid var(--glo-border);
+    border-radius: var(--glo-radius);
+    background: var(--glo-bg);
+    transition:
+      border-color 0.15s,
+      background 0.15s;
+    user-select: none;
+  }
+
+  .glo-check-label:hover {
+    border-color: var(--glo-accent);
+    background: rgba(29, 111, 164, 0.08);
+  }
+
+  .glo-check-label input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    accent-color: var(--glo-accent2);
+    flex-shrink: 0;
+    cursor: pointer;
+  }
+
+  /* ── Radio group ────────────────────────────────────────────────── */
+  .glo-radio-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.1rem;
+  }
+
+  .glo-radio-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+    cursor: pointer;
+    color: var(--glo-text);
+    padding: 0.4rem 0.8rem;
+    border: 1px solid var(--glo-border);
+    border-radius: 20px;
+    background: var(--glo-bg);
+    transition: all 0.15s;
+    user-select: none;
+  }
+
+  .glo-radio-label:hover {
+    border-color: var(--glo-accent);
+  }
+
+  .glo-radio-label input[type="radio"] {
+    accent-color: var(--glo-accent2);
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+  }
+
+  .glo-radio-label:has(input:checked) {
+    border-color: var(--glo-accent2);
+    background: rgba(14, 165, 233, 0.1);
+    color: var(--glo-accent2);
+  }
+
+  /* ── Field hint ─────────────────────────────────────────────────── */
+  .glo-hint {
+    font-size: 0.75rem;
+    color: var(--glo-muted);
+    margin-top: 0.2rem;
+  }
+
+  .glo-err-msg {
+    font-size: 0.75rem;
+    color: var(--glo-error);
+    margin-top: 0.2rem;
+    display: none;
+  }
+
+  /* ── Section label ──────────────────────────────────────────────── */
+  .glo-section-label {
+    font-family: var(--glo-font);
+    font-size: 0.65rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--glo-accent2);
+    margin: 1.5rem 0 0.75rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid var(--glo-border);
+  }
+
+  /* ── Navigation buttons ─────────────────────────────────────────── */
+  .glo-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.75rem;
+    gap: 1rem;
+  }
+
+  .glo-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-family: var(--glo-font);
+    font-size: 0.8rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 0.65rem 1.4rem;
+    border-radius: var(--glo-radius);
+    border: none;
+    cursor: pointer;
+    transition: all 0.15s;
+    font-weight: 600;
+  }
+
+  .glo-btn-primary {
+    background: var(--glo-accent);
+    color: #fff;
+  }
+
+  .glo-btn-primary:hover {
+    background: var(--glo-accent2);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(14, 165, 233, 0.25);
+  }
+
+  .glo-btn-ghost {
+    background: transparent;
+    color: var(--glo-muted);
+    border: 1px solid var(--glo-border);
+  }
+
+  .glo-btn-ghost:hover {
+    color: var(--glo-text);
+    border-color: var(--glo-muted);
+  }
+
+  .glo-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none !important;
+  }
+
+  /* ── Privacy note ───────────────────────────────────────────────── */
+  .glo-privacy {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    font-size: 0.75rem;
+    color: var(--glo-muted);
+    margin-top: 1rem;
+    line-height: 1.5;
+  }
+
+  .glo-privacy svg {
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+
+  /* ── Success state ──────────────────────────────────────────────── */
+  .glo-success-wrap {
+    display: none;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+
+  .glo-success-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: rgba(52, 211, 153, 0.12);
+    border: 1px solid var(--glo-success);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.25rem;
+  }
+
+  .glo-success-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--glo-text);
+    margin: 0 0 0.5rem;
+  }
+
+  .glo-success-msg {
+    font-size: 0.9rem;
+    color: var(--glo-muted);
+    line-height: 1.6;
+  }
+
+  /* ── Honeypot (hidden from humans) ─────────────────────────────── */
+  .glo-pot {
+    display: none !important;
+  }
+</style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link
+  href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;600;700&display=swap"
+  rel="stylesheet"
+/>
+
+<!-- hCaptcha script — remove if not using hCaptcha -->
+<script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+
+<div class="glo-form-wrap" id="gloFormWrap">
+  <!-- Header -->
+  <div class="glo-form-header">
+    <div class="glo-form-badge">CMMC Pre-Qualification</div>
+    <h2 class="glo-form-title">Let's See Where You Stand</h2>
+    <p class="glo-form-subtitle">
+      Answer a few quick questions and we'll assess your CMMC compliance needs —
+      no obligation, no sales pressure.
+    </p>
+  </div>
+
+  <!-- Step indicators -->
+  <div class="glo-steps" id="gloSteps">
+    <div class="glo-step active" id="glo-step-1">
+      <div class="glo-step-num">1</div>
+      <span>Your Company</span>
+    </div>
+    <div class="glo-step-divider"></div>
+    <div class="glo-step" id="glo-step-2">
+      <div class="glo-step-num">2</div>
+      <span>Your Contracts</span>
+    </div>
+    <div class="glo-step-divider"></div>
+    <div class="glo-step" id="glo-step-3">
+      <div class="glo-step-num">3</div>
+      <span>Your Situation</span>
+    </div>
+  </div>
+
+  <!-- FORM -->
+  <form
+    id="gloPreQualForm"
+    action="https://formspree.io/f/myklqeoe"
+    method="POST"
+    novalidate
+  >
+    <!-- Honeypot — do not remove -->
+    <input
+      class="glo-pot"
+      type="text"
+      name="_gotcha"
+      tabindex="-1"
+      autocomplete="off"
+    />
+
+    <!-- ── PANEL 1: Company Info ─────────────────────────────── -->
+    <div class="glo-panel active" id="glo-panel-1">
+      <div class="glo-section-label">Contact Information</div>
+
+      <div class="glo-field-group">
+        <div class="glo-field">
+          <label class="glo-label" for="glo-fname"
+            >First Name <span class="req">*</span></label
+          >
+          <input
+            class="glo-input"
+            type="text"
+            id="glo-fname"
+            name="first_name"
+            autocomplete="given-name"
+            required
+          />
+          <span class="glo-err-msg" id="err-fname">Required</span>
+        </div>
+        <div class="glo-field">
+          <label class="glo-label" for="glo-lname"
+            >Last Name <span class="req">*</span></label
+          >
+          <input
+            class="glo-input"
+            type="text"
+            id="glo-lname"
+            name="last_name"
+            autocomplete="family-name"
+            required
+          />
+          <span class="glo-err-msg" id="err-lname">Required</span>
+        </div>
+      </div>
+
+      <div class="glo-field-group">
+        <div class="glo-field">
+          <label class="glo-label" for="glo-title"
+            >Job Title <span class="req">*</span></label
+          >
+          <input
+            class="glo-input"
+            type="text"
+            id="glo-title"
+            name="job_title"
+            required
+          />
+          <span class="glo-err-msg" id="err-title">Required</span>
+        </div>
+        <div class="glo-field">
+          <label class="glo-label" for="glo-company"
+            >Company Name <span class="req">*</span></label
+          >
+          <input
+            class="glo-input"
+            type="text"
+            id="glo-company"
+            name="company_name"
+            autocomplete="organization"
+            required
+          />
+          <span class="glo-err-msg" id="err-company">Required</span>
+        </div>
+      </div>
+
+      <div class="glo-field-group">
+        <div class="glo-field">
+          <label class="glo-label" for="glo-email"
+            >Work Email <span class="req">*</span></label
+          >
+          <input
+            class="glo-input"
+            type="email"
+            id="glo-email"
+            name="email"
+            autocomplete="email"
+            required
+          />
+          <span class="glo-err-msg" id="err-email">Enter a valid email</span>
+        </div>
+        <div class="glo-field">
+          <label class="glo-label" for="glo-phone"
+            >Phone
+            <span style="color: var(--glo-muted); font-weight: 400"
+              >(optional)</span
+            ></label
+          >
+          <input
+            class="glo-input"
+            type="tel"
+            id="glo-phone"
+            name="phone"
+            autocomplete="tel"
+          />
+        </div>
+      </div>
+
+      <div class="glo-section-label">Company Size</div>
+
+      <div class="glo-field-group full">
+        <div class="glo-field">
+          <label class="glo-label" for="glo-size"
+            >Number of Employees <span class="req">*</span></label
+          >
+          <select class="glo-select" id="glo-size" name="company_size" required>
+            <option value="" disabled selected>Select range…</option>
+            <option value="1-10">1 – 10</option>
+            <option value="11-25">11 – 25</option>
+            <option value="26-50">26 – 50</option>
+            <option value="51-100">51 – 100</option>
+            <option value="101-150">101 – 150</option>
+            <option value="150+">150+</option>
+          </select>
+          <span class="glo-err-msg" id="err-size">Please select a range</span>
+        </div>
+      </div>
+
+      <div class="glo-nav">
+        <span></span>
+        <button
+          type="button"
+          class="glo-btn glo-btn-primary"
+          onclick="gloNext(1)"
+        >
+          Next: Your Contracts
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+            <path
+              d="M3 7h8M8 4l3 3-3 3"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- ── PANEL 2: Contract Info ─────────────────────────────── -->
+    <div class="glo-panel" id="glo-panel-2">
+      <div class="glo-section-label">DoD Contract Status</div>
+
+      <div class="glo-field-group full">
+        <div class="glo-field">
+          <label class="glo-label"
+            >Do you currently hold a DoD contract?
+            <span class="req">*</span></label
+          >
+          <div class="glo-radio-group" id="glo-dod-group">
+            <label class="glo-radio-label"
+              ><input
+                type="radio"
+                name="has_dod_contract"
+                value="Yes — active contract"
+              />
+              Yes — active contract</label
+            >
+            <label class="glo-radio-label"
+              ><input
+                type="radio"
+                name="has_dod_contract"
+                value="Yes — as a subcontractor"
+              />
+              Yes — as a subcontractor</label
+            >
+            <label class="glo-radio-label"
+              ><input
+                type="radio"
+                name="has_dod_contract"
+                value="No — but actively pursuing"
+              />
+              No — actively pursuing</label
+            >
+            <label class="glo-radio-label"
+              ><input
+                type="radio"
+                name="has_dod_contract"
+                value="No — exploring options"
+              />
+              No — exploring options</label
+            >
+          </div>
+          <span class="glo-err-msg" id="err-dod">Please select an option</span>
+        </div>
+      </div>
+
+      <div class="glo-section-label">Data Handling</div>
+
+      <div class="glo-field-group full">
+        <div class="glo-field">
+          <label class="glo-label"
+            >What type of sensitive information do you handle?
+            <span style="color: var(--glo-muted); font-weight: 400"
+              >(select all that apply)</span
+            ></label
+          >
+          <div class="glo-check-group">
+            <label class="glo-check-label"
+              ><input
+                type="checkbox"
+                name="data_types"
+                value="FCI — Federal Contract Information"
+              />
+              FCI — Federal Contract Information</label
+            >
+            <label class="glo-check-label"
+              ><input
+                type="checkbox"
+                name="data_types"
+                value="CUI — Controlled Unclassified Information"
+              />
+              CUI — Controlled Unclassified Information</label
+            >
+            <label class="glo-check-label"
+              ><input
+                type="checkbox"
+                name="data_types"
+                value="Technical data / engineering drawings"
+              />
+              Technical data / engineering drawings</label
+            >
+            <label class="glo-check-label"
+              ><input
+                type="checkbox"
+                name="data_types"
+                value="Export controlled data (ITAR/EAR)"
+              />
+              Export controlled data (ITAR / EAR)</label
+            >
+            <label class="glo-check-label"
+              ><input
+                type="checkbox"
+                name="data_types"
+                value="Unsure / need help identifying"
+              />
+              Unsure — need help identifying what I handle</label
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="glo-section-label">CMMC Level</div>
+
+      <div class="glo-field-group full">
+        <div class="glo-field">
+          <label class="glo-label"
+            >What CMMC level do you believe you need?
+            <span class="req">*</span></label
+          >
+          <div class="glo-radio-group" id="glo-cmmc-group">
+            <label class="glo-radio-label"
+              ><input type="radio" name="cmmc_level_needed" value="Level 1" />
+              Level 1</label
+            >
+            <label class="glo-radio-label"
+              ><input type="radio" name="cmmc_level_needed" value="Level 2" />
+              Level 2</label
+            >
+            <label class="glo-radio-label"
+              ><input type="radio" name="cmmc_level_needed" value="Level 3" />
+              Level 3</label
+            >
+            <label class="glo-radio-label"
+              ><input type="radio" name="cmmc_level_needed" value="Not sure" />
+              Not sure</label
+            >
+          </div>
+          <span class="glo-hint"
+            >Not sure? No worries — that's exactly what we help you figure
+            out.</span
+          >
+          <span class="glo-err-msg" id="err-cmmc">Please select an option</span>
+        </div>
+      </div>
+
+      <div class="glo-nav">
+        <button
+          type="button"
+          class="glo-btn glo-btn-ghost"
+          onclick="gloBack(2)"
+        >
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+            <path
+              d="M11 7H3M6 4L3 7l3 3"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          Back
+        </button>
+        <button
+          type="button"
+          class="glo-btn glo-btn-primary"
+          onclick="gloNext(2)"
+        >
+          Next: Your Situation
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+            <path
+              d="M3 7h8M8 4l3 3-3 3"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- ── PANEL 3: Current Situation ────────────────────────── -->
+    <div class="glo-panel" id="glo-panel-3">
+      <div class="glo-section-label">Current Compliance Status</div>
+
+      <div class="glo-field-group full">
+        <div class="glo-field">
+          <label class="glo-label" for="glo-status"
+            >Where are you in the CMMC process?
+            <span class="req">*</span></label
+          >
+          <select
+            class="glo-select"
+            id="glo-status"
+            name="compliance_status"
+            required
+          >
+            <option value="" disabled selected>Select current status…</option>
+            <option value="Just getting started — no assessments done">
+              Just getting started — no assessments done
+            </option>
+            <option value="Have done a self-assessment">
+              Have done a self-assessment
+            </option>
+            <option value="Working on a System Security Plan (SSP)">
+              Working on a System Security Plan (SSP)
+            </option>
+            <option value="Have a POA&M in place">
+              Have a POA&amp;M in place
+            </option>
+            <option value="Previously assessed, need reassessment">
+              Previously assessed, need reassessment
+            </option>
+            <option value="Already certified, need to maintain compliance">
+              Already certified, need to maintain compliance
+            </option>
+          </select>
+          <span class="glo-err-msg" id="err-status"
+            >Please select your current status</span
+          >
+        </div>
+      </div>
+
+      <div class="glo-section-label">Timeline</div>
+
+      <div class="glo-field-group full">
+        <div class="glo-field">
+          <label class="glo-label" for="glo-timeline"
+            >When do you need to be compliant? <span class="req">*</span></label
+          >
+          <select class="glo-select" id="glo-timeline" name="timeline" required>
+            <option value="" disabled selected>Select timeline…</option>
+            <option value="ASAP — contract requires it now">
+              ASAP — a contract requires it now
+            </option>
+            <option value="Within 3 months">Within 3 months</option>
+            <option value="Within 6 months">Within 6 months</option>
+            <option value="6–12 months">6 – 12 months</option>
+            <option value="Planning ahead (12+ months)">
+              Planning ahead (12+ months)
+            </option>
+            <option value="Not sure">Not sure</option>
+          </select>
+          <span class="glo-err-msg" id="err-timeline"
+            >Please select a timeline</span
+          >
+        </div>
+      </div>
+
+      <div class="glo-section-label">Anything Else?</div>
+
+      <div class="glo-field-group full">
+        <div class="glo-field">
+          <label class="glo-label" for="glo-notes"
+            >Brief description of your situation
+            <span style="color: var(--glo-muted); font-weight: 400"
+              >(optional)</span
+            ></label
+          >
+          <textarea
+            class="glo-textarea"
+            id="glo-notes"
+            name="notes"
+            placeholder="Tell us about your current IT setup, specific concerns, or anything else that would help us prepare for our call…"
+          ></textarea>
+        </div>
+      </div>
+
+      <!-- hCaptcha widget — replace YOUR_HCAPTCHA_SITE_KEY -->
+      <div
+        class="h-captcha"
+        data-sitekey="c18c1ba6-f388-4838-aa3a-6ab690681db6"
+        style="margin-top: 1.25rem"
+      ></div>
+
+      <div class="glo-privacy">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+          <path
+            d="M7 1L2 3v4c0 2.8 2.1 5.4 5 6 2.9-.6 5-3.2 5-6V3L7 1z"
+            stroke="#94a3b8"
+            stroke-width="1.2"
+            stroke-linejoin="round"
+          />
+        </svg>
+        Your information is used only to prepare your complimentary CMMC
+        readiness assessment. We will never sell or share your data with third
+        parties.
+      </div>
+
+      <div class="glo-nav">
+        <button
+          type="button"
+          class="glo-btn glo-btn-ghost"
+          onclick="gloBack(3)"
+        >
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+            <path
+              d="M11 7H3M6 4L3 7l3 3"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          Back
+        </button>
+        <button type="submit" class="glo-btn glo-btn-primary" id="gloSubmitBtn">
+          Submit for Review
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+            <path
+              d="M2 7l4 4 6-6"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </form>
+
+  <!-- Success state -->
+  <div class="glo-success-wrap" id="gloSuccess">
+    <div class="glo-success-icon">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <path
+          d="M5 13l4 4L19 7"
+          stroke="#34d399"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </div>
+    <h3 class="glo-success-title">We've Got Your Submission</h3>
+    <p class="glo-success-msg">
+      A member of the GreylineOps team will review your answers and reach out
+      within one business day to schedule your complimentary CMMC readiness
+      assessment.
+    </p>
+  </div>
+</div>
+
+<script>
+  (function () {
+    var currentPanel = 1;
+
+    /* ── Validation rules per panel ──────────────────────────── */
+    var validations = {
+      1: [
+        {
+          id: "glo-fname",
+          err: "err-fname",
+          check: function (v) {
+            return v.trim().length > 0;
+          },
+        },
+        {
+          id: "glo-lname",
+          err: "err-lname",
+          check: function (v) {
+            return v.trim().length > 0;
+          },
+        },
+        {
+          id: "glo-title",
+          err: "err-title",
+          check: function (v) {
+            return v.trim().length > 0;
+          },
+        },
+        {
+          id: "glo-company",
+          err: "err-company",
+          check: function (v) {
+            return v.trim().length > 0;
+          },
+        },
+        {
+          id: "glo-email",
+          err: "err-email",
+          check: function (v) {
+            return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
+          },
+        },
+        {
+          id: "glo-size",
+          err: "err-size",
+          check: function (v) {
+            return v !== "";
+          },
+        },
+      ],
+      2: [], // radio groups validated separately below
+      3: [
+        {
+          id: "glo-status",
+          err: "err-status",
+          check: function (v) {
+            return v !== "";
+          },
+        },
+        {
+          id: "glo-timeline",
+          err: "err-timeline",
+          check: function (v) {
+            return v !== "";
+          },
+        },
+      ],
+    };
+
+    function validatePanel(panel) {
+      var ok = true;
+
+      // Input/select validations
+      (validations[panel] || []).forEach(function (rule) {
+        var el = document.getElementById(rule.id);
+        var errEl = document.getElementById(rule.err);
+        if (!el || !errEl) return;
+        var valid = rule.check(el.value);
+        el.classList.toggle("error", !valid);
+        errEl.style.display = valid ? "none" : "block";
+        if (!valid) ok = false;
+      });
+
+      // Panel 2 radio group validations
+      if (panel === 2) {
+        ["glo-dod-group", "glo-cmmc-group"].forEach(function (groupId) {
+          var errId = groupId === "glo-dod-group" ? "err-dod" : "err-cmmc";
+          var group = document.getElementById(groupId);
+          var errEl = document.getElementById(errId);
+          if (!group || !errEl) return;
+          var checked = group.querySelector('input[type="radio"]:checked');
+          errEl.style.display = checked ? "none" : "block";
+          if (!checked) ok = false;
+        });
+      }
+
+      return ok;
+    }
+
+    window.gloNext = function (from) {
+      if (!validatePanel(from)) return;
+      showPanel(from, from + 1);
+    };
+
+    window.gloBack = function (from) {
+      showPanel(from, from - 1);
+    };
+
+    function showPanel(from, to) {
+      document.getElementById("glo-panel-" + from).classList.remove("active");
+      document.getElementById("glo-panel-" + to).classList.add("active");
+      currentPanel = to;
+      updateSteps(to);
+      document
+        .getElementById("gloFormWrap")
+        .scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+
+    function updateSteps(active) {
+      for (var i = 1; i <= 3; i++) {
+        var stepEl = document.getElementById("glo-step-" + i);
+        if (!stepEl) continue;
+        stepEl.classList.remove("active", "done");
+        if (i < active) stepEl.classList.add("done");
+        else if (i === active) stepEl.classList.add("active");
+      }
+    }
+
+    /* ── Form submission ─────────────────────────────────────── */
+    document
+      .getElementById("gloPreQualForm")
+      .addEventListener("submit", function (e) {
+        e.preventDefault();
+        if (!validatePanel(3)) return;
+
+        var btn = document.getElementById("gloSubmitBtn");
+        btn.disabled = true;
+        btn.textContent = "Submitting…";
+
+        var form = e.target;
+        var data = new FormData(form);
+
+        fetch(form.action, {
+          method: "POST",
+          body: data,
+          headers: { Accept: "application/json" },
+        })
+          .then(function (res) {
+            if (res.ok) {
+              form.style.display = "none";
+              document.getElementById("gloSteps").style.display = "none";
+              document.querySelector(".glo-form-header").style.display = "none";
+              document.getElementById("gloSuccess").style.display = "block";
+            } else {
+              btn.disabled = false;
+              btn.textContent = "Submit for Review";
+              alert(
+                "Something went wrong. Please try again or email us directly.",
+              );
+            }
+          })
+          .catch(function () {
+            btn.disabled = false;
+            btn.textContent = "Submit for Review";
+            alert("Network error. Please check your connection and try again.");
+          });
+      });
+  })();
+</script>

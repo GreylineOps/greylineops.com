@@ -4,6 +4,7 @@ title: "GreylineOps"
 theme: "hextra-main"
 
 params:
+  description: "Veteran-owned managed IT and CMMC compliance for small businesses with DoD contracts."
   customCSS:
     - assets/custom.css
   navbar:

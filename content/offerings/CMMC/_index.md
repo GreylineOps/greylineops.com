@@ -3,19 +3,38 @@ title: CMMC Level 3
 layout: hextra-home
 ---
 
-# CMMC compliance
+{{< hextra/hero-section heading="h3" >}}
+CMMC compliance
+{{< /hextra/hero-section >}}
 
 **Your DoD contract requires Level 3. We get you there — and keep you there.**
-
+{{< hextra/feature-grid >}}
+<br>
+{{< /hextra/feature-grid >}}
 CMMC 2.0 Level 3 is mandatory for any small business handling Controlled Unclassified Information (CUI) under a DoD contract. A failed assessment doesn't just cost money — it costs you the contract. GreylineOps specializes exclusively in DIB compliance.
 
-{{< cards cols="3">}}
+<!-- below is a one line break -->
+
+{{< hextra/feature-grid >}}
+<br>
+{{< /hextra/feature-grid >}}
+
+{{< hextra/feature-grid cols="3">}}
+
 {{< card link="" title="110 controls" subtitle="NIST SP 800-171 practices required at Level 3" >}}
 {{< card link="" title="Level 3 certified" subtitle="Third-party C3PAO or DCSA-led assessment required" >}}
 {{< card link="" title="Veteran-owned" subtitle="Built by those who served the mission" >}}
-{{< /cards >}}
+{{< /hextra/feature-grid >}}
 
-## Where does your contract fall?
+<!-- below is a one line break -->
+
+{{< hextra/feature-grid >}}
+<br>
+{{< /hextra/feature-grid >}}
+
+{{< hextra/hero-section heading="h3" >}}
+Where does your contract fall?
+{{< /hextra/hero-section >}}
 
 CMMC 2.0 has three levels. Most DoD prime and subcontractor small businesses handling CUI require Level 2 or Level 3. If your contract involves Advanced Persistent Threat (APT) programs, you're Level 3.
 
