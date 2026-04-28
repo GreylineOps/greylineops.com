@@ -36,7 +36,7 @@ menu:
     #      url: https://go.dev
     #      parent: services
     - name: CMMC Level 3
-      pageRef: /offerings/cmmc
+      pageRef: /services/cmmc
       weight: 2
     - name: DCSA Self-Assess
       pageRef: /self-assessment/dcsa-checklist/
