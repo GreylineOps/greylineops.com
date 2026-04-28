@@ -8,6 +8,10 @@
   </url><url>
     <loc>http://localhost:1313/offerings/cmmc/</loc>
   </url><url>
+    <loc>http://localhost:1313/self-assessment/pre-qual/</loc>
+  </url><url>
+    <loc>http://localhost:1313/self-assessment/</loc>
+  </url><url>
     <loc>http://localhost:1313/</loc>
   </url><url>
     <loc>http://localhost:1313/offerings/incident-response/</loc>
@@ -15,10 +19,6 @@
     <loc>http://localhost:1313/offerings/managed-detection/</loc>
   </url><url>
     <loc>http://localhost:1313/offerings/</loc>
-  </url><url>
-    <loc>http://localhost:1313/self-assessment/pre-qual/</loc>
-  </url><url>
-    <loc>http://localhost:1313/self-assessment/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
   </url>
