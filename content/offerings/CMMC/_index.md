@@ -21,8 +21,8 @@ CMMC 2.0 Level 3 is mandatory for any small business handling Controlled Unclass
 
 {{< hextra/feature-grid cols="3">}}
 
-{{< card link="" title="110 controls" subtitle="NIST SP 800-171 practices required at Level 3" >}}
-{{< card link="" title="Level 3 certified" subtitle="Third-party C3PAO or DCSA-led assessment required" >}}
+{{< card link="https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-171r2.pdf" title="110 controls" subtitle="NIST SP 800-171 practices required at Level 3" >}}
+{{< card link="https://www.dcsa.mil/Portals/91/Documents/CTP/tools/DCSA%20Assessment%20and%20Authorization%20Process%20Manual%20Version%202.2.pdf" title="Level 3 certified" subtitle="Third-party C3PAO or DCSA-led assessment required" >}}
 {{< card link="" title="Veteran-owned" subtitle="Built by those who served the mission" >}}
 {{< /hextra/feature-grid >}}
 
@@ -48,8 +48,9 @@ CMMC 2.0 has three levels. Most DoD prime and subcontractor small businesses han
 - **Scope:** Federal Contract Information (FCI) only — not CUI
 - **Who it applies to:** Contractors who receive FCI but do not process, store, or transmit CUI
 
-> If your contract involves CUI, Level 1 is not sufficient. Most active DoD subcontractors need Level 2 or higher.
-> {{< /tab >}}
+If your contract involves CUI, Level 1 is not sufficient. Most active DoD subcontractors need Level 2 or higher.
+
+{{< /tab >}}
 
 {{< tab >}}
 **Protecting CUI**
@@ -77,14 +78,20 @@ GreylineOps is built specifically for Level 3. Our entire practice — gap asses
 
 {{< /tabs >}}
 
----
+<!-- below is a one line break -->
 
-## What's at stake
+{{< hextra/feature-grid >}}
+<br>
+{{< /hextra/feature-grid >}}
+
+{{< hextra/hero-section heading="h3" >}}
+What's at stake
+{{< /hextra/hero-section >}}
 
 Non-compliance is not a paperwork problem. Here's what happens on each path.
 
-{{< cards >}}
-{{< card title="Without compliance" >}}
+{{< hextra/feature-grid cols="2" >}}
+{{< details title="Without compliance" >}}
 
 - Contract terminated or not awarded
 - False Claims Act liability if SPRS score was self-attested inaccurately
@@ -92,7 +99,8 @@ Non-compliance is not a paperwork problem. Here's what happens on each path.
 - Reputational damage with prime contractors
 - CUI breach triggers mandatory DFARS 252.204-7012 reporting
 
-  {{< card title="With GreylineOps" >}}
+{{< /details >}}
+{{< details title="With GreylineOps" >}}
 
 - Audit-ready posture maintained continuously
 - Accurate SPRS score submitted to DoD
@@ -100,7 +108,8 @@ Non-compliance is not a paperwork problem. Here's what happens on each path.
 - C3PAO / DCSA assessment passed with confidence
 - Incident response and 72-hour reporting handled
 
-  {{< /cards >}}
+{{< /details >}}
+{{< /hextra/feature-grid >}}
 
 {{< callout type="warning" >}}
 **False Claims Act exposure is real.** If your company submitted a SPRS score that overstated your compliance posture and a CUI breach occurs, the DoD can pursue civil liability. We calculate your accurate SPRS score as part of every gap assessment.

@@ -1,0 +1,663 @@
+<div id="dcsa-checklist-wrap">
+  <style>
+    #dcsa-checklist-wrap *,
+    #dcsa-checklist-wrap *::before,
+    #dcsa-checklist-wrap *::after {
+      box-sizing: border-box;
+    }
+
+    #dcsa-checklist-wrap {
+      --dc-bg: #1a2332;
+      --dc-surface: #ffffff;
+      --dc-surface2: #f2f0ec;
+      --dc-border: #bdc3c7;
+      --dc-border-strong: rgba(0, 0, 0, 0.18);
+      --dc-text: #7f9ab0;
+      --dc-text-muted: #6b6a67;
+      --dc-text-hint: #a09e9b;
+      --dc-green-bg: #eaf3de;
+      --dc-green-text: #3b6d11;
+      --dc-green-border: #97c459;
+      --dc-red-bg: #fcebeb;
+      --dc-red-text: #a32d2d;
+      --dc-red-border: #f09595;
+      --dc-amber-bg: #faeeda;
+      --dc-amber-text: #854f0b;
+      --dc-blue-bg: #e6f1fb;
+      --dc-blue-text: #185fa5;
+      --dc-progress-track: #e8e6e1;
+      --dc-progress-fill: #1d9e75;
+      --dc-radius-sm: 6px;
+      --dc-radius-md: 10px;
+      --dc-radius-lg: 14px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--dc-text);
+      margin: 2rem 0;
+    }
+
+    .dc-header {
+      margin-bottom: 1.5rem;
+      padding-bottom: 1.25rem;
+      border-bottom: 1px solid var(--dc-border);
+    }
+
+    .dc-eyebrow {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--dc-blue-text);
+      margin-bottom: 0.4rem;
+    }
+
+    .dc-header h2 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: var(--dc-text);
+      margin: 0 0 0.4rem;
+      line-height: 1.3;
+    }
+
+    .dc-header p {
+      font-size: 13px;
+      color: var(--dc-text-muted);
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    .dc-summary-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+      gap: 8px;
+      margin-bottom: 1rem;
+    }
+
+    .dc-stat {
+      background: var(--dc-surface);
+      border: 0.5px solid var(--dc-border);
+      border-radius: var(--dc-radius-md);
+      padding: 0.65rem 0.9rem;
+    }
+
+    .dc-stat-label {
+      font-size: 10px;
+      color: var(--dc-text-hint);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 3px;
+    }
+
+    .dc-stat-val {
+      font-size: 22px;
+      font-weight: 600;
+      color: var(--dc-text);
+    }
+
+    .dc-stat-val.dc-green {
+      color: var(--dc-green-text);
+    }
+    .dc-stat-val.dc-red {
+      color: var(--dc-red-text);
+    }
+
+    .dc-progress-wrap {
+      height: 4px;
+      background: var(--dc-progress-track);
+      border-radius: 99px;
+      margin-bottom: 1.5rem;
+      overflow: hidden;
+    }
+
+    .dc-progress-bar {
+      height: 100%;
+      background: var(--dc-progress-fill);
+      border-radius: 99px;
+      transition: width 0.35s ease;
+      width: 0%;
+    }
+
+    .dc-section {
+      background: var(--dc-surface);
+      border: 0.5px solid var(--dc-border);
+      border-radius: var(--dc-radius-lg);
+      margin-bottom: 7px;
+      overflow: hidden;
+    }
+
+    .dc-section-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.85rem 1rem;
+      cursor: pointer;
+      user-select: none;
+      gap: 10px;
+      transition: background 0.15s;
+    }
+
+    .dc-section-header:hover {
+      background: var(--dc-surface2);
+    }
+
+    .dc-section-title-wrap {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .dc-ref {
+      font-size: 10px;
+      color: var(--dc-text-hint);
+      font-weight: 500;
+      letter-spacing: 0.03em;
+      margin-right: 5px;
+    }
+
+    .dc-section-title {
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--dc-text);
+    }
+
+    .dc-section-meta {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      flex-shrink: 0;
+    }
+
+    .dc-badge {
+      font-size: 10px;
+      font-weight: 500;
+      padding: 2px 8px;
+      border-radius: 99px;
+      white-space: nowrap;
+    }
+
+    .dc-badge-neutral {
+      background: var(--dc-surface2);
+      color: var(--dc-text-muted);
+    }
+    .dc-badge-ok {
+      background: var(--dc-green-bg);
+      color: var(--dc-green-text);
+    }
+    .dc-badge-gap {
+      background: var(--dc-amber-bg);
+      color: var(--dc-amber-text);
+    }
+
+    .dc-chevron {
+      width: 14px;
+      height: 14px;
+      color: var(--dc-text-hint);
+      transition: transform 0.2s;
+      flex-shrink: 0;
+    }
+
+    .dc-chevron.dc-open {
+      transform: rotate(90deg);
+    }
+
+    .dc-items {
+      display: none;
+      border-top: 0.5px solid var(--dc-border);
+    }
+
+    .dc-items.dc-open {
+      display: block;
+    }
+
+    .dc-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      padding: 0.6rem 1rem;
+      border-bottom: 0.5px solid var(--dc-border);
+    }
+
+    .dc-item:last-child {
+      border-bottom: none;
+    }
+
+    .dc-item-text {
+      font-size: 12px;
+      color: var(--dc-text);
+      flex: 1;
+      line-height: 1.55;
+      padding-top: 3px;
+    }
+
+    .dc-btn-group {
+      display: flex;
+      gap: 3px;
+      flex-shrink: 0;
+    }
+
+    .dc-btn {
+      font-size: 11px;
+      font-weight: 500;
+      padding: 3px 8px;
+      border-radius: var(--dc-radius-sm);
+      border: 0.5px solid var(--dc-border-strong);
+      background: transparent;
+      cursor: pointer;
+      color: var(--dc-text-muted);
+      transition: all 0.12s;
+      font-family: inherit;
+      line-height: 1.4;
+    }
+
+    .dc-btn:hover {
+      background: var(--dc-surface2);
+    }
+    .dc-btn.dc-a-ok {
+      background: var(--dc-green-bg);
+      color: var(--dc-green-text);
+      border-color: var(--dc-green-border);
+    }
+    .dc-btn.dc-a-gap {
+      background: var(--dc-red-bg);
+      color: var(--dc-red-text);
+      border-color: var(--dc-red-border);
+    }
+    .dc-btn.dc-a-na {
+      background: var(--dc-surface2);
+      color: var(--dc-text-muted);
+      border-color: var(--dc-border-strong);
+    }
+
+    .dc-toolbar {
+      margin-top: 1.25rem;
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .dc-btn-action {
+      font-size: 12px;
+      font-weight: 500;
+      padding: 7px 14px;
+      border-radius: var(--dc-radius-sm);
+      border: 0.5px solid var(--dc-border-strong);
+      background: var(--dc-surface);
+      cursor: pointer;
+      color: var(--dc-text);
+      font-family: inherit;
+      transition: all 0.12s;
+    }
+
+    .dc-btn-action:hover {
+      background: var(--dc-surface2);
+    }
+
+    .dc-note {
+      margin-top: 1.25rem;
+      padding: 0.8rem 1rem;
+      background: var(--dc-blue-bg);
+      border-radius: var(--dc-radius-md);
+      font-size: 12px;
+      color: var(--dc-blue-text);
+      line-height: 1.55;
+    }
+
+    @media (max-width: 480px) {
+      .dc-btn-group {
+        flex-direction: column;
+        gap: 2px;
+      }
+      .dc-summary-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media print {
+      .dc-toolbar,
+      .dc-note {
+        display: none !important;
+      }
+      .dc-items {
+        display: block !important;
+      }
+      .dc-btn {
+        display: none !important;
+      }
+    }
+  </style>
+
+  <div class="dc-header">
+    <div class="dc-eyebrow">NISP / 32 CFR Part 117</div>
+    <h2>DCSA Self-Assessment Checklist</h2>
+    <p>
+      Section-by-section compliance review aligned to how DCSA Industrial
+      Security Representatives inspect. Mark each item OK, Gap, or N/A. Retain
+      your completed report — DCSA will ask for the two most recent inspection
+      records.
+    </p>
+  </div>
+  <div class="dc-note">
+    <strong>Official reference:</strong> This checklist maps to 32 CFR Part 117
+    (NISPOM). The DCSA Self-Inspection Handbook for NISP Contractors (dcsa.mil)
+    and CDSE course IS130 (cdse.edu) are the authoritative government resources.
+  </div>
+  <br />
+  <div class="dc-summary-grid">
+    <div class="dc-stat">
+      <div class="dc-stat-label">Total</div>
+      <div class="dc-stat-val" id="dc-s-total">0</div>
+    </div>
+    <div class="dc-stat">
+      <div class="dc-stat-label">Compliant</div>
+      <div class="dc-stat-val dc-green" id="dc-s-ok">0</div>
+    </div>
+    <div class="dc-stat">
+      <div class="dc-stat-label">Gaps</div>
+      <div class="dc-stat-val dc-red" id="dc-s-gap">0</div>
+    </div>
+    <div class="dc-stat">
+      <div class="dc-stat-label">Pending</div>
+      <div class="dc-stat-val" id="dc-s-pend">0</div>
+    </div>
+  </div>
+
+  <div class="dc-progress-wrap">
+    <div class="dc-progress-bar" id="dc-pbar"></div>
+  </div>
+
+  <div id="dc-sections"></div>
+
+  <div class="dc-toolbar">
+    <button class="dc-btn-action" onclick="dcExpandAll()">Expand all</button>
+    <button class="dc-btn-action" onclick="dcCollapseAll()">
+      Collapse all
+    </button>
+    <button class="dc-btn-action" onclick="window.print()">
+      Print / save PDF
+    </button>
+    <button class="dc-btn-action" onclick="dcResetAll()">Reset</button>
+  </div>
+</div>
+
+<script>
+  (function () {
+    var DC_SECTIONS = [
+      {
+        id: "dc_s1",
+        ref: "§117.7",
+        title: "General responsibilities & program management",
+        items: [
+          "FSO appointed in writing by a senior officer on company letterhead",
+          "ITPSO (Insider Threat Program Senior Official) appointed in writing",
+          "Insider Threat Program documented with written plan and training records",
+          "Annual insider threat training documented for every cleared employee",
+          "Formal self-inspection completed within the last 12 months; records retained",
+          "Standard Practice Procedures (SPP) reviewed and updated within the past year",
+          "SPP signed by both the FSO and a senior officer",
+          "SPP accessible to all cleared employees",
+          "Key Management Personnel (KMP) list current in NISS",
+          "SF 328s on file for all KMPs",
+        ],
+      },
+      {
+        id: "dc_s2",
+        ref: "§117.8",
+        title: "Reporting requirements",
+        items: [
+          "Adverse information reports submitted within 1 business day of discovery",
+          "Suspicious contact reports on file and documented",
+          "Cyber incident reports submitted within 72 hours for covered contractor information systems",
+          "Security violation file maintained with root cause, disposition, and any DCSA reports",
+          "Changes in KMP status (departure, addition, citizenship change) reported promptly",
+          "Foreign visit requests processed through NISS",
+          "Employees briefed on SEAD 3 self-reporting requirements (foreign travel, contacts, arrests, financial, mental health, drugs)",
+        ],
+      },
+      {
+        id: "dc_s3",
+        ref: "§117.9",
+        title: "Facility clearance (FCL)",
+        items: [
+          "FCL active and at the correct classification level (Confidential / Secret / Top Secret)",
+          "DD Form 441 security agreement on file",
+          "Commitment of Security Responsibility on file",
+          "NISS entity information current: address, phone, KMPs, classified storage, IS authorization",
+          "FOCI questionnaire (SF 328) reviewed at least annually for material changes",
+          "Any FOCI mitigation instrument (SCA, SSA, or Proxy) still valid and audited per its terms",
+        ],
+      },
+      {
+        id: "dc_s4",
+        ref: "§117.10",
+        title: "Personnel clearances",
+        items: [
+          "Clearance records current in DISS for all cleared employees",
+          "Every cleared employee has documented need-to-know for their access level",
+          "Initial indoctrination (SF 312) executed before first classified access",
+          "Access terminated in DISS when employee leaves or no longer requires access",
+          "Debrief executed and documented at employee termination",
+          "Continuous vetting enrollment confirmed in DISS for all cleared personnel",
+        ],
+      },
+      {
+        id: "dc_s5",
+        ref: "§117.12",
+        title: "Security training & education",
+        items: [
+          "Initial security briefing delivered before every newly cleared employee's first access",
+          "Annual refresher training delivered to all cleared employees within the past 12 months",
+          "Derivative classifier training completed and refreshed every two years",
+          "FSO training requirements satisfied within one year of appointment",
+          "ITPSO training documented (DCSA Insider Threat curriculum)",
+          "Training records retained per SPP (typically 2 years after departure or clearance termination)",
+        ],
+      },
+      {
+        id: "dc_s6",
+        ref: "§117.13–14",
+        title: "Classification & marking",
+        items: [
+          "DD Form 254 current for every active classified contract",
+          "Security Classification Guides (SCGs) on file and accessible to classifiers",
+          "Derivative classification decisions properly sourced to SCG or classified source material",
+          "Classified documents marked correctly: banner lines, portion marks, authority block, declassification instructions",
+          "Electronic documents carry portion markings and proper banners",
+          "Working papers marked and destroyed within 180 days or permanently marked as required",
+        ],
+      },
+      {
+        id: "dc_s7",
+        ref: "§117.15",
+        title: "Safeguarding — possessing facilities only",
+        items: [
+          "GSA-approved security containers in use for all classified storage",
+          "Container combinations changed on installation, on departure of combo-holder, and at least annually",
+          "SF 700 (Security Container Information) on file for each container",
+          "SF 702 (Security Container Check Sheet) activity logs maintained on every container and closed area",
+          "SF 701 (Activity Security Checklist) end-of-day checks documented",
+          "Classified reproduction controlled per SPP",
+          "Approved destruction methods in use (NSA/CSS-evaluated shredder, disintegrator, etc.)",
+          "Receipt and transmission records maintained",
+          "Closed areas (if any) approved and documented by DCSA",
+        ],
+      },
+      {
+        id: "dc_s8",
+        ref: "§117.16–17",
+        title: "Visits & subcontracting",
+        items: [
+          "Outgoing visit requests submitted through DISS/NISS with need-to-know justification",
+          "Incoming visit certifications received before any classified discussion",
+          "Visitor log maintained where required by SPP",
+          "DD Form 254 issued to every classified subcontractor before they access classified information",
+          "Subcontractor FCL verified in NISS before work begins",
+          "Classified bid packages controlled and tracked",
+        ],
+      },
+      {
+        id: "dc_s9",
+        ref: "§117.18",
+        title: "Information system (IS) security",
+        items: [
+          "Any classified IS has a current Authority to Operate (ATO) from the government customer or DCSA",
+          "ISSM appointed in writing",
+          "System Security Plan (SSP) current and matches actual system configuration",
+          "POA&M active and tracked for any unresolved security findings",
+          "Removable media controlled per SSP",
+          "Audit logs reviewed on the cadence specified in the SSP",
+        ],
+      },
+    ];
+
+    var dcState = {};
+    DC_SECTIONS.forEach(function (s) {
+      s.items.forEach(function (_, i) {
+        dcState[s.id + "_" + i] = "pending";
+      });
+    });
+
+    function dcUpdateStats() {
+      var vals = Object.values(dcState);
+      var total = vals.length;
+      var ok = vals.filter(function (v) {
+        return v === "ok";
+      }).length;
+      var gap = vals.filter(function (v) {
+        return v === "gap";
+      }).length;
+      var na = vals.filter(function (v) {
+        return v === "na";
+      }).length;
+      var pend = vals.filter(function (v) {
+        return v === "pending";
+      }).length;
+      document.getElementById("dc-s-total").textContent = total;
+      document.getElementById("dc-s-ok").textContent = ok;
+      document.getElementById("dc-s-gap").textContent = gap;
+      document.getElementById("dc-s-pend").textContent = pend;
+      var reviewed = ok + gap + na;
+      document.getElementById("dc-pbar").style.width =
+        Math.round((reviewed / total) * 100) + "%";
+      DC_SECTIONS.forEach(function (s) {
+        var sOk = s.items.filter(function (_, i) {
+          return dcState[s.id + "_" + i] === "ok";
+        }).length;
+        var sGap = s.items.filter(function (_, i) {
+          return dcState[s.id + "_" + i] === "gap";
+        }).length;
+        var badge = document.getElementById("dc-badge_" + s.id);
+        if (!badge) return;
+        if (sGap > 0) {
+          badge.className = "dc-badge dc-badge-gap";
+          badge.textContent = sGap + " gap" + (sGap > 1 ? "s" : "");
+        } else if (sOk === s.items.length) {
+          badge.className = "dc-badge dc-badge-ok";
+          badge.textContent = "complete";
+        } else {
+          badge.className = "dc-badge dc-badge-neutral";
+          badge.textContent = sOk + "/" + s.items.length;
+        }
+      });
+    }
+
+    window.dcSetStatus = function (key, val) {
+      dcState[key] = val;
+      document
+        .querySelectorAll('[data-dckey="' + key + '"]')
+        .forEach(function (b) {
+          b.classList.remove("dc-a-ok", "dc-a-gap", "dc-a-na");
+          if (b.dataset.dcval === val) b.classList.add("dc-a-" + val);
+        });
+      dcUpdateStats();
+    };
+
+    window.dcToggleSection = function (id) {
+      var items = document.getElementById("dc-items_" + id);
+      var chev = document.getElementById("dc-chev_" + id);
+      var open = items.classList.toggle("dc-open");
+      chev.classList.toggle("dc-open", open);
+    };
+
+    window.dcExpandAll = function () {
+      DC_SECTIONS.forEach(function (s) {
+        document.getElementById("dc-items_" + s.id).classList.add("dc-open");
+        document.getElementById("dc-chev_" + s.id).classList.add("dc-open");
+      });
+    };
+
+    window.dcCollapseAll = function () {
+      DC_SECTIONS.forEach(function (s) {
+        document.getElementById("dc-items_" + s.id).classList.remove("dc-open");
+        document.getElementById("dc-chev_" + s.id).classList.remove("dc-open");
+      });
+    };
+
+    window.dcResetAll = function () {
+      Object.keys(dcState).forEach(function (k) {
+        dcState[k] = "pending";
+      });
+      document.querySelectorAll(".dc-btn").forEach(function (b) {
+        b.classList.remove("dc-a-ok", "dc-a-gap", "dc-a-na");
+      });
+      dcUpdateStats();
+    };
+
+    var wrap = document.getElementById("dc-sections");
+    DC_SECTIONS.forEach(function (s) {
+      var div = document.createElement("div");
+      div.className = "dc-section";
+      div.innerHTML =
+        '<div class="dc-section-header" onclick="dcToggleSection(\'' +
+        s.id +
+        "')\">" +
+        '<div class="dc-section-title-wrap"><span class="dc-ref">' +
+        s.ref +
+        '</span><span class="dc-section-title">' +
+        s.title +
+        "</span></div>" +
+        '<div class="dc-section-meta">' +
+        '<span class="dc-badge dc-badge-neutral" id="dc-badge_' +
+        s.id +
+        '">0/' +
+        s.items.length +
+        "</span>" +
+        '<svg class="dc-chevron" id="dc-chev_' +
+        s.id +
+        '" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6,4 10,8 6,12"/></svg>' +
+        "</div></div>" +
+        '<div class="dc-items" id="dc-items_' +
+        s.id +
+        '">' +
+        s.items
+          .map(function (item, i) {
+            var key = s.id + "_" + i;
+            return (
+              '<div class="dc-item">' +
+              '<div class="dc-item-text">' +
+              item +
+              "</div>" +
+              '<div class="dc-btn-group">' +
+              '<button class="dc-btn" data-dckey="' +
+              key +
+              '" data-dcval="ok" onclick="dcSetStatus(\'' +
+              key +
+              "','ok')\">OK</button>" +
+              '<button class="dc-btn" data-dckey="' +
+              key +
+              '" data-dcval="gap" onclick="dcSetStatus(\'' +
+              key +
+              "','gap')\">Gap</button>" +
+              '<button class="dc-btn" data-dckey="' +
+              key +
+              '" data-dcval="na" onclick="dcSetStatus(\'' +
+              key +
+              "','na')\">N/A</button>" +
+              "</div></div>"
+            );
+          })
+          .join("") +
+        "</div>";
+      wrap.appendChild(div);
+    });
+
+    dcUpdateStats();
+  })();
+</script>
