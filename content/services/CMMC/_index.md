@@ -19,11 +19,11 @@ CMMC 2.0 Level 3 is mandatory for any small business handling Controlled Unclass
 <br>
 {{< /hextra/feature-grid >}}
 
-{{< hextra/feature-grid cols="3">}}
+{{< hextra/feature-grid cols="2">}}
 
 {{< card link="https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-171r2.pdf" title="110 controls" subtitle="NIST SP 800-171 practices required at Level 3" >}}
 {{< card link="https://www.dcsa.mil/Portals/91/Documents/CTP/tools/DCSA%20Assessment%20and%20Authorization%20Process%20Manual%20Version%202.2.pdf" title="Level 3 certified" subtitle="Third-party C3PAO or DCSA-led assessment required" >}}
-{{< card link="" title="Veteran-owned" subtitle="Built by those who served the mission" >}}
+
 {{< /hextra/feature-grid >}}
 
 <!-- below is a one line break -->
@@ -48,7 +48,7 @@ CMMC 2.0 has three levels. Most DoD prime and subcontractor small businesses han
 - **Scope:** Federal Contract Information (FCI) only — not CUI
 - **Who it applies to:** Contractors who receive FCI but do not process, store, or transmit CUI
 
-If your contract involves CUI, Level 1 is not sufficient. Most active DoD subcontractors need Level 2 or higher.
+**_If your contract involves CUI, Level 1 is not sufficient. Most active DoD subcontractors need Level 2 or higher._**
 
 {{< /tab >}}
 
@@ -60,8 +60,8 @@ If your contract involves CUI, Level 1 is not sufficient. Most active DoD subcon
 - **Scope:** Any contractor processing, storing, or transmitting CUI
 - **Who it applies to:** The majority of small DIB contractors
 
-> Level 2 is the most common requirement for small businesses in the Defense Industrial Base.
-> {{< /tab >}}
+**_Level 2 is the most common requirement for small businesses in the Defense Industrial Base._**
+{{< /tab >}}
 
 {{< tab >}}
 **APT-level defense** — _GreylineOps specialty_

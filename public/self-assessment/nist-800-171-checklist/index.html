@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="robots" content="noindex, nofollow" />
+  <link rel="icon shortcut" href="/favicon.ico" sizes="32x32" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" id="favicon-svg" />
+<link rel="icon" href="/favicon-16x16.png" type="image/png" sizes="16x16" />
+<link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
+<link fetchpriority="low" href="/site.webmanifest" rel="manifest" />
+<title>NIST 800-171 – GreylineOps</title>
+  <meta name="description" content=" NIST SP 800-171 Rev 2 · DFARS 252.204-7019/7020 NIST SP 800-171 Self-Assessment Checklist All 110 controls across 14 families. Scoring follows the DoD Assessment Methodology — partial implementation earns no credit. Use results to calculate and submit your SPRS score." /><link rel="canonical" href="http://localhost:1313/self-assessment/nist-800-171-checklist/" itemprop="url" />
+
+<meta property="og:title" content="NIST 800-171">
+<meta
+  property="og:description"
+  content="
+    
+      Veteran-owned managed IT and CMMC compliance for small businesses with DoD contracts.
+    
+  ">
+<meta
+  property="og:type"
+  content="
+    website
+  ">
+<meta property="og:url" content="http://localhost:1313/self-assessment/nist-800-171-checklist/">
+
+
+  <meta itemprop="name" content="NIST 800-171">
+  <meta itemprop="description" content="NIST SP 800-171 Rev 2 · DFARS 252.204-7019/7020 NIST SP 800-171 Self-Assessment Checklist All 110 controls across 14 families. Scoring follows the DoD Assessment Methodology — partial implementation earns no credit. Use results to calculate and submit your SPRS score.">
+  <meta itemprop="wordCount" content="150">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="NIST 800-171">
+  <meta name="twitter:description" content="NIST SP 800-171 Rev 2 · DFARS 252.204-7019/7020 NIST SP 800-171 Self-Assessment Checklist All 110 controls across 14 families. Scoring follows the DoD Assessment Methodology — partial implementation earns no credit. Use results to calculate and submit your SPRS score.">
+<link href="/css/compiled/main.css" rel="stylesheet" />
+    <link href="/css/variables.css" rel="stylesheet" />
+    <link href="/css/custom.css" rel="stylesheet" />
+
+  
+<script src="/js/main-head.js" integrity=""></script>
+
+  
+  
+  </head>
+<body>
+    <a href="#content" class="hx:sr-only hx:focus-visible:not-sr-only hx:focus-visible:fixed hx:focus-visible:z-50 hx:focus-visible:top-2 hx:focus-visible:left-2 hx:focus-visible:bg-primary-500 hx:focus-visible:text-white hx:focus-visible:px-4 hx:focus-visible:py-2 hx:focus-visible:rounded-md hx:focus-visible:text-sm hx:focus-visible:font-medium">Skip to content</a><div class="hextra-nav-container hx:sticky hx:top-0 hx:z-20 hx:w-full hx:bg-transparent hx:print:hidden">
+  <div
+    class="hextra-nav-container-blur hx:pointer-events-none hx:absolute hx:z-[-1] hx:h-full hx:w-full hx:bg-white hx:dark:bg-dark hx:shadow-[0_2px_4px_rgba(0,0,0,.02),0_1px_0_rgba(0,0,0,.06)] hx:contrast-more:shadow-[0_0_0_1px_#000] hx:dark:shadow-[0_-1px_0_rgba(255,255,255,.1)_inset] hx:contrast-more:dark:shadow-[0_0_0_1px_#fff]"
+  ></div>
+
+  <nav class="hextra-max-navbar-width hx:mx-auto hx:flex hx:items-center hx:justify-end hx:gap-2 hx:h-16 hx:px-6">
+    <a class="hx:flex hx:items-center hx:hover:opacity-75 hx:ltr:mr-auto hx:rtl:ml-auto" href="/">
+    <img class="hx:mr-2 hx:block hx:dark:hidden" src="/images/logomark-v4.svg" alt="Logo" height="20" width="40" />
+    <img class="hx:mr-2 hx:hidden hx:dark:block" src="/images/logomark-v4.svg" alt="Dark Logo" height="20" width="40" />
+    <span class="hx:mr-2 hx:font-extrabold hx:inline hx:select-none">GreylineOps</span>
+</a>
+<a
+  title=""
+  href="/services"
+  
+  class="hx:text-sm hx:contrast-more:text-gray-700 hx:contrast-more:dark:text-gray-100 hx:relative hx:-ml-2 hx:hidden hx:whitespace-nowrap hx:p-2 hx:md:inline-flex hx:items-center hx:gap-1 hx:text-gray-600 hx:hover:text-gray-800 hx:dark:text-gray-400 hx:dark:hover:text-gray-200"
+><span class="hx:text-center">Services</span>
+</a><a
+  title=""
+  href="/services/cmmc"
+  
+  class="hx:text-sm hx:contrast-more:text-gray-700 hx:contrast-more:dark:text-gray-100 hx:relative hx:-ml-2 hx:hidden hx:whitespace-nowrap hx:p-2 hx:md:inline-flex hx:items-center hx:gap-1 hx:text-gray-600 hx:hover:text-gray-800 hx:dark:text-gray-400 hx:dark:hover:text-gray-200"
+><span class="hx:text-center">CMMC Level 3</span>
+</a><a
+  title=""
+  href="/self-assessment/dcsa-checklist/"
+  
+  class="hx:text-sm hx:contrast-more:text-gray-700 hx:contrast-more:dark:text-gray-100 hx:relative hx:-ml-2 hx:hidden hx:whitespace-nowrap hx:p-2 hx:md:inline-flex hx:items-center hx:gap-1 hx:text-gray-600 hx:hover:text-gray-800 hx:dark:text-gray-400 hx:dark:hover:text-gray-200"
+><span class="hx:text-center">DCSA Self-Assess</span>
+</a><a
+  title=""
+  href="/about"
+  
+  class="hx:text-sm hx:contrast-more:text-gray-700 hx:contrast-more:dark:text-gray-100 hx:relative hx:-ml-2 hx:hidden hx:whitespace-nowrap hx:p-2 hx:md:inline-flex hx:items-center hx:gap-1 hx:text-gray-600 hx:hover:text-gray-800 hx:dark:text-gray-400 hx:dark:hover:text-gray-200"
+><span class="hx:text-center">About</span>
+</a><button type="button" aria-label="Menu" aria-expanded="false" class="hextra-hamburger-menu hx:cursor-pointer hx:-mr-2 hx:rounded-sm hx:p-2 hx:active:bg-gray-400/20 hx:md:hidden hx:hextra-focus-visible-inset"><svg height=24 fill="none" viewBox="0 0 24 24" stroke="currentColor"><g><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8H20"></path></g><g><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16H20"></path></g></svg></button>
+  </nav>
+</div>
+
+  <div class='hx:mx-auto hx:flex hextra-max-page-width'>
+    <aside class="hextra-sidebar-container hx:flex hx:flex-col hx:print:hidden hx:md:top-16 hx:md:shrink-0 hx:md:w-64 hx:md:self-start hx:max-md:[transform:translate3d(0,-100%,0)] hx:md:sticky">
+    <div class="hx:px-4 hx:pt-4 hx:md:hidden">
+      <div class="hextra-search-wrapper hx:relative hx:md:w-64">
+  <div class="hx:relative hx:flex hx:items-center hx:text-gray-900 hx:contrast-more:text-gray-800 hx:dark:text-gray-300 hx:contrast-more:dark:text-gray-300">
+    <input
+      placeholder="Search..."
+      aria-label="Search..."
+      class="hextra-search-input hx:hextra-focus-visible hx:block hx:w-full hx:appearance-none hx:rounded-lg hx:px-3 hx:py-2 hx:transition-colors hx:text-base hx:leading-tight hx:md:text-sm hx:bg-black/[.05] hx:dark:bg-gray-50/10 hx:focus-visible:bg-white hx:dark:focus-visible:bg-dark hx:placeholder:text-gray-500 hx:dark:placeholder:text-gray-400 hx:contrast-more:border hx:contrast-more:border-current"
+      type="search"
+      autocomplete="off"
+      value=""
+      spellcheck="false"
+    />
+    <kbd
+      class="hx:absolute hx:my-1.5 hx:select-none hx:ltr:right-1.5 hx:rtl:left-1.5 hx:h-5 hx:rounded-sm hx:bg-white hx:px-1.5 hx:font-mono hx:text-[10px] hx:font-medium hx:text-gray-500 hx:border hx:border-gray-200 hx:dark:border-gray-100/20 hx:dark:bg-dark/50 hx:contrast-more:border-current hx:contrast-more:text-current hx:contrast-more:dark:border-current hx:items-center hx:gap-1 hx:transition-opacity hx:pointer-events-none hx:hidden hx:sm:flex"
+    >
+      CTRL K
+    </kbd>
+  </div>
+
+  <div>
+    <ul
+      class="hextra-search-results hextra-scrollbar hx:hidden hx:border hx:border-gray-200 hx:bg-white hx:text-gray-100 hx:dark:border-neutral-800 hx:dark:bg-neutral-900 hx:absolute hx:top-full hx:z-20 hx:mt-2 hx:overflow-auto hx:overscroll-contain hx:rounded-xl hx:py-2.5 hx:shadow-xl hx:max-h-[min(calc(50vh-11rem-env(safe-area-inset-bottom)),400px)] hx:md:max-h-[min(calc(100vh-5rem-env(safe-area-inset-bottom)),400px)] hx:inset-x-0 hx:ltr:md:left-auto hx:rtl:md:right-auto hx:contrast-more:border hx:contrast-more:border-gray-900 hx:contrast-more:dark:border-gray-50 hx:w-screen hx:min-h-[100px] hx:max-w-[min(calc(100vw-2rem),calc(100%+20rem))]"
+      aria-label="Search results"
+      style="transition: max-height 0.2s ease 0s;"
+    ></ul>
+    <div class="hextra-search-status hx:sr-only" aria-live="polite" role="status"></div>
+  </div>
+</div>
+
+    </div><div class="hextra-scrollbar hx:overflow-y-auto hx:overflow-x-hidden hx:p-4 hx:grow hx:md:h-[calc(100vh-var(--navbar-height)-var(--menu-height))]">
+    <ul class="hx:flex hx:flex-col hx:gap-1 hx:md:hidden">
+      
+      
+              <li class=""><div class="hextra-sidebar-item hx:group hx:relative hx:flex hx:items-center" data-active="false">
+    <a
+      class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:grow hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:ltr:pr-8 hx:rtl:pl-8
+      hx:hextra-focus-visible-inset
+        hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:contrast-more:border hx:contrast-more:border-transparent hx:contrast-more:text-gray-900 hx:contrast-more:hover:border-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:dark:text-gray-50 hx:contrast-more:dark:hover:border-gray-50"
+      href="/services/"
+      
+    >
+      <span class="hx:min-w-0 [word-break:break-word]">Services</span>
+    </a>
+      <button type="button" class="hextra-sidebar-collapsible-button hx:absolute hx:top-1/2 hx:-translate-y-1/2 hx:ltr:right-2 hx:rtl:left-2 hx:shrink-0 hx:cursor-pointer hx:p-0 hx:text-gray-500 hx:dark:text-neutral-400 hx:group-hover:text-gray-900 hx:dark:group-hover:text-gray-50 hx:group-data-[active=true]:text-primary-800 hx:group-data-[active=true]:dark:text-primary-600 hx:hextra-focus-visible-inset" aria-label="Toggle section" aria-expanded="false"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" focusable="false" class="hx:h-[18px] hx:min-w-[18px] hx:rounded-xs hx:p-0.5 hx:hover:bg-gray-800/5 hx:dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="hx:origin-center hx:transition-transform hx:rtl:-rotate-180"></path></svg></button>
+  </div><div class="hextra-sidebar-children hx:ltr:pr-0 hx:rtl:pl-0 hx:overflow-hidden">
+        <ul class='hx:relative hx:flex hx:flex-col hx:gap-1 hx:before:absolute hx:before:inset-y-1 hx:before:w-px hx:before:bg-gray-200 hx:before:content-[""] hx:ltr:ml-3 hx:ltr:pl-3 hx:ltr:before:left-0 hx:rtl:mr-3 hx:rtl:pr-3 hx:rtl:before:right-0 hx:dark:before:bg-neutral-800'><li class="hx:flex hx:flex-col "><div class="hextra-sidebar-item hx:group hx:relative hx:flex hx:items-center" data-active="false">
+    <a
+      class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:grow hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none]
+      hx:hextra-focus-visible-inset
+        hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:contrast-more:border hx:contrast-more:border-transparent hx:contrast-more:text-gray-900 hx:contrast-more:hover:border-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:dark:text-gray-50 hx:contrast-more:dark:hover:border-gray-50"
+      href="/services/cmmc/"
+      
+    >
+      <span class="hx:min-w-0 [word-break:break-word]">CMMC Level 3</span>
+    </a>
+  </div>
+              
+            </li><li class="hx:flex hx:flex-col "><div class="hextra-sidebar-item hx:group hx:relative hx:flex hx:items-center" data-active="false">
+    <a
+      class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:grow hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none]
+      hx:hextra-focus-visible-inset
+        hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:contrast-more:border hx:contrast-more:border-transparent hx:contrast-more:text-gray-900 hx:contrast-more:hover:border-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:dark:text-gray-50 hx:contrast-more:dark:hover:border-gray-50"
+      href="/services/incident-response/"
+      
+    >
+      <span class="hx:min-w-0 [word-break:break-word]">Incident Response</span>
+    </a>
+  </div>
+              
+            </li><li class="hx:flex hx:flex-col "><div class="hextra-sidebar-item hx:group hx:relative hx:flex hx:items-center" data-active="false">
+    <a
+      class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:grow hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none]
+      hx:hextra-focus-visible-inset
+        hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:contrast-more:border hx:contrast-more:border-transparent hx:contrast-more:text-gray-900 hx:contrast-more:hover:border-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:dark:text-gray-50 hx:contrast-more:dark:hover:border-gray-50"
+      href="/services/managed-detection/"
+      
+    >
+      <span class="hx:min-w-0 [word-break:break-word]">Managed Detection</span>
+    </a>
+  </div>
+              
+            </li><li class="hx:flex hx:flex-col "><div class="hextra-sidebar-item hx:group hx:relative hx:flex hx:items-center" data-active="false">
+    <a
+      class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:grow hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none]
+      hx:hextra-focus-visible-inset
+        hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:contrast-more:border hx:contrast-more:border-transparent hx:contrast-more:text-gray-900 hx:contrast-more:hover:border-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:dark:text-gray-50 hx:contrast-more:dark:hover:border-gray-50"
+      href="/services/sprs/"
+      
+    >
+      <span class="hx:min-w-0 [word-break:break-word]">SPRS</span>
+    </a>
+  </div>
+              
+            </li></ul>
+      </div></li>
+              <li class=""><div class="hextra-sidebar-item hx:group hx:relative hx:flex hx:items-center" data-active="false">
+    <a
+      class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:grow hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none]
+      hx:hextra-focus-visible-inset
+        hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:contrast-more:border hx:contrast-more:border-transparent hx:contrast-more:text-gray-900 hx:contrast-more:hover:border-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:dark:text-gray-50 hx:contrast-more:dark:hover:border-gray-50"
+      href="/services/cmmc/"
+      
+    >
+      <span class="hx:min-w-0 [word-break:break-word]">CMMC Level 3</span>
+    </a>
+  </div></li>
+              <li class=""><div class="hextra-sidebar-item hx:group hx:relative hx:flex hx:items-center" data-active="false">
+    <a
+      class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:grow hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none]
+      hx:hextra-focus-visible-inset
+        hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:contrast-more:border hx:contrast-more:border-transparent hx:contrast-more:text-gray-900 hx:contrast-more:hover:border-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:dark:text-gray-50 hx:contrast-more:dark:hover:border-gray-50"
+      href="/self-assessment/dcsa-checklist/"
+      
+    >
+      <span class="hx:min-w-0 [word-break:break-word]">DCSA Self-Assess</span>
+    </a>
+  </div></li>
+              <li class=""><div class="hextra-sidebar-item hx:group hx:relative hx:flex hx:items-center" data-active="false">
+    <a
+      class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:grow hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none]
+      hx:hextra-focus-visible-inset
+        hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:contrast-more:border hx:contrast-more:border-transparent hx:contrast-more:text-gray-900 hx:contrast-more:hover:border-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:dark:text-gray-50 hx:contrast-more:dark:hover:border-gray-50"
+      href="/about/"
+      
+    >
+      <span class="hx:min-w-0 [word-break:break-word]">About</span>
+    </a>
+  </div></li>
+    </ul>
+
+    <ul class="hx:flex hx:flex-col hx:gap-1 hx:max-md:hidden">
+        
+            <li class=""><div class="hextra-sidebar-item hx:group hx:relative hx:flex hx:items-center" data-active="false">
+    <a
+      class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:grow hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none]
+      hx:hextra-focus-visible-inset
+        hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:contrast-more:border hx:contrast-more:border-transparent hx:contrast-more:text-gray-900 hx:contrast-more:hover:border-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:dark:text-gray-50 hx:contrast-more:dark:hover:border-gray-50"
+      href="/self-assessment/pre-qual/"
+      
+    >
+      <span class="hx:min-w-0 [word-break:break-word]">CMMC Pre-Qualification | GreylineOps</span>
+    </a>
+  </div></li>
+            <li class=""><div class="hextra-sidebar-item hx:group hx:relative hx:flex hx:items-center" data-active="false">
+    <a
+      class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:grow hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none]
+      hx:hextra-focus-visible-inset
+        hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:contrast-more:border hx:contrast-more:border-transparent hx:contrast-more:text-gray-900 hx:contrast-more:hover:border-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:dark:text-gray-50 hx:contrast-more:dark:hover:border-gray-50"
+      href="/self-assessment/dcsa-checklist/"
+      
+    >
+      <span class="hx:min-w-0 [word-break:break-word]">FCL Self-Inspection Checklist | DCSA Assessment Prep for Defense Contractors</span>
+    </a>
+  </div></li>
+            <li class="open"><div class="hextra-sidebar-item hx:group hx:relative hx:flex hx:items-center" data-active="true">
+    <a
+      class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:grow hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none]
+      hx:hextra-focus-visible-inset
+        hextra-sidebar-active-item hx:bg-primary-100 hx:font-semibold hx:text-primary-800 hx:contrast-more:border hx:contrast-more:border-primary-500 hx:dark:bg-primary-400/10 hx:dark:text-primary-600 hx:contrast-more:dark:border-primary-500"
+      href="/self-assessment/nist-800-171-checklist/"
+      
+    >
+      <span class="hx:min-w-0 [word-break:break-word]">NIST 800-171</span>
+    </a>
+  </div></li>
+        
+      </ul>
+    </div>
+  
+  
+    <div class="  hx:sticky hx:bottom-0 hx:max-h-(--menu-height) hx:bg-white hx:dark:bg-dark hx:mx-4 hx:py-4 hx:shadow-[0_-12px_16px_#fff] hx:flex hx:items-center hx:gap-2 hx:border-gray-200 hx:dark:border-neutral-800 hx:dark:shadow-[0_-12px_16px_#111] hx:contrast-more:border-neutral-400 hx:contrast-more:shadow-none hx:contrast-more:dark:shadow-none hx:border-t" data-toggle-animation="show"><div class="hx:flex hx:grow hx:flex-col"><div class="hx:flex hx:justify-items-start hx:group" data-theme="light">
+  <button
+    title="Change theme"
+    data-state="closed"
+    data-location="bottom"
+    class="hextra-theme-toggle hx:cursor-pointer hx:rounded-md hx:text-left hx:font-medium hx:h-7 hx:px-2 hx:text-xs hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:font-medium hx:text-gray-600 hx:transition-colors hx:dark:text-gray-400 hx:grow"
+    type="button"
+    aria-label="Change theme"
+    aria-expanded="false"
+    aria-haspopup="menu"
+  >
+    <div class="hx:flex hx:items-center hx:gap-2 hx:capitalize"><svg height=12 class="hx:group-data-[theme=dark]:hidden hx:group-data-[theme=system]:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg><span class="hx:group-data-[theme=dark]:hidden hx:group-data-[theme=system]:hidden">Light</span><svg height=12 class="hx:group-data-[theme=light]:hidden hx:group-data-[theme=system]:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg><span class="hx:group-data-[theme=light]:hidden hx:group-data-[theme=system]:hidden">Dark</span><svg height=12 class="hx:group-data-[theme=dark]:hidden hx:group-data-[theme=light]:hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  fill="currentColor">
+  <path d="M 11.996094,2 C 6.4986225,2.0192368 2.03125,6.5024993 2.03125,12 c 0,5.497501 4.4673725,9.980763 9.964844,10 H 12 12.0039 c 5.497471,-0.01924 9.964844,-4.502499 9.964844,-10 0,-5.4975007 -4.467373,-9.9807632 -9.964844,-10 H 12 Z M 12,4 c 4.417218,0.017598 7.96875,3.5822356 7.96875,8 0,4.417764 -3.551532,7.982402 -7.96875,8 z" />
+</svg>
+<span class="hx:group-data-[theme=dark]:hidden hx:group-data-[theme=light]:hidden">System</span></div>
+  </button>
+  <ul
+    class="hextra-theme-toggle-options hx:hidden hx:z-20 hx:max-h-64 hx:overflow-auto hx:rounded-lg hx:border hx:border-gray-200 hx:bg-white hx:p-1 hx:text-sm hx:shadow-lg hx:dark:border-neutral-700 hx:dark:bg-neutral-900"
+    style="position: fixed; inset: auto auto 0px 0px; margin: 0px; min-width: 100px;"
+    data-theme="light"
+    role="menu"
+  >
+    <li role="none" class="hx:flex hx:flex-col">
+      <button
+        type="button"
+        role="menuitemradio"
+        aria-checked="true"
+        tabindex="-1"
+        data-item="light"
+        class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9 hx:text-left hx:w-full hx:bg-transparent hx:border-0"
+      >
+        Light
+         <span class="hx:absolute hx:inset-y-0 hx:flex hx:items-center hx:ltr:right-3 hx:rtl:left-3 hx:group-data-[theme=dark]:hidden hx:group-data-[theme=system]:hidden"><svg height=1em width=1em xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
+      </button>
+    </li>
+    <li role="none" class="hx:flex hx:flex-col">
+      <button
+        type="button"
+        role="menuitemradio"
+        aria-checked="false"
+        tabindex="-1"
+        data-item="dark"
+        class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9 hx:text-left hx:w-full hx:bg-transparent hx:border-0"
+      >
+        Dark
+         <span class="hx:absolute hx:inset-y-0 hx:flex hx:items-center hx:ltr:right-3 hx:rtl:left-3 hx:group-data-[theme=light]:hidden hx:group-data-[theme=system]:hidden"><svg height=1em width=1em xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
+      </button>
+    </li>
+    <li role="none" class="hx:flex hx:flex-col">
+      <button
+        type="button"
+        role="menuitemradio"
+        aria-checked="false"
+        tabindex="-1"
+        data-item="system"
+        class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9 hx:text-left hx:w-full hx:bg-transparent hx:border-0"
+      >
+        System
+         <span class="hx:absolute hx:inset-y-0 hx:flex hx:items-center hx:ltr:right-3 hx:rtl:left-3 hx:group-data-[theme=dark]:hidden hx:group-data-[theme=light]:hidden"><svg height=1em width=1em xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
+      </button>
+    </li>
+  </ul>
+</div>
+</div></div></aside>
+    
+<nav class="hextra-toc hx:order-last hx:hidden hx:w-64 hx:shrink-0 hx:xl:block hx:print:hidden hx:px-4" aria-label="Table of contents">
+    <div class="hextra-scrollbar hx:sticky hx:top-16 hx:overflow-y-auto hx:pr-4 hx:pt-6 hx:text-sm [hyphens:auto] hx:max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] hx:ltr:-mr-4 hx:rtl:-ml-4">
+      <div class=" hx:sticky hx:bottom-0 hx:flex hx:flex-col hx:items-start hx:gap-2 hx:pb-8 hx:border-gray-200 hx:dark:border-neutral-800 hx:contrast-more:border-t hx:contrast-more:border-neutral-400 hx:contrast-more:shadow-none hx:contrast-more:dark:border-neutral-400">
+        <button id="backToTop" tabindex="-1" onClick="scrollUp();" class="hx:cursor-pointer hx:transition-all hx:duration-75 hx:opacity-0 hx:text-xs hx:font-medium hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-100 hx:contrast-more:text-gray-800 hx:contrast-more:dark:text-gray-50">
+          <span>Scroll to top</span>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" focusable="false" class="hx:inline hx:ltr:ml-1 hx:rtl:mr-1 hx:h-3.5 hx:w-3.5 hx:rounded-full hx:border hx:border-gray-500 hx:hover:border-gray-900 hx:dark:border-gray-400 hx:dark:hover:border-gray-100 hx:contrast-more:border-gray-800 hx:contrast-more:dark:border-gray-50">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+
+    <article class="hx:w-full hx:break-words hx:flex hx:min-h-[calc(100vh-var(--navbar-height))] hx:min-w-0 hx:justify-center hx:pb-8 hx:pr-[calc(env(safe-area-inset-right)-1.5rem)]">
+      <main id="content" class="hx:w-full hx:min-w-0 hextra-max-content-width hx:px-6 hx:pt-4 hx:md:px-12">
+        
+        <div class="content">
+          <h1>NIST 800-171</h1>
+          
+
+<div id="nist-wrap">
+
+<style>
+#nist-wrap *, #nist-wrap *::before, #nist-wrap *::after { box-sizing: border-box; }
+#nist-wrap {
+  --n-bg: #f9f8f6;
+  --n-surface: #ffffff;
+  --n-surface2: #f3f1ee;
+  --n-border: rgba(0,0,0,0.09);
+  --n-border-md: rgba(0,0,0,0.15);
+  --n-text: #181715;
+  --n-muted: #6b6a67;
+  --n-hint: #a09e9a;
+  --n-green-bg: #eaf3de; --n-green: #3b6d11; --n-green-bd: #97c459;
+  --n-red-bg: #fcebeb; --n-red: #a32d2d; --n-red-bd: #f09595;
+  --n-amber-bg: #faeeda; --n-amber: #854f0b; --n-amber-bd: #ef9f27;
+  --n-blue-bg: #e6f1fb; --n-blue: #185fa5;
+  --n-navy: #0f3460;
+  --n-prog: #e8e6e1; --n-fill: #1d9e75;
+  --n-r-sm: 6px; --n-r-md: 10px; --n-r-lg: 14px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: var(--n-text);
+  margin: 2rem 0;
+  font-size: 14px;
+}
+
+.n-header { margin-bottom: 1.5rem; padding-bottom: 1.25rem; border-bottom: 1px solid var(--n-border); }
+.n-eyebrow { font-size: 11px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--n-blue); margin-bottom: .4rem; }
+.n-header h2 { font-size: 1.45rem; font-weight: 600; margin: 0 0 .4rem; line-height: 1.3; }
+.n-header p { font-size: 13px; color: var(--n-muted); line-height: 1.6; margin: 0; }
+
+.n-score-panel {
+  background: var(--n-navy);
+  color: #fff;
+  border-radius: var(--n-r-lg);
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.n-score-main { flex-shrink: 0; }
+.n-score-num { font-size: 3rem; font-weight: 700; line-height: 1; }
+.n-score-label { font-size: 11px; letter-spacing: .08em; text-transform: uppercase; opacity: .7; margin-top: 4px; }
+.n-score-detail { flex: 1; min-width: 200px; }
+.n-score-bar-wrap { background: rgba(255,255,255,.2); border-radius: 99px; height: 6px; margin: 8px 0 12px; overflow: hidden; }
+.n-score-bar { height: 100%; border-radius: 99px; background: #5DCAA5; transition: width .4s ease; }
+.n-score-meta { display: flex; gap: 1.5rem; flex-wrap: wrap; }
+.n-score-meta-item { font-size: 12px; opacity: .85; }
+.n-score-meta-item strong { display: block; font-size: 18px; font-weight: 600; opacity: 1; }
+
+.n-summary-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(100px,1fr)); gap: 8px; margin-bottom: 1.25rem; }
+.n-stat { background: var(--n-surface); border: .5px solid var(--n-border); border-radius: var(--n-r-md); padding: .65rem .9rem; }
+.n-stat-label { font-size: 10px; color: var(--n-hint); text-transform: uppercase; letter-spacing: .06em; margin-bottom: 3px; }
+.n-stat-val { font-size: 20px; font-weight: 600; }
+.n-stat-val.green { color: var(--n-green); }
+.n-stat-val.red { color: var(--n-red); }
+.n-stat-val.amber { color: var(--n-amber); }
+
+.n-prog-wrap { height: 4px; background: var(--n-prog); border-radius: 99px; margin-bottom: 1.25rem; overflow: hidden; }
+.n-prog-bar { height: 100%; background: var(--n-fill); border-radius: 99px; transition: width .35s; width: 0; }
+
+.n-controls { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 1.25rem; align-items: center; }
+.n-filter-btn { font-size: 12px; font-weight: 500; padding: 5px 12px; border-radius: 99px; border: .5px solid var(--n-border-md); background: var(--n-surface); cursor: pointer; color: var(--n-muted); font-family: inherit; transition: all .12s; }
+.n-filter-btn:hover { background: var(--n-surface2); }
+.n-filter-btn.active { background: var(--n-navy); color: #fff; border-color: var(--n-navy); }
+.n-search { flex: 1; min-width: 160px; max-width: 260px; font-size: 13px; padding: 5px 10px; border: .5px solid var(--n-border-md); border-radius: var(--n-r-sm); background: var(--n-surface); font-family: inherit; color: var(--n-text); }
+.n-search:focus { outline: none; border-color: var(--n-blue); }
+
+.n-family { background: var(--n-surface); border: .5px solid var(--n-border); border-radius: var(--n-r-lg); margin-bottom: 7px; overflow: hidden; }
+.n-family-header { display: flex; align-items: center; gap: 10px; padding: .85rem 1rem; cursor: pointer; user-select: none; transition: background .15s; }
+.n-family-header:hover { background: var(--n-surface2); }
+.n-family-id { font-size: 10px; font-weight: 700; letter-spacing: .06em; color: var(--n-blue); background: var(--n-blue-bg); padding: 2px 7px; border-radius: 4px; flex-shrink: 0; }
+.n-family-title { font-size: 13px; font-weight: 500; flex: 1; }
+.n-family-meta { display: flex; align-items: center; gap: 7px; flex-shrink: 0; }
+.n-badge { font-size: 10px; font-weight: 500; padding: 2px 8px; border-radius: 99px; white-space: nowrap; }
+.n-badge-neutral { background: var(--n-surface2); color: var(--n-muted); }
+.n-badge-ok { background: var(--n-green-bg); color: var(--n-green); }
+.n-badge-gap { background: var(--n-amber-bg); color: var(--n-amber); }
+.n-chev { width: 14px; height: 14px; color: var(--n-hint); transition: transform .2s; flex-shrink: 0; }
+.n-chev.open { transform: rotate(90deg); }
+.n-items { display: none; border-top: .5px solid var(--n-border); }
+.n-items.open { display: block; }
+
+.n-item { display: flex; align-items: flex-start; gap: 8px; padding: .6rem 1rem; border-bottom: .5px solid var(--n-border); }
+.n-item:last-child { border-bottom: none; }
+.n-item.hidden { display: none; }
+.n-item-left { flex: 1; min-width: 0; }
+.n-item-id { font-size: 10px; font-weight: 600; color: var(--n-hint); margin-bottom: 2px; font-family: 'SF Mono', 'Fira Code', monospace; }
+.n-item-text { font-size: 12px; color: var(--n-text); line-height: 1.55; }
+.n-item-pts { font-size: 10px; color: var(--n-muted); margin-top: 2px; }
+.n-item-pts span { font-weight: 600; }
+.n-btn-group { display: flex; gap: 3px; flex-shrink: 0; margin-top: 1px; }
+.n-btn { font-size: 11px; font-weight: 500; padding: 3px 8px; border-radius: var(--n-r-sm); border: .5px solid var(--n-border-md); background: transparent; cursor: pointer; color: var(--n-muted); transition: all .12s; font-family: inherit; line-height: 1.4; }
+.n-btn:hover { background: var(--n-surface2); }
+.n-btn.a-met { background: var(--n-green-bg); color: var(--n-green); border-color: var(--n-green-bd); }
+.n-btn.a-partial { background: var(--n-amber-bg); color: var(--n-amber); border-color: var(--n-amber-bd); }
+.n-btn.a-not { background: var(--n-red-bg); color: var(--n-red); border-color: var(--n-red-bd); }
+.n-btn.a-na { background: var(--n-surface2); color: var(--n-muted); border-color: var(--n-border-md); }
+
+.n-toolbar { margin-top: 1.25rem; display: flex; gap: 6px; flex-wrap: wrap; }
+.n-btn-action { font-size: 12px; font-weight: 500; padding: 7px 14px; border-radius: var(--n-r-sm); border: .5px solid var(--n-border-md); background: var(--n-surface); cursor: pointer; color: var(--n-text); font-family: inherit; transition: all .12s; }
+.n-btn-action:hover { background: var(--n-surface2); }
+.n-btn-action.primary { background: var(--n-navy); color: #fff; border-color: var(--n-navy); }
+.n-btn-action.primary:hover { opacity: .88; }
+
+.n-note { margin-top: 1.25rem; padding: .85rem 1rem; background: var(--n-blue-bg); border-radius: var(--n-r-md); font-size: 12px; color: var(--n-blue); line-height: 1.6; }
+.n-note strong { font-weight: 600; }
+
+.n-sprs-box { margin-top: 1.25rem; border: 1px solid var(--n-border-md); border-radius: var(--n-r-md); overflow: hidden; display: none; }
+.n-sprs-box.show { display: block; }
+.n-sprs-header { background: var(--n-surface2); padding: .7rem 1rem; font-size: 12px; font-weight: 600; color: var(--n-muted); text-transform: uppercase; letter-spacing: .06em; }
+.n-sprs-body { padding: 1rem; font-size: 12px; line-height: 1.7; color: var(--n-text); }
+.n-sprs-body pre { background: var(--n-surface2); border-radius: var(--n-r-sm); padding: .75rem 1rem; font-size: 11px; font-family: 'SF Mono', 'Fira Code', monospace; white-space: pre-wrap; word-break: break-word; margin-top: .5rem; }
+
+@media (max-width: 520px) {
+  .n-btn-group { flex-direction: column; gap: 2px; }
+  .n-score-panel { flex-direction: column; gap: 1rem; }
+  .n-summary-grid { grid-template-columns: repeat(2,1fr); }
+}
+@media print {
+  .n-controls, .n-toolbar, .n-sprs-box, .n-note { display: none !important; }
+  .n-items { display: block !important; }
+  .n-btn { display: none !important; }
+}
+</style>
+
+<div class="n-header">
+  <div class="n-eyebrow">NIST SP 800-171 Rev 2 · DFARS 252.204-7019/7020</div>
+  <h2>NIST SP 800-171 Self-Assessment Checklist</h2>
+  <p>All 110 controls across 14 families. Scoring follows the DoD Assessment Methodology — partial implementation earns no credit. Use results to calculate and submit your SPRS score.</p>
+</div>
+
+<div class="n-score-panel">
+  <div class="n-score-main">
+    <div class="n-score-num" id="n-score">110</div>
+    <div class="n-score-label">SPRS Score</div>
+  </div>
+  <div class="n-score-detail">
+    <div style="font-size:12px;opacity:.8;margin-bottom:4px;">Score range: −203 to 110 &nbsp;·&nbsp; Target: 110</div>
+    <div class="n-score-bar-wrap"><div class="n-score-bar" id="n-sbar" style="width:100%"></div></div>
+    <div class="n-score-meta">
+      <div class="n-score-meta-item"><strong id="n-pts-lost">0</strong>Points deducted</div>
+      <div class="n-score-meta-item"><strong id="n-not-met">0</strong>Controls not met</div>
+      <div class="n-score-meta-item"><strong id="n-partial">0</strong>Partial / POA&amp;M needed</div>
+    </div>
+  </div>
+</div>
+
+<div class="n-summary-grid">
+  <div class="n-stat"><div class="n-stat-label">Total</div><div class="n-stat-val" id="n-total">110</div></div>
+  <div class="n-stat"><div class="n-stat-label">Met</div><div class="n-stat-val green" id="n-met-ct">0</div></div>
+  <div class="n-stat"><div class="n-stat-label">Not met</div><div class="n-stat-val red" id="n-not-ct">0</div></div>
+  <div class="n-stat"><div class="n-stat-label">Partial</div><div class="n-stat-val amber" id="n-part-ct">0</div></div>
+  <div class="n-stat"><div class="n-stat-label">Pending</div><div class="n-stat-val" id="n-pend-ct">110</div></div>
+</div>
+
+<div class="n-prog-wrap"><div class="n-prog-bar" id="n-pbar"></div></div>
+
+<div class="n-controls">
+  <button class="n-filter-btn active" onclick="nFilter('all',this)">All families</button>
+  <button class="n-filter-btn" onclick="nFilter('gaps',this)">Gaps only</button>
+  <button class="n-filter-btn" onclick="nFilter('pending',this)">Not reviewed</button>
+  <input class="n-search" type="text" placeholder="Search controls..." oninput="nSearch(this.value)" id="n-search-input">
+</div>
+
+<div id="n-families"></div>
+
+<div class="n-toolbar">
+  <button class="n-btn-action" onclick="nExpandAll()">Expand all</button>
+  <button class="n-btn-action" onclick="nCollapseAll()">Collapse all</button>
+  <button class="n-btn-action primary" onclick="nShowSPRS()">Generate SPRS submission</button>
+  <button class="n-btn-action" onclick="window.print()">Print / PDF</button>
+  <button class="n-btn-action" onclick="nReset()">Reset</button>
+</div>
+
+<div class="n-sprs-box" id="n-sprs-box">
+  <div class="n-sprs-header">SPRS Submission Summary</div>
+  <div class="n-sprs-body" id="n-sprs-body"></div>
+</div>
+
+<div class="n-note">
+  <strong>Scoring methodology:</strong> Each control is worth 1, 3, or 5 points. Not meeting a control deducts its full value from 110. Partial implementation counts as not met under the DoD methodology — create a POA&amp;M for all unmet items. Submit via PIEE at sprs.csd.disa.mil or by email to webptsmh@navy.mil. Scores must be refreshed every 3 years. Inaccurate scores may trigger False Claims Act liability.
+</div>
+
+</div>
+
+<script>
+(function(){
+
+var ND = [
+  { id:"3.1", family:"Access Control", abbr:"AC", controls:[
+    {id:"3.1.1",text:"Limit information system access to authorized users, processes acting on behalf of authorized users, and devices (including other information systems).",pts:1},
+    {id:"3.1.2",text:"Limit information system access to the types of transactions and functions that authorized users are permitted to execute.",pts:1},
+    {id:"3.1.3",text:"Control the flow of CUI in accordance with approved authorizations.",pts:1},
+    {id:"3.1.4",text:"Separate the duties of individuals to reduce the risk of malevolent activity without collusion.",pts:1},
+    {id:"3.1.5",text:"Employ the principle of least privilege, including for specific security functions and privileged accounts.",pts:3},
+    {id:"3.1.6",text:"Use non-privileged accounts or roles when accessing non-security functions.",pts:1},
+    {id:"3.1.7",text:"Prevent non-privileged users from executing privileged functions and capture the execution of such functions in audit logs.",pts:1},
+    {id:"3.1.8",text:"Limit unsuccessful logon attempts.",pts:1},
+    {id:"3.1.9",text:"Provide privacy and security notices consistent with CUI rules.",pts:1},
+    {id:"3.1.10",text:"Use session lock with pattern-hiding displays after a period of inactivity.",pts:1},
+    {id:"3.1.11",text:"Terminate (automatically) a user session after a defined condition.",pts:1},
+    {id:"3.1.12",text:"Monitor and control remote access sessions.",pts:3},
+    {id:"3.1.13",text:"Employ cryptographic mechanisms to protect the confidentiality of remote access sessions.",pts:3},
+    {id:"3.1.14",text:"Route remote access via managed access control points.",pts:1},
+    {id:"3.1.15",text:"Authorize remote execution of privileged commands and access to security-relevant info via remote access only for documented operational needs.",pts:3},
+    {id:"3.1.16",text:"Authorize wireless access prior to allowing such connections.",pts:1},
+    {id:"3.1.17",text:"Protect wireless access using authentication and encryption.",pts:3},
+    {id:"3.1.18",text:"Control connection of mobile devices.",pts:1},
+    {id:"3.1.19",text:"Encrypt CUI on mobile devices and mobile computing platforms.",pts:5},
+    {id:"3.1.20",text:"Verify and control/limit connections to external systems.",pts:1},
+    {id:"3.1.21",text:"Limit use of portable storage devices on external systems.",pts:3},
+    {id:"3.1.22",text:"Control CUI posted or processed on publicly accessible information systems.",pts:1}
+  ]},
+  { id:"3.2", family:"Awareness & Training", abbr:"AT", controls:[
+    {id:"3.2.1",text:"Ensure that personnel are aware of the security risks associated with their activities and the applicable policies, standards, and procedures.",pts:3},
+    {id:"3.2.2",text:"Ensure that personnel are trained to carry out their assigned information security responsibilities.",pts:3},
+    {id:"3.2.3",text:"Provide security awareness training on recognizing and reporting potential indicators of insider threat.",pts:3}
+  ]},
+  { id:"3.3", family:"Audit & Accountability", abbr:"AU", controls:[
+    {id:"3.3.1",text:"Create and retain system audit logs and records to the extent needed to enable monitoring, analysis, investigation, and reporting of unlawful or unauthorized system activity.",pts:3},
+    {id:"3.3.2",text:"Ensure that the actions of individual system users can be uniquely traced to those users so they can be held accountable for their actions.",pts:3},
+    {id:"3.3.3",text:"Review and update logged events.",pts:1},
+    {id:"3.3.4",text:"Alert in the event of an audit logging process failure.",pts:1},
+    {id:"3.3.5",text:"Correlate audit record review, analysis, and reporting processes for investigation and response.",pts:3},
+    {id:"3.3.6",text:"Provide audit record reduction and report generation to support on-demand analysis and reporting.",pts:1},
+    {id:"3.3.7",text:"Provide a system capability that compares and synchronizes internal clocks with an authoritative source to generate time stamps.",pts:1},
+    {id:"3.3.8",text:"Protect audit information and audit tools from unauthorized access, modification, and deletion.",pts:3},
+    {id:"3.3.9",text:"Limit management of audit logging to a subset of privileged users.",pts:1}
+  ]},
+  { id:"3.4", family:"Configuration Management", abbr:"CM", controls:[
+    {id:"3.4.1",text:"Establish and maintain baseline configurations and inventories of organizational systems (including hardware, software, firmware, and documentation).",pts:3},
+    {id:"3.4.2",text:"Establish and enforce security configuration settings for IT products employed in organizational systems.",pts:3},
+    {id:"3.4.3",text:"Track, review, approve, and log changes to organizational systems.",pts:1},
+    {id:"3.4.4",text:"Analyze the security impact of changes prior to implementation.",pts:1},
+    {id:"3.4.5",text:"Define, document, approve, and enforce physical and logical access restrictions associated with changes.",pts:1},
+    {id:"3.4.6",text:"Employ the principle of least functionality by configuring organizational systems to provide only essential capabilities.",pts:3},
+    {id:"3.4.7",text:"Restrict, disable, or prevent the use of nonessential programs, functions, ports, protocols, and services.",pts:3},
+    {id:"3.4.8",text:"Apply deny-by-exception (blacklisting) to prevent the use of unauthorized software or deny-all/permit-by-exception (whitelisting) to allow the use of authorized software.",pts:3},
+    {id:"3.4.9",text:"Control and monitor user-installed software.",pts:1}
+  ]},
+  { id:"3.5", family:"Identification & Authentication", abbr:"IA", controls:[
+    {id:"3.5.1",text:"Identify information system users, processes acting on behalf of users, and devices.",pts:1},
+    {id:"3.5.2",text:"Authenticate (or verify) the identities of those users, processes, or devices, as a prerequisite to allowing access.",pts:1},
+    {id:"3.5.3",text:"Use multifactor authentication for local and network access to privileged accounts and for network access to non-privileged accounts.",pts:5},
+    {id:"3.5.4",text:"Employ replay-resistant authentication mechanisms for network access to privileged and non-privileged accounts.",pts:3},
+    {id:"3.5.5",text:"Employ identifier management to prevent reuse of identifiers for a defined period.",pts:1},
+    {id:"3.5.6",text:"Disable identifiers after a defined inactivity period.",pts:1},
+    {id:"3.5.7",text:"Enforce a minimum password complexity and change of characters when new passwords are created.",pts:1},
+    {id:"3.5.8",text:"Prohibit password reuse for a specified number of generations.",pts:1},
+    {id:"3.5.9",text:"Allow temporary password use for system logons with an immediate change to a permanent password.",pts:1},
+    {id:"3.5.10",text:"Store and transmit only cryptographically-protected passwords.",pts:3},
+    {id:"3.5.11",text:"Obscure feedback of authentication information.",pts:1}
+  ]},
+  { id:"3.6", family:"Incident Response", abbr:"IR", controls:[
+    {id:"3.6.1",text:"Establish an operational incident-handling capability for organizational systems that includes preparation, detection, analysis, containment, recovery, and user response activities.",pts:3},
+    {id:"3.6.2",text:"Track, document, and report incidents to designated officials and/or authorities both internal and external to the organization.",pts:3},
+    {id:"3.6.3",text:"Test the organizational incident response capability.",pts:1}
+  ]},
+  { id:"3.7", family:"Maintenance", abbr:"MA", controls:[
+    {id:"3.7.1",text:"Perform maintenance on organizational systems.",pts:1},
+    {id:"3.7.2",text:"Provide controls on the tools, techniques, mechanisms, and personnel for the performance of organizational system maintenance.",pts:3},
+    {id:"3.7.3",text:"Ensure equipment removed for maintenance is sanitized.",pts:1},
+    {id:"3.7.4",text:"Check media containing diagnostic and test programs for malicious code before the media are used in organizational systems.",pts:1},
+    {id:"3.7.5",text:"Require MFA to establish nonlocal maintenance sessions via external networks and terminate such connections when nonlocal maintenance is complete.",pts:3},
+    {id:"3.7.6",text:"Supervise the maintenance activities of maintenance personnel without required access authorization.",pts:1}
+  ]},
+  { id:"3.8", family:"Media Protection", abbr:"MP", controls:[
+    {id:"3.8.1",text:"Protect (i.e., physically control and securely store) system media containing CUI, both paper and digital.",pts:1},
+    {id:"3.8.2",text:"Limit access to CUI on system media to authorized users.",pts:1},
+    {id:"3.8.3",text:"Sanitize or destroy system media before disposal or reuse.",pts:1},
+    {id:"3.8.4",text:"Mark media with necessary CUI markings and distribution limitations.",pts:1},
+    {id:"3.8.5",text:"Control access to media containing CUI and maintain accountability for media during transport.",pts:1},
+    {id:"3.8.6",text:"Implement cryptographic mechanisms to protect CUI during transport unless otherwise protected by alternative physical safeguards.",pts:3},
+    {id:"3.8.7",text:"Control the use of removable media on system components.",pts:1},
+    {id:"3.8.8",text:"Prohibit the use of portable storage without identifiable owner.",pts:1},
+    {id:"3.8.9",text:"Protect the confidentiality of backup CUI at storage locations.",pts:1}
+  ]},
+  { id:"3.9", family:"Personnel Security", abbr:"PS", controls:[
+    {id:"3.9.1",text:"Screen individuals prior to authorizing access to organizational systems containing CUI.",pts:3},
+    {id:"3.9.2",text:"Ensure that CUI is protected during and after personnel actions such as terminations and transfers.",pts:3}
+  ]},
+  { id:"3.10", family:"Physical Protection", abbr:"PE", controls:[
+    {id:"3.10.1",text:"Limit physical access to organizational systems to authorized individuals.",pts:1},
+    {id:"3.10.2",text:"Protect and monitor the physical facility and support infrastructure for organizational systems.",pts:1},
+    {id:"3.10.3",text:"Escort visitors and monitor visitor activity.",pts:1},
+    {id:"3.10.4",text:"Maintain audit logs of physical access.",pts:1},
+    {id:"3.10.5",text:"Control and manage physical access devices.",pts:1},
+    {id:"3.10.6",text:"Enforce safeguarding measures for CUI at alternate work sites.",pts:1}
+  ]},
+  { id:"3.11", family:"Risk Assessment", abbr:"RA", controls:[
+    {id:"3.11.1",text:"Periodically assess the risk to organizational operations, assets, and individuals resulting from the operation of organizational systems and processing, storage, or transmission of CUI.",pts:3},
+    {id:"3.11.2",text:"Scan for vulnerabilities in organizational systems and applications periodically and when new vulnerabilities affecting those systems are identified.",pts:3},
+    {id:"3.11.3",text:"Remediate vulnerabilities in accordance with risk assessments.",pts:3}
+  ]},
+  { id:"3.12", family:"Security Assessment", abbr:"CA", controls:[
+    {id:"3.12.1",text:"Periodically assess the security controls in organizational systems to determine if the controls are effective.",pts:3},
+    {id:"3.12.2",text:"Develop and implement plans of action designed to correct deficiencies and reduce or eliminate vulnerabilities in organizational systems.",pts:3},
+    {id:"3.12.3",text:"Monitor security controls on an ongoing basis to ensure the continued effectiveness of the controls.",pts:3},
+    {id:"3.12.4",text:"Develop, document, and periodically update system security plans that describe system boundaries, system environments of operation, how security requirements are implemented, and the relationships with or connections to other systems.",pts:3}
+  ]},
+  { id:"3.13", family:"System & Communications Protection", abbr:"SC", controls:[
+    {id:"3.13.1",text:"Monitor, control, and protect communications (i.e., information transmitted or received) at the external boundaries and key internal boundaries of organizational systems.",pts:3},
+    {id:"3.13.2",text:"Employ architectural designs, software development techniques, and systems engineering principles promoting information security.",pts:3},
+    {id:"3.13.3",text:"Separate user functionality from system management functionality.",pts:1},
+    {id:"3.13.4",text:"Prevent unauthorized and unintended information transfer via shared system resources.",pts:1},
+    {id:"3.13.5",text:"Implement subnetworks for publicly accessible system components that are physically or logically separated from internal networks.",pts:3},
+    {id:"3.13.6",text:"Deny network communications traffic by default and allow network communications traffic by exception (i.e., deny all, permit by exception).",pts:3},
+    {id:"3.13.7",text:"Prevent remote devices from simultaneously connecting to the system and to other resources (split tunneling).",pts:3},
+    {id:"3.13.8",text:"Implement cryptographic mechanisms to prevent unauthorized disclosure of CUI during transmission unless otherwise protected by alternative physical safeguards.",pts:5},
+    {id:"3.13.9",text:"Terminate network connections after a defined period of inactivity.",pts:1},
+    {id:"3.13.10",text:"Establish and manage cryptographic keys for required cryptography.",pts:3},
+    {id:"3.13.11",text:"Employ FIPS-validated cryptography when used to protect the confidentiality of CUI.",pts:5},
+    {id:"3.13.12",text:"Prohibit remote activation of collaborative computing devices and provide indication of use to present users.",pts:1},
+    {id:"3.13.13",text:"Control and monitor the use of mobile code.",pts:1},
+    {id:"3.13.14",text:"Control and monitor the use of VoIP technologies.",pts:1},
+    {id:"3.13.15",text:"Protect the authenticity of communications sessions.",pts:3},
+    {id:"3.13.16",text:"Protect CUI at rest.",pts:3}
+  ]},
+  { id:"3.14", family:"System & Information Integrity", abbr:"SI", controls:[
+    {id:"3.14.1",text:"Identify, report, and correct information and information system flaws in a timely manner.",pts:3},
+    {id:"3.14.2",text:"Provide protection from malicious code at appropriate locations within organizational information systems.",pts:3},
+    {id:"3.14.3",text:"Monitor information system security alerts and advisories and take action in response.",pts:1},
+    {id:"3.14.4",text:"Update malicious code protection mechanisms when new releases are available.",pts:3},
+    {id:"3.14.5",text:"Perform periodic scans of organizational systems and real-time scans of files from external sources.",pts:3},
+    {id:"3.14.6",text:"Monitor organizational systems, including inbound and outbound communications traffic, to detect attacks and indicators of potential attacks.",pts:3},
+    {id:"3.14.7",text:"Identify unauthorized use of organizational systems.",pts:3}
+  ]}
+];
+
+var nState = {};
+ND.forEach(function(f){ f.controls.forEach(function(c){ nState[c.id]='pending'; }); });
+
+var nCurrentFilter = 'all';
+var nCurrentSearch = '';
+
+function nCalcScore(){
+  var deduct=0, notMet=0, partial=0, met=0, pend=0;
+  ND.forEach(function(f){ f.controls.forEach(function(c){
+    var s=nState[c.id];
+    if(s==='not'){ deduct+=c.pts; notMet++; }
+    else if(s==='partial'){ deduct+=c.pts; partial++; }
+    else if(s==='met'){ met++; }
+    else { pend++; }
+  }); });
+  var score=110-deduct;
+  document.getElementById('n-score').textContent=score;
+  var pct=Math.max(0,((score+203)/313)*100);
+  document.getElementById('n-sbar').style.width=pct+'%';
+  document.getElementById('n-pts-lost').textContent=deduct;
+  document.getElementById('n-not-met').textContent=notMet;
+  document.getElementById('n-partial').textContent=partial;
+  document.getElementById('n-met-ct').textContent=met;
+  document.getElementById('n-not-ct').textContent=notMet;
+  document.getElementById('n-part-ct').textContent=partial;
+  document.getElementById('n-pend-ct').textContent=pend;
+  var total=Object.keys(nState).length;
+  var reviewed=met+notMet+partial+Object.values(nState).filter(function(v){return v==='na';}).length;
+  document.getElementById('n-pbar').style.width=Math.round(reviewed/total*100)+'%';
+
+  ND.forEach(function(f){
+    var badge=document.getElementById('nb_'+f.id.replace('.','_'));
+    if(!badge)return;
+    var fNot=f.controls.filter(function(c){return nState[c.id]==='not'||nState[c.id]==='partial';}).length;
+    var fMet=f.controls.filter(function(c){return nState[c.id]==='met';}).length;
+    if(fNot>0){ badge.className='n-badge n-badge-gap'; badge.textContent=fNot+' gap'+(fNot>1?'s':''); }
+    else if(fMet===f.controls.length){ badge.className='n-badge n-badge-ok'; badge.textContent='complete'; }
+    else { badge.className='n-badge n-badge-neutral'; badge.textContent=fMet+'/'+f.controls.length; }
+  });
+}
+
+window.nSetStatus=function(id,val){
+  nState[id]=val;
+  document.querySelectorAll('[data-nid="'+id+'"]').forEach(function(b){
+    b.classList.remove('a-met','a-partial','a-not','a-na');
+    if(b.dataset.nval===val) b.classList.add('a-'+val);
+  });
+  nCalcScore();
+  if(nCurrentFilter!=='all') nApplyFilter();
+};
+
+window.nFilter=function(type,btn){
+  nCurrentFilter=type;
+  document.querySelectorAll('.n-filter-btn').forEach(function(b){b.classList.remove('active');});
+  btn.classList.add('active');
+  nApplyFilter();
+};
+
+function nApplyFilter(){
+  ND.forEach(function(f){
+    var anyVisible=false;
+    f.controls.forEach(function(c){
+      var el=document.getElementById('ni_'+c.id.replace(/\./g,'_'));
+      if(!el)return;
+      var s=nState[c.id];
+      var matchFilter=true;
+      if(nCurrentFilter==='gaps') matchFilter=(s==='not'||s==='partial');
+      else if(nCurrentFilter==='pending') matchFilter=(s==='pending');
+      var matchSearch=true;
+      if(nCurrentSearch){ matchSearch=(c.text.toLowerCase().indexOf(nCurrentSearch)>-1)||(c.id.indexOf(nCurrentSearch)>-1); }
+      if(matchFilter&&matchSearch){ el.classList.remove('hidden'); anyVisible=true; }
+      else { el.classList.add('hidden'); }
+    });
+    var fam=document.getElementById('nf_'+f.id.replace('.','_'));
+    if(fam) fam.style.display=anyVisible?'':'none';
+  });
+}
+
+window.nSearch=function(val){
+  nCurrentSearch=val.toLowerCase().trim();
+  nApplyFilter();
+  if(nCurrentSearch){
+    ND.forEach(function(f){
+      var el=document.getElementById('ni_'+f.id.replace('.','_'));
+      if(el&&el.style.display!=='none') document.getElementById('nfitems_'+f.id.replace('.','_')).classList.add('open');
+    });
+  }
+};
+
+window.nExpandAll=function(){
+  ND.forEach(function(f){
+    document.getElementById('nfitems_'+f.id.replace('.','_')).classList.add('open');
+    var c=document.getElementById('nfc_'+f.id.replace('.','_'));
+    if(c) c.classList.add('open');
+  });
+};
+
+window.nCollapseAll=function(){
+  ND.forEach(function(f){
+    document.getElementById('nfitems_'+f.id.replace('.','_')).classList.remove('open');
+    var c=document.getElementById('nfc_'+f.id.replace('.','_'));
+    if(c) c.classList.remove('open');
+  });
+};
+
+window.nToggleFamily=function(fid){
+  var el=document.getElementById('nfitems_'+fid);
+  var c=document.getElementById('nfc_'+fid);
+  var open=el.classList.toggle('open');
+  if(c) c.classList.toggle('open',open);
+};
+
+window.nShowSPRS=function(){
+  var score=parseInt(document.getElementById('n-score').textContent);
+  var today=new Date();
+  var dateStr=today.toISOString().split('T')[0];
+  var nextDate=new Date(today.setFullYear(today.getFullYear()+3)).toISOString().split('T')[0];
+  var gaps=[];
+  ND.forEach(function(f){ f.controls.forEach(function(c){
+    if(nState[c.id]==='not'||nState[c.id]==='partial') gaps.push(c.id+' ('+c.pts+'pt) — '+c.text.substring(0,80)+'...');
+  }); });
+  var box=document.getElementById('n-sprs-box');
+  var body=document.getElementById('n-sprs-body');
+  box.classList.add('show');
+  body.innerHTML='<p>Use the information below for your SPRS submission. Submit via PIEE or email to <strong>webptsmh@navy.mil</strong>.</p>'
+    +'<pre>'
+    +'NIST SP 800-171 Assessment Summary\n'
+    +'===================================\n'
+    +'Standard: NIST SP 800-171 Rev 2\n'
+    +'Assessment type: Basic (Self-assessment)\n'
+    +'Date of assessment: '+dateStr+'\n'
+    +'Date of next assessment: '+nextDate+'\n'
+    +'Summary score: '+score+' out of 110\n'
+    +'Confidence level: Low (self-generated)\n\n'
+    +'Controls not met / partially met ('+gaps.length+'):\n'
+    +(gaps.length?gaps.map(function(g){return '  · '+g;}).join('\n'):'  None — all controls met')
+    +'\n\nNote: A POA&M is required for all not-met controls.\n'
+    +'Retain this assessment and your SSP for audit purposes.'
+    +'</pre>';
+  box.scrollIntoView({behavior:'smooth',block:'start'});
+};
+
+window.nReset=function(){
+  Object.keys(nState).forEach(function(k){nState[k]='pending';});
+  document.querySelectorAll('.n-btn').forEach(function(b){b.classList.remove('a-met','a-partial','a-not','a-na');});
+  document.getElementById('n-sprs-box').classList.remove('show');
+  document.getElementById('n-search-input').value='';
+  nCurrentSearch=''; nCurrentFilter='all';
+  document.querySelectorAll('.n-filter-btn').forEach(function(b,i){b.classList.toggle('active',i===0);});
+  ND.forEach(function(f){
+    var fam=document.getElementById('nf_'+f.id.replace('.','_'));
+    if(fam) fam.style.display='';
+    f.controls.forEach(function(c){
+      var el=document.getElementById('ni_'+c.id.replace(/\./g,'_'));
+      if(el) el.classList.remove('hidden');
+    });
+  });
+  nCalcScore();
+};
+
+
+var wrap=document.getElementById('n-families');
+ND.forEach(function(f){
+  var fid=f.id.replace('.','_');
+  var div=document.createElement('div');
+  div.className='n-family'; div.id='nf_'+fid;
+  var pts=f.controls.reduce(function(a,c){return a+c.pts;},0);
+  div.innerHTML='<div class="n-family-header" onclick="nToggleFamily(\''+fid+'\')">'
+    +'<span class="n-family-id">'+f.abbr+'</span>'
+    +'<span class="n-family-title">'+f.family+'</span>'
+    +'<div class="n-family-meta">'
+    +'<span class="n-badge n-badge-neutral" id="nb_'+fid+'">0/'+f.controls.length+'</span>'
+    +'<svg class="n-chev" id="nfc_'+fid+'" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6,4 10,8 6,12"/></svg>'
+    +'</div></div>'
+    +'<div class="n-items" id="nfitems_'+fid+'">'
+    +f.controls.map(function(c){
+      var cid=c.id.replace(/\./g,'_');
+      return '<div class="n-item" id="ni_'+cid+'">'
+        +'<div class="n-item-left">'
+        +'<div class="n-item-id">'+c.id+'</div>'
+        +'<div class="n-item-text">'+c.text+'</div>'
+        +'<div class="n-item-pts">Weight: <span>'+c.pts+' pt'+(c.pts>1?'s':'')+'</span></div>'
+        +'</div>'
+        +'<div class="n-btn-group">'
+        +'<button class="n-btn" data-nid="'+c.id+'" data-nval="met" onclick="nSetStatus(\''+c.id+'\',\'met\')">Met</button>'
+        +'<button class="n-btn" data-nid="'+c.id+'" data-nval="partial" onclick="nSetStatus(\''+c.id+'\',\'partial\')">Partial</button>'
+        +'<button class="n-btn" data-nid="'+c.id+'" data-nval="not" onclick="nSetStatus(\''+c.id+'\',\'not\')">Not met</button>'
+        +'<button class="n-btn" data-nid="'+c.id+'" data-nval="na" onclick="nSetStatus(\''+c.id+'\',\'na\')">N/A</button>'
+        +'</div></div>';
+    }).join('')
+    +'</div>';
+  wrap.appendChild(div);
+});
+
+nCalcScore();
+})();
+</script>
+
+
+        </div>
+        <div class="hx:mt-16"></div>
+        <div class="hx:mt-16"></div>
+        
+      </main>
+    </article>
+  </div>
+
+      <footer class="hextra-footer hx:bg-gray-100 hx:pb-[env(safe-area-inset-bottom)] hx:dark:bg-neutral-900 hx:print:bg-transparent"><div class="hextra-custom-footer hextra-max-footer-width hx:pl-[max(env(safe-area-inset-left),1.5rem)] hx:pr-[max(env(safe-area-inset-right),1.5rem)] hx:text-gray-600 hx:dark:text-gray-400"></div><div
+      class="hextra-max-footer-width hx:mx-auto hx:flex hx:justify-center hx:py-12 hx:pl-[max(env(safe-area-inset-left),1.5rem)] hx:pr-[max(env(safe-area-inset-right),1.5rem)] hx:text-gray-600 hx:dark:text-gray-400 hx:md:justify-start"
+    >
+      <div class="hx:flex hx:w-full hx:flex-col hx:items-center hx:sm:items-start"><div class="hx:font-semibold"><a class="hx:flex hx:text-sm hx:items-center hx:gap-1 hx:text-current" target="_blank" rel="noopener noreferrer" title="Hextra GitHub Homepage" href="https://github.com/imfing/hextra">
+    <span>Powered by Hextra<svg height=1em class="hx:inline-block hx:ltr:ml-1 hx:rtl:mr-1 hx:align-[-2.5px]" viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="m 105.50024,22.224647 c -9.59169,-5.537563 -21.40871,-5.537563 -31.000093,0 L 39.054693,42.689119 C 29.463353,48.226675 23.55484,58.460531 23.55484,69.535642 v 40.928918 c 0,11.07542 5.908513,21.3092 15.499853,26.84652 l 35.445453,20.46446 c 9.591313,5.53732 21.408404,5.53732 31.000094,0 l 35.44507,-20.46446 c 9.59131,-5.53732 15.49985,-15.7711 15.49985,-26.84652 V 69.535642 c 0,-11.075111 -5.90854,-21.308967 -15.49985,-26.846523 z M 34.112797,85.737639 c -1.384445,2.397827 -1.384445,5.352099 0,7.749927 l 24.781554,42.922974 c 1.38437,2.39783 3.942853,3.87496 6.711592,3.87496 h 49.563107 c 2.76905,0 5.3273,-1.47713 6.71144,-3.87496 l 24.78194,-42.922974 c 1.38414,-2.397828 1.38414,-5.3521 0,-7.749927 L 121.88049,42.814746 c -1.38414,-2.397828 -3.94239,-3.874964 -6.71144,-3.874964 H 65.605944 c -2.768739,0 -5.327223,1.477059 -6.711592,3.874964 z" style="stroke-width:0.774993" /></svg></span>
+  </a></div></div>
+    </div></footer>
+    
+    <script defer src="/js/main.js" integrity=""></script>
+<script defer src="/js/flexsearch.9f5b5908f93ae86f1ecd4b043b799f580c2d1654e703dd9357d568ac41b2547a.js" integrity="sha256-n1tZCPk66G8ezUsEO3mfWAwtFlTnA92TV9VorEGyVHo=" crossorigin="anonymous"></script><script defer src="/en.search.js" integrity=""></script>
+  </body>
+</html>
