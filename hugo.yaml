@@ -25,7 +25,7 @@ menu:
   main:
     - identifier: services
       name: Services
-      pageRef: /offerings
+      pageRef: /services
       weight: 1
     #    - identifier: python
     #      name: Python ↗
@@ -38,15 +38,18 @@ menu:
     - name: CMMC Level 3
       pageRef: /offerings/cmmc
       weight: 2
+    - name: DCSA Self-Assess
+      pageRef: /self-assessment/dcsa-checklist/
+      weight: 3
     - name: About
       pageRef: /about
-      weight: 3
+      weight: 4
     #    - name: Search
     #      weight: 4
     #      params:
     #        type: search
-    - name: GitHub
-      weight: 5
-      url: "https://github.com/imfing/hextra"
-      params:
-        icon: github
+  #   - name: GitHub
+  #     weight: 5
+  #     url: "https://github.com/imfing/hextra"
+  #     params:
+  #       icon: github

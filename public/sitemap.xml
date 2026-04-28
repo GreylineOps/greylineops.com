@@ -6,19 +6,21 @@
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/offerings/cmmc/</loc>
+    <loc>http://localhost:1313/services/cmmc/</loc>
   </url><url>
     <loc>http://localhost:1313/self-assessment/pre-qual/</loc>
+  </url><url>
+    <loc>http://localhost:1313/self-assessment/dcsa-checklist/</loc>
   </url><url>
     <loc>http://localhost:1313/self-assessment/</loc>
   </url><url>
     <loc>http://localhost:1313/</loc>
   </url><url>
-    <loc>http://localhost:1313/offerings/incident-response/</loc>
+    <loc>http://localhost:1313/services/incident-response/</loc>
   </url><url>
-    <loc>http://localhost:1313/offerings/managed-detection/</loc>
+    <loc>http://localhost:1313/services/managed-detection/</loc>
   </url><url>
-    <loc>http://localhost:1313/offerings/</loc>
+    <loc>http://localhost:1313/services/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
   </url>
