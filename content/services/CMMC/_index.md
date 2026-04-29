@@ -115,103 +115,65 @@ Non-compliance is not a paperwork problem. Here's what happens on each path.
 **False Claims Act exposure is real.** If your company submitted a SPRS score that overstated your compliance posture and a CUI breach occurs, the DoD can pursue civil liability. We calculate your accurate SPRS score as part of every gap assessment.
 {{< /callout >}}
 
----
+<!-- below is a one line break -->
 
-## Our process
+{{< hextra/feature-grid >}}
+<br>
+{{< /hextra/feature-grid >}}
 
-We run a structured, repeatable engagement designed specifically for small DIB contractors. No generic frameworks, no enterprise bloat.
-
-{{< steps >}}
-
-### Gap assessment
-
-We evaluate your current security posture against all 110 NIST SP 800-171 controls. Every deficiency is documented with severity and remediation effort.
-
-**Deliverable:** Prioritized gap report and initial SPRS score calculation.
-_Timeline: Week 1–2_
-
-### System Security Plan (SSP)
-
-We draft or update your SSP — the foundational document required for any CMMC assessment. This describes your CUI environment, system boundaries, personnel roles, and how each control is implemented or planned.
-
-**Deliverable:** Complete, assessment-ready SSP.
-_Timeline: Week 2–4_
-
-### Plan of Action & Milestones (POA&M)
-
-Every gap gets a remediation task, an owner, a timeline, and a tracking mechanism. We manage the POA&M actively — not just document it. Open items are closed on schedule or escalated with a clear path forward.
-
-**Deliverable:** Live POA&M tracked and managed by GreylineOps.
-_Timeline: Week 3–6_
-
-### Remediation & hardening
-
-We implement the technical and procedural controls — endpoint hardening, MFA, access controls, CUI data flows, audit logging, encryption, and more. We do the work, not just advise on it.
-
-**Deliverable:** All POA&M items closed or accepted with documented risk decisions.
-_Timeline: Week 4–10_
-
-### C3PAO / DCSA assessment prep
-
-We conduct a full mock assessment before your official review — same scope, same rigor. Any remaining gaps surface here, not during your official assessment. We walk you through the process so there are no surprises.
-
-**Deliverable:** Mock assessment report and final readiness confirmation.
-_Timeline: Week 10–12_
-
-### Continuous compliance monitoring
-
-Post-certification, we provide ongoing managed compliance — monitoring, quarterly reviews, annual reassessments, and incident response. CMMC is not a one-time checkbox. We keep you continuously audit-ready.
-
-**Deliverable:** Managed compliance service with defined SLAs.
-_Timeline: Ongoing_
-
-{{< /steps >}}
-
----
-
-## All 14 CMMC practice domains
+**All 14 CMMC practice domains**
 
 NIST SP 800-171 is organized into 14 domains. Level 3 requires full compliance across all of them, plus additional practices from NIST SP 800-172. GreylineOps covers every domain.
 
+<!-- below is a one line break -->
+
+{{< hextra/feature-grid >}}
+<br>
+{{< /hextra/feature-grid >}}
+
 | Domain                             | Abbreviation | Practices (L2/L3) |
-| ---------------------------------- | ------------ | ----------------- |
-| Access Control                     | AC           | 22                |
-| Awareness & Training               | AT           | 3                 |
-| Audit & Accountability             | AU           | 9                 |
-| Configuration Management           | CM           | 9                 |
-| Identification & Authentication    | IA           | 11                |
-| Incident Response                  | IR           | 3                 |
-| Maintenance                        | MA           | 6                 |
-| Media Protection                   | MP           | 9                 |
-| Physical Protection                | PE           | 6                 |
-| Personnel Security                 | PS           | 2                 |
-| Risk Assessment                    | RA           | 3                 |
-| Security Assessment                | CA           | 4                 |
-| System & Communications Protection | SC           | 16                |
-| System & Information Integrity     | SI           | 7                 |
-| **Total**                          |              | **110**           |
+| :--------------------------------- | :----------: | :---------------: |
+| Access Control                     |      AC      |        22         |
+| Awareness & Training               |      AT      |         3         |
+| Audit & Accountability             |      AU      |         9         |
+| Configuration Management           |      CM      |         9         |
+| Identification & Authentication    |      IA      |        11         |
+| Incident Response                  |      IR      |         3         |
+| Maintenance                        |      MA      |         6         |
+| Media Protection                   |      MP      |         9         |
+| Physical Protection                |      PE      |         6         |
+| Personnel Security                 |      PS      |         2         |
+| Risk Assessment                    |      RA      |         3         |
+| Security Assessment                |      CA      |         4         |
+| System & Communications Protection |      SC      |        16         |
+| System & Information Integrity     |      SI      |         7         |
+| **Total**                          |              |      **110**      |
 
----
+<!-- below is a one line break -->
 
-## Common questions
+{{< hextra/feature-grid >}}
+<br>
+{{< /hextra/feature-grid >}}
 
-{{< details "How long does CMMC Level 3 certification take?" >}}
+**{{< icon "exclamation" >}}Common questions**
+
+{{< details title="How long does CMMC Level 3 certification take?" >}}
 For most small businesses starting from scratch, **3–6 months** is realistic. Organizations with strong existing IT practices can move faster. The timeline depends on how many gaps exist, your team's bandwidth, and C3PAO / DCSA scheduling. We'll give you a realistic estimate after the gap assessment — not a number designed to win the deal.
 {{< /details >}}
 
-{{< details "We're a 12-person company. Is CMMC Level 3 even achievable for us?" >}}
+{{< details title="We're a 12-person company. Is CMMC Level 3 even achievable for us?" >}}
 Yes — and we do this specifically for small businesses. CMMC does not have different requirements based on company size. What matters is **scoping your CUI environment tightly**. A well-scoped small business is often easier to certify than a large one with sprawling infrastructure. Our entire practice is built around making this achievable for companies your size.
 {{< /details >}}
 
-{{< details "What is a SPRS score and why does it matter right now?" >}}
+{{< details title="What is a SPRS score and why does it matter right now?" >}}
 The **Supplier Performance Risk System (SPRS)** score is a self-assessed score ranging from -203 to +110 that DoD contracting officers can review today — before CMMC is fully enforced across all contracts. Submitting an inaccurate or inflated score creates **False Claims Act liability**. We calculate your accurate SPRS score as part of the gap assessment and ensure your submission is legally defensible.
 {{< /details >}}
 
-{{< details "Do we need to move to a GovCloud or DoD-specific cloud environment?" >}}
+{{< details title="Do we need to move to a GovCloud or DoD-specific cloud environment?" >}}
 Not always — but sometimes. CMMC Level 3 requires **FedRAMP Moderate or equivalent** cloud environments for CUI processing and storage. We assess your current cloud posture early and give you a clear recommendation, including whether Microsoft 365 GCC High, Azure Government, or another solution fits your situation and budget.
 {{< /details >}}
 
-{{< details "What's the difference between a C3PAO and a DCSA assessment?" >}}
+{{< details title="What's the difference between a C3PAO and a DCSA assessment?" >}}
 
 - **Level 2 (critical):** A certified Third Party Assessment Organization **(C3PAO)** conducts your assessment every three years.
 - **Level 3:** The **Defense Contract Security Agency (DCSA)** conducts a government-led assessment — a higher bar with more rigorous scrutiny.
@@ -219,22 +181,30 @@ Not always — but sometimes. CMMC Level 3 requires **FedRAMP Moderate or equiva
 GreylineOps prepares clients for both, with mock assessments designed to mirror whichever path your contract requires.
 {{< /details >}}
 
-{{< details "Can we start with Level 2 and upgrade to Level 3 later?" >}}
+{{< details title="Can we start with Level 2 and upgrade to Level 3 later?" >}}
 Yes. Many of our clients achieve Level 2 certification first and then pursue Level 3 as their contract portfolio grows. The foundational work — SSP, POA&M, control implementation — carries forward. Level 3 adds practices from NIST SP 800-172 and requires a DCSA assessment, but you're not starting over.
 {{< /details >}}
 
----
+<!-- below is a one line break -->
 
-## Ready to get assessed?
+{{< hextra/feature-grid >}}
+<br>
+{{< /hextra/feature-grid >}}
+
+**Ready to get assessed?**
 
 Most DIB contractors are one audit away from a lost contract. A free gap assessment tells you exactly where you stand — no pressure, no pitch, just a clear picture of your compliance posture.
 
 {{< callout type="info" >}}
 **Free CMMC gap assessment** — we review your current posture against all 110 controls, calculate your SPRS score, and give you a prioritized remediation roadmap. No obligation.
 
-[Schedule your assessment →](/contact)
+Schedule your assessment → [HERE](/pre-qual)
 {{< /callout >}}
 
----
+<!-- below is a one line break -->
 
-_GreylineOps is a veteran-owned small business specializing in CMMC compliance and managed security for Defense Industrial Base contractors. [greylineops.com](https://greylineops.com)_
+{{< hextra/feature-grid >}}
+<br>
+{{< /hextra/feature-grid >}}
+
+_GreylineOps is a veteran-owned small business specializing in CMMC compliance and managed security for Defense Industrial Base contractors. **[greylineops.com](https://greylineops.com)**_
