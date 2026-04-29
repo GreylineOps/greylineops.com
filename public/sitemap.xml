@@ -20,7 +20,13 @@
   </url><url>
     <loc>http://localhost:1313/services/managed-detection/</loc>
   </url><url>
+    <loc>http://localhost:1313/self-assessment/nist-800-171-checklist/</loc>
+  </url><url>
+    <loc>http://localhost:1313/self-assessment/our-process/</loc>
+  </url><url>
     <loc>http://localhost:1313/services/</loc>
+  </url><url>
+    <loc>http://localhost:1313/services/sprs/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
   </url>
