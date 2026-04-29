@@ -38,9 +38,9 @@ menu:
     - name: CMMC Level 3
       pageRef: /services/cmmc
       weight: 2
-    #    - name: DCSA Self-Assess
-    #      pageRef: /self-assessment/dcsa-checklist/
-    #      weight: 3
+    - name: Blog
+      pageRef: /blog/
+      weight: 3
     - name: About
       pageRef: /about
       weight: 4
