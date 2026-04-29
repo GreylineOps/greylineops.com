@@ -22,6 +22,12 @@ We evaluate your current security posture against all 110 NIST SP 800-171 contro
 **Deliverable:** Prioritized gap report and initial SPRS score calculation.
 _Timeline: Week 1–2_
 
+<!-- below is a one line break -->
+
+{{< hextra/feature-grid >}}
+<br>
+{{< /hextra/feature-grid >}}
+
 **{{< icon "chevron-double-right" >}} System Security Plan (SSP)**
 
 We draft or update your SSP — the foundational document required for any CMMC assessment. This describes your CUI environment, system boundaries, personnel roles, and how each control is implemented or planned.
