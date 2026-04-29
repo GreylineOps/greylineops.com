@@ -1,6 +1,6 @@
 ---
 date: "2026-04-30T07:55:28-07:00"
-title: "CMMC Levels 1 2 and 3 Requirements Differences and What Small Businesses Must Do"
+title: "CMMC Levels 1, 2, and 3: Requirements, Differences, and What Small Businesses Must Do"
 description: "Not all CMMC requirements are the same. Learn the differences between Levels 1, 2, and 3 — and why a specialized MSP is the smart choice for small DIB contractors."
 ---
 
@@ -195,7 +195,7 @@ Whether you're figuring out which level applies to your contracts, building towa
 
 **The DIB doesn't have time for generic IT support. Neither do you.**
 
-[Contact GreylineOps](http://GreylineOps.com) to schedule a CMMC readiness consultation.
+[Contact GreylineOps](/pre-qual/) to schedule a CMMC readiness consultation.
 
 ---
 
