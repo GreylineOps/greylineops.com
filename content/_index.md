@@ -3,16 +3,6 @@ title: GreylineOps
 layout: hextra-home
 ---
 
-{{< callout type="info" >}}
-Site is currently under construction
-{{< /callout >}}
-
-<!-- below is a one line break -->
-
-{{< hextra/feature-grid >}}
-<br>
-{{< /hextra/feature-grid >}}
-
 {{< hextra/hero-subtitle style="color:#27AE60">}}
 --- Veteran-owned · CMMC Level 3 Specialists
 {{< /hextra/hero-subtitle >}}
@@ -120,7 +110,8 @@ icon="badge-check" >}}
 <br>
 {{< /hextra/feature-grid >}}
 
-<!--
+<!-- carousel is under development
+
 Partners
 {{< carousel >}}
 {{< carousel-slide image="slider/Microsoft-365.png" alt="Microsoft 365" >}}
