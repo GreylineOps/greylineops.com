@@ -1,0 +1,59 @@
+{{ $slides := .Inner }}
+<section class="hextra-carousel">
+  <div class="carousel-track-wrapper">
+    <div class="carousel-track" id="carouselTrack">{{ .Inner }}</div>
+  </div>
+</section>
+
+<style>
+  .hextra-carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin: 2rem 0 3rem;
+  }
+  .carousel-track {
+    display: flex;
+    width: max-content;
+    animation: carousel-scroll 20s linear infinite;
+  }
+  .carousel-track:hover {
+    animation-play-state: paused;
+  }
+  .carousel-slide {
+    padding: 2rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .carousel-content img {
+    max-height: 120px;
+    max-width: 280px;
+    object-fit: contain;
+    filter: grayscale(100%) opacity(0.7);
+    transition: filter 0.3s ease;
+  }
+  .carousel-content img:hover {
+    filter: grayscale(0%) opacity(1);
+  }
+  @keyframes carousel-scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+</style>
+
+<script>
+  (function () {
+    const track = document.getElementById("carouselTrack");
+    const slides = Array.from(track.querySelectorAll(".carousel-slide"));
+
+    // Duplicate slides so the scroll loops seamlessly
+    slides.forEach((slide) => {
+      track.appendChild(slide.cloneNode(true));
+    });
+  })();
+</script>

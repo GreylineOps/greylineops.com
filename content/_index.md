@@ -113,3 +113,18 @@ subtitle="Veteran-owned small business, SBA certified. Built from the ground up 
 icon="badge-check" >}}
 
 {{< /hextra/feature-grid >}}
+
+<!-- below is a one line break -->
+
+{{< hextra/feature-grid >}}
+<br>
+{{< /hextra/feature-grid >}}
+
+<!--
+Partners
+{{< carousel >}}
+{{< carousel-slide image="slider/Microsoft-365.png" alt="Microsoft 365" >}}
+{{< carousel-slide image="slider/huntress.png" alt="Huntress" >}}
+{{< carousel-slide image="slider/ninjaone.png" alt="NinjaOne" >}}
+{{< /carousel >}}
+-->

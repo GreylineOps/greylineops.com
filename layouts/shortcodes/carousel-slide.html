@@ -1,0 +1,11 @@
+<div class="carousel-slide">
+  <div class="carousel-content">
+    {{ with .Get "link" }}
+      <a href="{{ . }}">
+        <img src="{{ $.Get "image" }}" alt="{{ $.Get "alt" | default "" }}" />
+      </a>
+    {{ else }}
+      <img src="{{ .Get "image" }}" alt="{{ .Get "alt" | default "" }}" />
+    {{ end }}
+  </div>
+</div>
