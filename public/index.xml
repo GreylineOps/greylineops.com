@@ -5,7 +5,7 @@
     <description>Recent content on GreylineOps</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 29 Apr 2026 07:35:24 -0700</lastBuildDate>
+    <lastBuildDate>Wed, 06 May 2026 15:09:15 -0700</lastBuildDate>
     
 	  <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
@@ -13,6 +13,466 @@
       
       
     
+    
+    <item>
+      <title>DMZ and CMMC Compliance: Do You Need One and What Are the Alternatives?</title>
+      <link>http://localhost:1313/blog/dmz-and-cmmc-compliance-do-you-need-one-and-what-are-the-alternatives/</link>
+      <pubDate>Wed, 06 May 2026 15:09:15 -0700</pubDate>
+      
+      <guid>http://localhost:1313/blog/dmz-and-cmmc-compliance-do-you-need-one-and-what-are-the-alternatives/</guid>
+      <description>
+        
+        
+        &lt;h1&gt;Does Your Business Need a DMZ for CMMC Compliance? A Complete Guide&lt;/h1&gt;&lt;h2&gt;What Is a DMZ?&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;what-is-a-dmz&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#what-is-a-dmz&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;A &lt;strong&gt;Demilitarized Zone (DMZ)&lt;/strong&gt; in network security is a physical or logical subnetwork that sits between an organization&amp;rsquo;s internal trusted network and an untrusted external network — typically the internet. Think of it as a buffer zone: systems that need to be accessible from the outside world (web servers, email gateways, VPN concentrators) are placed in the DMZ, shielded from the internal network where sensitive data lives.&lt;/p&gt;
+&lt;p&gt;The key principle behind a DMZ is &lt;strong&gt;controlled exposure&lt;/strong&gt;. If an attacker compromises a server in the DMZ, they still face a second layer of firewall protection before reaching the internal network. This architecture has been a cornerstone of enterprise network security for decades.&lt;/p&gt;
+&lt;p&gt;A traditional DMZ is created using &lt;strong&gt;dual-firewall architecture&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Outer firewall&lt;/strong&gt; — filters traffic between the internet and the DMZ&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Inner firewall&lt;/strong&gt; — filters traffic between the DMZ and the internal network&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Any traffic flowing from the internet into the internal network must pass through both firewalls and traverse the DMZ, making lateral movement by attackers significantly harder.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;CMMC and Network Security: The Compliance Context&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;cmmc-and-network-security-the-compliance-context&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#cmmc-and-network-security-the-compliance-context&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;The &lt;strong&gt;Cybersecurity Maturity Model Certification (CMMC)&lt;/strong&gt; is a framework developed by the U.S. Department of Defense (DoD) to ensure that Defense Industrial Base (DIB) contractors adequately protect &lt;strong&gt;Federal Contract Information (FCI)&lt;/strong&gt; and &lt;strong&gt;Controlled Unclassified Information (CUI)&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;CMMC 2.0 consists of three levels:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Level 1 (Foundational):&lt;/strong&gt; 17 practices based on FAR 52.204-21&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Level 2 (Advanced):&lt;/strong&gt; 110 practices aligned with NIST SP 800-171&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Level 3 (Expert):&lt;/strong&gt; 110+ practices, including select NIST SP 800-172 requirements&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Most contractors handling CUI will need to achieve &lt;strong&gt;CMMC Level 2&lt;/strong&gt;. The framework doesn&amp;rsquo;t name a DMZ explicitly — but several of its domains make a DMZ highly relevant, if not practically necessary.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;Is a DMZ Required for CMMC?&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;is-a-dmz-required-for-cmmc&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#is-a-dmz-required-for-cmmc&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;The short answer: &lt;strong&gt;a DMZ is not explicitly mandated by CMMC&lt;/strong&gt;, but the controls that CMMC requires often make deploying one the most straightforward path to compliance.&lt;/p&gt;
+&lt;p&gt;Here are the specific NIST SP 800-171 controls (mirrored in CMMC Level 2) that drive DMZ-related decisions:&lt;/p&gt;
+&lt;h3&gt;3.13.1 — Boundary Protection&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;3131--boundary-protection&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#3131--boundary-protection&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;blockquote&gt;
+  &lt;p&gt;&lt;em&gt;&amp;ldquo;Monitor, control, and protect communications at the external boundaries and key internal boundaries of organizational systems.&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
+
+&lt;/blockquote&gt;
+&lt;p&gt;This control is the closest thing to a DMZ requirement. Protecting the boundary between your CUI environment and external networks almost always calls for a segmented architecture — and a DMZ is a well-proven way to achieve it.&lt;/p&gt;
+&lt;h3&gt;3.13.2 — Security Architecture&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;3132--security-architecture&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#3132--security-architecture&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;blockquote&gt;
+  &lt;p&gt;&lt;em&gt;&amp;ldquo;Employ architectural designs, software development techniques, and systems engineering principles that promote effective information security.&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
+
+&lt;/blockquote&gt;
+&lt;p&gt;A DMZ is a recognized architectural design that security assessors and C3PAOs (Certified Third-Party Assessment Organizations) will look favorably upon as evidence of mature security thinking.&lt;/p&gt;
+&lt;h3&gt;3.13.5 — Public-Access System Isolation&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;3135--public-access-system-isolation&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#3135--public-access-system-isolation&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;blockquote&gt;
+  &lt;p&gt;&lt;em&gt;&amp;ldquo;Implement subnetworks for publicly accessible system components that are physically or logically separated from internal networks.&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
+
+&lt;/blockquote&gt;
+&lt;p&gt;This control essentially &lt;strong&gt;describes a DMZ&lt;/strong&gt;. If you operate any publicly accessible systems — a web server, a customer portal, a file transfer endpoint — this control requires them to be separated from your internal environment. A DMZ is the canonical implementation.&lt;/p&gt;
+&lt;h3&gt;3.1.3 — CUI Flow Control&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;313--cui-flow-control&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#313--cui-flow-control&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;blockquote&gt;
+  &lt;p&gt;&lt;em&gt;&amp;ldquo;Control the flow of CUI in accordance with approved authorizations.&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
+
+&lt;/blockquote&gt;
+&lt;p&gt;Network segmentation and access control between zones (enforced by DMZ firewall rules) directly satisfies this requirement.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Bottom line:&lt;/strong&gt; If your organization runs any externally facing services and handles CUI, deploying a DMZ is one of the clearest ways to satisfy multiple CMMC Level 2 controls simultaneously.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;When Does a DMZ Make Sense?&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;when-does-a-dmz-make-sense&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#when-does-a-dmz-make-sense&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;A DMZ is most appropriate — and often essential — in the following scenarios:&lt;/p&gt;
+&lt;h3&gt;You Host Publicly Accessible Services&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;you-host-publicly-accessible-services&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#you-host-publicly-accessible-services&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Web servers, email servers, DNS servers, FTP/SFTP endpoints, and VPN gateways all benefit from DMZ placement. These systems face the internet directly; putting them on your internal network creates unacceptable risk.&lt;/p&gt;
+&lt;h3&gt;You Work with External Partners or Vendors&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;you-work-with-external-partners-or-vendors&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#you-work-with-external-partners-or-vendors&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;If third parties need access to certain systems, placing those systems in a DMZ limits the access they have to your broader internal environment and CUI.&lt;/p&gt;
+&lt;h3&gt;You Process CUI on an Internal Network&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;you-process-cui-on-an-internal-network&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#you-process-cui-on-an-internal-network&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;When your internal network holds CUI, any external-facing system becomes a potential threat vector. A DMZ creates a hard boundary between internet-facing infrastructure and CUI systems.&lt;/p&gt;
+&lt;h3&gt;You Are Pursuing CMMC Level 2 or Level 3 Certification&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;you-are-pursuing-cmmc-level-2-or-level-3-certification&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#you-are-pursuing-cmmc-level-2-or-level-3-certification&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Assessors reviewing your System Security Plan (SSP) will scrutinize how you&amp;rsquo;ve addressed boundary protection. A documented DMZ architecture with proper firewall rules and monitoring is strong, auditable evidence.&lt;/p&gt;
+&lt;h3&gt;You Have a Mixed Environment (Cloud + On-Premises)&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;you-have-a-mixed-environment-cloud--on-premises&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#you-have-a-mixed-environment-cloud--on-premises&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Hybrid environments benefit from DMZ-like segmentation between on-prem networks, cloud workloads, and external access points.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;Hardware and Software for Building a DMZ&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;hardware-and-software-for-building-a-dmz&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#hardware-and-software-for-building-a-dmz&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;Hardware Firewalls (Recommended for CMMC Environments)&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;hardware-firewalls-recommended-for-cmmc-environments&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#hardware-firewalls-recommended-for-cmmc-environments&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Vendor&lt;/th&gt;
+          &lt;th&gt;Product Line&lt;/th&gt;
+          &lt;th&gt;Notes&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Palo Alto Networks&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;PA-Series, VM-Series&lt;/td&gt;
+          &lt;td&gt;Next-gen firewall with App-ID, deep packet inspection; widely used in CMMC environments&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Fortinet&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;FortiGate&lt;/td&gt;
+          &lt;td&gt;Strong price-to-performance; broad CMMC-relevant logging and reporting&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Cisco&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Firepower (FTD), ASA&lt;/td&gt;
+          &lt;td&gt;Mature platform with extensive integrations; common in DoD supply chain&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Juniper&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;SRX Series&lt;/td&gt;
+          &lt;td&gt;Scalable, well-suited to larger or more complex architectures&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Sophos&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;XGS Series&lt;/td&gt;
+          &lt;td&gt;Good option for SMBs; unified threat management features&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3&gt;Software / Virtual Firewalls&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;software--virtual-firewalls&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#software--virtual-firewalls&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Product&lt;/th&gt;
+          &lt;th&gt;Notes&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;pfSense / pfSense Plus&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Open-source (community) or commercial; capable DMZ support; audit trail depends on configuration&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;OPNsense&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Open-source alternative to pfSense; active development, strong logging&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Cisco FTDv&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Virtual version of Firepower; suitable for cloud-hosted DMZ environments&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Palo Alto VM-Series&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Virtual next-gen firewall for AWS, Azure, GCP&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Azure Firewall / AWS Network Firewall&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Native cloud options for cloud-based DMZ architectures&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3&gt;Key Capabilities to Look For (CMMC-Relevant)&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;key-capabilities-to-look-for-cmmc-relevant&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#key-capabilities-to-look-for-cmmc-relevant&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Stateful packet inspection and deep packet inspection (DPI)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Comprehensive logging&lt;/strong&gt; — CMMC requires audit logs (3.3.1, 3.3.2); your firewall must generate them&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Role-based administration&lt;/strong&gt; — aligns with least privilege requirements (3.1.1, 3.1.2)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Intrusion Detection/Prevention (IDS/IPS)&lt;/strong&gt; — supports 3.14.6 and 3.14.7&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Encrypted management interfaces&lt;/strong&gt; — avoids transmitting credentials in the clear&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2&gt;Alternatives to a Traditional DMZ&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;alternatives-to-a-traditional-dmz&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#alternatives-to-a-traditional-dmz&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;If a full dual-firewall DMZ isn&amp;rsquo;t feasible — due to cost, infrastructure constraints, or a cloud-first architecture — there are alternatives. Each has trade-offs from a CMMC compliance perspective.&lt;/p&gt;
+&lt;h3&gt;1. Network Segmentation via VLANs&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;1-network-segmentation-via-vlans&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#1-network-segmentation-via-vlans&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;What it is:&lt;/strong&gt; VLANs (Virtual Local Area Networks) logically separate network traffic at the switch layer without requiring separate physical hardware. You can create a &amp;ldquo;CUI segment,&amp;rdquo; a &amp;ldquo;general IT segment,&amp;rdquo; and a &amp;ldquo;guest/DMZ segment&amp;rdquo; on the same physical infrastructure.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;CMMC relevance:&lt;/strong&gt; Segmentation via VLANs can satisfy boundary protection and CUI flow control requirements — &lt;em&gt;if&lt;/em&gt; it is properly enforced with inter-VLAN routing rules and access control lists (ACLs).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Why it may be recommended:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Lower cost than dedicated firewall hardware&lt;/li&gt;
+&lt;li&gt;Widely supported by enterprise switches (Cisco, Juniper, HP/Aruba)&lt;/li&gt;
+&lt;li&gt;Can be sufficient for smaller organizations with limited external-facing services&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Why it may fall short:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;VLANs alone are not a security boundary — they are a traffic separation mechanism. Without enforced inter-VLAN firewall rules, a VLAN misconfiguration or a trunk port vulnerability can allow lateral movement.&lt;/li&gt;
+&lt;li&gt;Assessors may require evidence that VLAN segmentation is enforced at Layer 3, not just Layer 2.&lt;/li&gt;
+&lt;li&gt;Does not provide the same depth-in-defense as a dual-firewall DMZ.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3&gt;2. Zero Trust Network Architecture (ZTNA)&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;2-zero-trust-network-architecture-ztna&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2-zero-trust-network-architecture-ztna&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;What it is:&lt;/strong&gt; Zero Trust is a security model built on the principle of &amp;ldquo;never trust, always verify.&amp;rdquo; Rather than assuming anything inside the network perimeter is safe, every user, device, and connection is continuously authenticated and authorized.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;CMMC relevance:&lt;/strong&gt; Zero Trust directly aligns with several CMMC Level 2 (and Level 3) principles, including least privilege (3.1.1), multi-factor authentication (3.5.3), and controlled access (3.1.2). NIST SP 800-207 provides the government&amp;rsquo;s Zero Trust guidance.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Why it is recommended:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Eliminates implicit trust based on network location — highly effective against insider threats and lateral movement&lt;/li&gt;
+&lt;li&gt;Well-aligned with modern remote-work environments and cloud-hosted CUI systems&lt;/li&gt;
+&lt;li&gt;Increasingly viewed favorably by DoD and C3PAOs as a forward-looking architecture&lt;/li&gt;
+&lt;li&gt;Products like &lt;strong&gt;Zscaler Private Access&lt;/strong&gt;, &lt;strong&gt;Cloudflare Access&lt;/strong&gt;, &lt;strong&gt;Microsoft Entra (Azure AD)&lt;/strong&gt;, and &lt;strong&gt;Palo Alto Prisma Access&lt;/strong&gt; provide Zero Trust capabilities at scale&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Why it may fall short as a standalone replacement:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Does not inherently replace the need for boundary protection on the &lt;em&gt;network&lt;/em&gt; layer — ZTNA controls identity and access, but doesn&amp;rsquo;t isolate workloads the way a DMZ does&lt;/li&gt;
+&lt;li&gt;Implementation complexity is high; misconfigured Zero Trust policies can create gaps&lt;/li&gt;
+&lt;li&gt;May still need to be paired with network-level segmentation to satisfy 3.13.1 and 3.13.5 fully&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3&gt;3. Micro-Segmentation&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;3-micro-segmentation&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#3-micro-segmentation&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;What it is:&lt;/strong&gt; Micro-segmentation applies granular firewall policies at the workload or application level, rather than at the network perimeter. Software-defined networking (SDN) tools enforce rules between individual servers or services.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;CMMC relevance:&lt;/strong&gt; Strong alignment with CUI isolation and least-privilege access. Particularly useful in virtualized and containerized environments.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Why it is recommended:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;More granular than VLANs — policies follow the workload, not the network segment&lt;/li&gt;
+&lt;li&gt;Tools like &lt;strong&gt;VMware NSX&lt;/strong&gt;, &lt;strong&gt;Illumio&lt;/strong&gt;, and &lt;strong&gt;Guardicore&lt;/strong&gt; provide strong visibility and enforcement&lt;/li&gt;
+&lt;li&gt;Difficult for attackers to move laterally even if they compromise one workload&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Why it may fall short:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;High implementation and operational complexity&lt;/li&gt;
+&lt;li&gt;Requires mature inventory and asset management practices — you can&amp;rsquo;t segment what you can&amp;rsquo;t see&lt;/li&gt;
+&lt;li&gt;May not satisfy the &amp;ldquo;subnetworks for publicly accessible systems&amp;rdquo; requirement in 3.13.5 without additional boundary controls&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3&gt;4. Cloud-Native Security Groups and Virtual Networks&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;4-cloud-native-security-groups-and-virtual-networks&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#4-cloud-native-security-groups-and-virtual-networks&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;What it is:&lt;/strong&gt; In cloud environments (AWS, Azure, GCP), security groups, virtual private clouds (VPCs), and network security groups (NSGs) can replicate DMZ-like segmentation without physical hardware.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;CMMC relevance:&lt;/strong&gt; Cloud-based segmentation can satisfy boundary protection requirements &lt;em&gt;if&lt;/em&gt; it is configured with the same rigor as an on-premises DMZ. The &lt;strong&gt;FedRAMP&lt;/strong&gt; authorization status of the cloud platform also factors into CMMC assessments.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Why it is recommended:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Native to cloud environments; no additional hardware cost&lt;/li&gt;
+&lt;li&gt;Infrastructure-as-code (IaC) enables auditable, repeatable configurations&lt;/li&gt;
+&lt;li&gt;Supports centralized logging to SIEM tools&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Why it may fall short:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Misconfiguration is the leading cause of cloud security incidents — a poorly configured security group is worse than no segmentation at all&lt;/li&gt;
+&lt;li&gt;Shared responsibility model means you must understand exactly what the cloud provider secures vs. what you are responsible for&lt;/li&gt;
+&lt;li&gt;Assessors will scrutinize cloud configurations carefully; documentation must be thorough&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2&gt;DMZ vs. Alternatives: A CMMC Compliance Comparison&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;dmz-vs-alternatives-a-cmmc-compliance-comparison&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#dmz-vs-alternatives-a-cmmc-compliance-comparison&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Approach&lt;/th&gt;
+          &lt;th&gt;CMMC 3.13.1&lt;/th&gt;
+          &lt;th&gt;CMMC 3.13.5&lt;/th&gt;
+          &lt;th&gt;Ease of Assessment&lt;/th&gt;
+          &lt;th&gt;Recommended For&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Dual-Firewall DMZ&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;✅ Strong&lt;/td&gt;
+          &lt;td&gt;✅ Strong&lt;/td&gt;
+          &lt;td&gt;High (well-understood)&lt;/td&gt;
+          &lt;td&gt;Most on-prem environments with external services&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;VLAN Segmentation&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;⚠️ Partial&lt;/td&gt;
+          &lt;td&gt;⚠️ Partial&lt;/td&gt;
+          &lt;td&gt;Moderate&lt;/td&gt;
+          &lt;td&gt;Small orgs with no external-facing services&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Zero Trust (ZTNA)&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;⚠️ Partial&lt;/td&gt;
+          &lt;td&gt;❌ Not direct&lt;/td&gt;
+          &lt;td&gt;Moderate&lt;/td&gt;
+          &lt;td&gt;Remote-first, cloud-heavy environments&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Micro-Segmentation&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;✅ Strong&lt;/td&gt;
+          &lt;td&gt;⚠️ Partial&lt;/td&gt;
+          &lt;td&gt;Low (complex)&lt;/td&gt;
+          &lt;td&gt;Virtualized/containerized environments&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Cloud Security Groups&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;✅ Strong&lt;/td&gt;
+          &lt;td&gt;✅ Strong&lt;/td&gt;
+          &lt;td&gt;Moderate&lt;/td&gt;
+          &lt;td&gt;Cloud-hosted CUI environments&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h2&gt;Practical Recommendations for CMMC-Seeking Organizations&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;practical-recommendations-for-cmmc-seeking-organizations&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#practical-recommendations-for-cmmc-seeking-organizations&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Conduct a Scope Assessment First.&lt;/strong&gt; Before deciding on a DMZ or alternative, define your CUI boundary. What systems process, store, or transmit CUI? Scoping tightly reduces complexity and cost.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;If You Have Externally Facing Systems, Deploy a DMZ.&lt;/strong&gt; Control 3.13.5 is hard to satisfy any other way. A DMZ with a well-documented firewall ruleset is the gold standard and will hold up under C3PAO assessment.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Layer Your Controls.&lt;/strong&gt; A DMZ and Zero Trust are not mutually exclusive. Many mature CMMC environments use a DMZ for network-level boundary protection &lt;em&gt;and&lt;/em&gt; Zero Trust for identity and access management.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Document Everything.&lt;/strong&gt; Your System Security Plan (SSP) must describe your network architecture in detail. Diagrams, firewall rulesets, and change management logs are all evidence an assessor will request.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Log and Monitor the DMZ.&lt;/strong&gt; A DMZ without logging doesn&amp;rsquo;t satisfy 3.3.1 and 3.3.2. Ensure your firewall sends logs to a SIEM or centralized log management system.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Engage a C3PAO or CMMC Registered Practitioner Early.&lt;/strong&gt; Architecture decisions made before an assessment are far easier and cheaper to adjust than findings discovered during one.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Conclusion&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;conclusion&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#conclusion&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;A DMZ is not a checkbox in the CMMC framework — it is a proven architectural pattern that directly satisfies multiple critical controls around boundary protection, CUI isolation, and access control. While alternatives like Zero Trust, micro-segmentation, and VLAN-based separation have their place, they rarely offer the same combination of simplicity, auditability, and assessor familiarity as a properly deployed DMZ.&lt;/p&gt;
+&lt;p&gt;For most organizations in the Defense Industrial Base that operate any externally facing services and handle CUI, &lt;strong&gt;a DMZ should be a foundational element of your CMMC compliance architecture&lt;/strong&gt; — not an afterthought.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;This post is intended for informational purposes. Organizations should work with a qualified CMMC Registered Practitioner Organization (RPO) or C3PAO to evaluate their specific compliance posture.&lt;/em&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>CMMC Levels 1, 2, and 3: Requirements, Differences, and What Small Businesses Must Do</title>
+      <link>http://localhost:1313/blog/cmmc-levels-1-2-and-3-requirements-differences-and-what-small-businesses-must-do/</link>
+      <pubDate>Thu, 30 Apr 2026 07:55:28 -0700</pubDate>
+      
+      <guid>http://localhost:1313/blog/cmmc-levels-1-2-and-3-requirements-differences-and-what-small-businesses-must-do/</guid>
+      <description>
+        
+        
+        &lt;h1&gt;CMMC 2.0 Explained: Which Level Does Your Business Need — and Why It Matters&lt;/h1&gt;&lt;p&gt;&lt;em&gt;Posted by GreylineOps | Cybersecurity &amp;amp; Compliance&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;If your company does business with the Department of Defense — or wants to — you&amp;rsquo;ve probably heard the acronym &lt;strong&gt;CMMC&lt;/strong&gt; thrown around more and more. The Cybersecurity Maturity Model Certification (CMMC) 2.0 is the DoD&amp;rsquo;s framework for ensuring that defense contractors and their suppliers protect sensitive federal information. And starting now, it&amp;rsquo;s not optional.&lt;/p&gt;
+&lt;p&gt;But here&amp;rsquo;s where a lot of small businesses in the Defense Industrial Base (DIB) get tripped up: &lt;strong&gt;CMMC isn&amp;rsquo;t one-size-fits-all&lt;/strong&gt;. There are three distinct levels, each with different requirements, different costs, and different implications for your contracts. Knowing which level applies to you — and what you need to do about it — can mean the difference between winning DoD work and being shut out of it entirely.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s break it down.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;What Is CMMC 2.0?&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;what-is-cmmc-20&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#what-is-cmmc-20&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;CMMC 2.0 is the DoD&amp;rsquo;s updated certification framework, released in late 2021 as a streamlined evolution of the original CMMC 1.0. Its purpose is straightforward: verify that companies in the defense supply chain have the cybersecurity controls in place to protect &lt;strong&gt;Federal Contract Information (FCI)&lt;/strong&gt; and &lt;strong&gt;Controlled Unclassified Information (CUI)&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Under CMMC 2.0, the five-level model was simplified to three levels, and the requirements were more closely aligned with established frameworks — specifically &lt;strong&gt;NIST SP 800-171&lt;/strong&gt; and, at the highest tier, &lt;strong&gt;NIST SP 800-172&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s a high-level look at all three levels before we dive into each one:&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Level&lt;/th&gt;
+          &lt;th&gt;Name&lt;/th&gt;
+          &lt;th&gt;Applies To&lt;/th&gt;
+          &lt;th&gt;Assessment Type&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Level 1&lt;/td&gt;
+          &lt;td&gt;Foundational&lt;/td&gt;
+          &lt;td&gt;FCI handlers&lt;/td&gt;
+          &lt;td&gt;Annual self-assessment&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Level 2&lt;/td&gt;
+          &lt;td&gt;Advanced&lt;/td&gt;
+          &lt;td&gt;CUI handlers&lt;/td&gt;
+          &lt;td&gt;Third-party assessment (most cases)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Level 3&lt;/td&gt;
+          &lt;td&gt;Expert&lt;/td&gt;
+          &lt;td&gt;High-value CUI&lt;/td&gt;
+          &lt;td&gt;Government-led assessment&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h2&gt;CMMC Level 1: Foundational&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;cmmc-level-1-foundational&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#cmmc-level-1-foundational&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;Who It&amp;rsquo;s For&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;who-its-for&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#who-its-for&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Level 1 applies to any company that handles &lt;strong&gt;Federal Contract Information (FCI)&lt;/strong&gt; — information provided by or generated for the government under a contract, but not intended for public release. If you make widgets for a DoD prime contractor, process government purchase orders, or provide basic support services to federal agencies, you likely fall into this category.&lt;/p&gt;
+&lt;p&gt;FCI is less sensitive than CUI, but it still requires protection. Think of it as the baseline — the cybersecurity hygiene every contractor should already have.&lt;/p&gt;
+&lt;h3&gt;What&amp;rsquo;s Required&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;whats-required&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#whats-required&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Level 1 maps directly to the &lt;strong&gt;17 practices outlined in FAR Clause 52.204-21&lt;/strong&gt; (&amp;ldquo;Basic Safeguarding of Covered Contractor Information Systems&amp;rdquo;). These are foundational controls grouped under six domains:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Access Control&lt;/strong&gt; – Limit system access to authorized users and devices&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Identification &amp;amp; Authentication&lt;/strong&gt; – Authenticate the identity of users, devices, and processes&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Media Protection&lt;/strong&gt; – Sanitize or destroy information system media before disposal&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Physical Protection&lt;/strong&gt; – Limit physical access to organizational systems&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;System &amp;amp; Communications Protection&lt;/strong&gt; – Monitor and control communications at external boundaries&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;System &amp;amp; Information Integrity&lt;/strong&gt; – Identify, report, and correct system flaws in a timely manner&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;How You&amp;rsquo;re Assessed&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;how-youre-assessed&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#how-youre-assessed&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Level 1 allows for &lt;strong&gt;annual self-assessment&lt;/strong&gt;. Your leadership signs an attestation confirming compliance and submits it to the &lt;strong&gt;Supplier Performance Risk System (SPRS)&lt;/strong&gt;. No third-party auditor is required — but the attestation carries legal weight. Submitting a false attestation can expose you to liability under the False Claims Act.&lt;/p&gt;
+&lt;h3&gt;The Bottom Line&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;the-bottom-line&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#the-bottom-line&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Level 1 is the floor, not the ceiling. If you&amp;rsquo;re doing any DoD work at all, these 17 practices are non-negotiable. The good news: most of these controls represent solid basic security hygiene that your business should have regardless of compliance requirements.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;CMMC Level 2: Advanced&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;cmmc-level-2-advanced&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#cmmc-level-2-advanced&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;Who It&amp;rsquo;s For&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;who-its-for-1&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#who-its-for-1&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Level 2 applies to companies that handle &lt;strong&gt;Controlled Unclassified Information (CUI)&lt;/strong&gt; — a broad category of sensitive government data that, while not classified, still requires protection by law, regulation, or policy. CUI includes things like:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Technical data and engineering drawings&lt;/li&gt;
+&lt;li&gt;Export-controlled information (EAR/ITAR)&lt;/li&gt;
+&lt;li&gt;Personally Identifiable Information (PII)&lt;/li&gt;
+&lt;li&gt;Procurement and acquisition-sensitive data&lt;/li&gt;
+&lt;li&gt;Law enforcement sensitive information
+The vast majority of companies in the DIB that are actively working on defense programs will fall into &lt;strong&gt;Level 2&lt;/strong&gt;. If your contract includes a DFARS 252.204-7012 clause, you&amp;rsquo;re almost certainly handling CUI and need to meet Level 2 requirements.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;What&amp;rsquo;s Required&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;whats-required-1&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#whats-required-1&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Level 2 maps to the &lt;strong&gt;110 security practices defined in NIST SP 800-171&lt;/strong&gt;, organized across 14 domains:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Access Control&lt;/li&gt;
+&lt;li&gt;Awareness and Training&lt;/li&gt;
+&lt;li&gt;Audit and Accountability&lt;/li&gt;
+&lt;li&gt;Configuration Management&lt;/li&gt;
+&lt;li&gt;Identification and Authentication&lt;/li&gt;
+&lt;li&gt;Incident Response&lt;/li&gt;
+&lt;li&gt;Maintenance&lt;/li&gt;
+&lt;li&gt;Media Protection&lt;/li&gt;
+&lt;li&gt;Personnel Security&lt;/li&gt;
+&lt;li&gt;Physical Protection&lt;/li&gt;
+&lt;li&gt;Risk Assessment&lt;/li&gt;
+&lt;li&gt;Security Assessment&lt;/li&gt;
+&lt;li&gt;System and Communications Protection&lt;/li&gt;
+&lt;li&gt;System and Information Integrity
+This is a serious, comprehensive security program. We&amp;rsquo;re talking about requirements like multi-factor authentication across all systems, detailed audit logging, documented incident response plans, vulnerability scanning, configuration baselines, controlled use of removable media, and more.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;For many small businesses, going from minimal security to full NIST 800-171 compliance is a significant undertaking — one that requires months of planning, implementation, and documentation work.&lt;/p&gt;
+&lt;h3&gt;How You&amp;rsquo;re Assessed&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;how-youre-assessed-1&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#how-youre-assessed-1&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;For &lt;strong&gt;most CUI contractors&lt;/strong&gt;, Level 2 requires a &lt;strong&gt;triennial third-party assessment&lt;/strong&gt; by a &lt;strong&gt;Certified Third-Party Assessor Organization (C3PAO)&lt;/strong&gt;. This isn&amp;rsquo;t a checkbox exercise — it&amp;rsquo;s a rigorous on-site (or remote) audit of your environment, policies, and processes.&lt;/p&gt;
+&lt;p&gt;There is a narrow exception: certain non-prioritized programs may allow self-assessment at Level 2. But for any program the DoD deems critical, a C3PAO assessment is mandatory. Don&amp;rsquo;t assume you qualify for the exception without confirming it with your contracting officer.&lt;/p&gt;
+&lt;p&gt;You&amp;rsquo;ll also need to maintain a &lt;strong&gt;System Security Plan (SSP)&lt;/strong&gt; and a &lt;strong&gt;Plan of Action &amp;amp; Milestones (POA&amp;amp;M)&lt;/strong&gt; documenting any gaps and your remediation timeline.&lt;/p&gt;
+&lt;h3&gt;The Bottom Line&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;the-bottom-line-1&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#the-bottom-line-1&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Level 2 is where the heavy lifting is for most small defense contractors. The requirements are substantial, the documentation burden is real, and a failed C3PAO assessment can cost you contracts. This is the level where working with a specialized MSP pays the largest dividends.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;CMMC Level 3: Expert&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;cmmc-level-3-expert&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#cmmc-level-3-expert&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;Who It&amp;rsquo;s For&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;who-its-for-2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#who-its-for-2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Level 3 is reserved for companies supporting the DoD&amp;rsquo;s &lt;strong&gt;highest-priority programs&lt;/strong&gt; — those involving the most sensitive CUI, particularly where advanced persistent threats (APTs), including nation-state actors, are a realistic concern. We&amp;rsquo;re talking about prime contractors and subcontractors working on cutting-edge weapons systems, sensitive R&amp;amp;D programs, or critical national security infrastructure.&lt;/p&gt;
+&lt;p&gt;If your work involves this tier, you&amp;rsquo;ll know it. Your contracting officer will tell you explicitly, and your contracts will reflect it.&lt;/p&gt;
+&lt;h3&gt;What&amp;rsquo;s Required&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;whats-required-2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#whats-required-2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Level 3 builds on all 110 practices from Level 2 and adds &lt;strong&gt;24 additional practices from NIST SP 800-172&lt;/strong&gt;, which is specifically designed to provide enhanced protections against APTs. These additional controls include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Advanced threat hunting and detection capabilities&lt;/li&gt;
+&lt;li&gt;More rigorous configuration and change management&lt;/li&gt;
+&lt;li&gt;Enhanced supply chain risk management&lt;/li&gt;
+&lt;li&gt;Penetration testing requirements&lt;/li&gt;
+&lt;li&gt;Advanced security operations capabilities&lt;/li&gt;
+&lt;li&gt;More stringent incident response and recovery procedures
+This level essentially requires a mature, well-funded security operation — it&amp;rsquo;s well beyond what most small businesses can build internally without significant investment.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;How You&amp;rsquo;re Assessed&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;how-youre-assessed-2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#how-youre-assessed-2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Level 3 assessments are conducted by the &lt;strong&gt;Defense Contract Management Agency (DCMA)&lt;/strong&gt;&amp;rsquo;s Defense Industrial Base Cybersecurity Assessment Center (DIBCAC). This is a government-led assessment — no C3PAO involved. The bar is correspondingly higher, and the scrutiny is more intense.&lt;/p&gt;
+&lt;h3&gt;The Bottom Line&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;the-bottom-line-2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#the-bottom-line-2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Most small businesses in the DIB won&amp;rsquo;t need Level 3. But if your work takes you there, you&amp;rsquo;ll need a partner with deep expertise in both the technical requirements and the assessment process. Half-measures won&amp;rsquo;t cut it.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;So Which Level Do You Need?&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;so-which-level-do-you-need&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#so-which-level-do-you-need&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Here&amp;rsquo;s a quick decision framework:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&amp;ldquo;We provide goods or services to the DoD but don&amp;rsquo;t handle sensitive technical data.&amp;rdquo;&lt;/strong&gt; → Likely &lt;strong&gt;Level 1&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&amp;ldquo;Our contracts include DFARS 252.204-7012, and we receive or generate technical drawings, specs, or other sensitive program data.&amp;rdquo;&lt;/strong&gt; → Almost certainly &lt;strong&gt;Level 2&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&amp;ldquo;We&amp;rsquo;re working on a program that DCMA or our contracting officer has specifically flagged for heightened security requirements.&amp;rdquo;&lt;/strong&gt; → Potentially &lt;strong&gt;Level 3&lt;/strong&gt;
+When in doubt, review your contract language carefully and consult with your contracting officer. Getting this wrong — either under-preparing or over-investing — has real business consequences.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2&gt;Why a CMMC-Specialized MSP Is the Smart Choice for Small DIB Businesses&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;why-a-cmmc-specialized-msp-is-the-smart-choice-for-small-dib-businesses&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#why-a-cmmc-specialized-msp-is-the-smart-choice-for-small-dib-businesses&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Understanding the levels is one thing. Getting there is another.&lt;/p&gt;
+&lt;p&gt;Most small businesses in the defense supply chain aren&amp;rsquo;t cybersecurity companies. You make parts, provide services, do engineering work — that&amp;rsquo;s your core competency. Building a CMMC-compliant IT environment from scratch requires expertise that most small businesses simply don&amp;rsquo;t have in-house.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s why partnering with an MSP that &lt;strong&gt;specializes in CMMC&lt;/strong&gt; makes sense:&lt;/p&gt;
+&lt;h3&gt;1. You Don&amp;rsquo;t Know What You Don&amp;rsquo;t Know&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;1-you-dont-know-what-you-dont-know&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#1-you-dont-know-what-you-dont-know&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;CMMC compliance isn&amp;rsquo;t just about checking boxes — it&amp;rsquo;s about understanding the &lt;em&gt;intent&lt;/em&gt; behind each control and implementing it in a way that will hold up under assessment. A general-purpose IT provider can deploy software. A CMMC-specialized MSP knows which configurations will satisfy an assessor, which documentation is required, and where the common pitfalls are.&lt;/p&gt;
+&lt;h3&gt;2. The Documentation Burden Is Massive&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;2-the-documentation-burden-is-massive&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2-the-documentation-burden-is-massive&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;A compliant SSP for a Level 2 environment can run dozens of pages. Your POA&amp;amp;M needs to be accurate, credible, and maintainable. Policies and procedures need to exist, be current, and reflect your actual operations. A specialized MSP does this work every day — it&amp;rsquo;s not new territory.&lt;/p&gt;
+&lt;h3&gt;3. Assessment Readiness Is a Skill&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;3-assessment-readiness-is-a-skill&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#3-assessment-readiness-is-a-skill&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Passing a C3PAO assessment isn&amp;rsquo;t just about being technically compliant — it&amp;rsquo;s about being able to demonstrate compliance. That means having the right evidence, understanding what assessors look for, and being prepared to walk through your environment confidently. An MSP that lives in this space has seen assessments from every angle.&lt;/p&gt;
+&lt;h3&gt;4. The Compliance Landscape Keeps Changing&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;4-the-compliance-landscape-keeps-changing&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#4-the-compliance-landscape-keeps-changing&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;CMMC 2.0 rules continue to be refined, DFARS clauses get updated, and CUI categories evolve. A specialized MSP stays current so you don&amp;rsquo;t have to. When something changes that affects your compliance posture, you hear about it from your provider — not six months later when you&amp;rsquo;re in the middle of an assessment.&lt;/p&gt;
+&lt;h3&gt;5. The Cost of Non-Compliance Dwarfs the Cost of Compliance&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;5-the-cost-of-non-compliance-dwarfs-the-cost-of-compliance&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#5-the-cost-of-non-compliance-dwarfs-the-cost-of-compliance&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Losing a DoD contract — or being excluded from future work — because of a failed assessment is a devastating business outcome. Investing in proper compliance is almost always the more economical path, especially when you can spread the cost over a managed services engagement rather than building everything internally.&lt;/p&gt;
+&lt;h3&gt;6. Enclave Solutions Can Reduce Scope (and Cost)&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;6-enclave-solutions-can-reduce-scope-and-cost&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#6-enclave-solutions-can-reduce-scope-and-cost&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;One of the most effective strategies for small businesses is using a &lt;strong&gt;CMMC-compliant enclave&lt;/strong&gt; — a segregated, pre-certified environment for handling CUI — rather than trying to make your entire IT environment compliant. A specialized MSP can architect this for you, often significantly reducing the scope and cost of your assessment.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;GreylineOps Is Built for This&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;greylineops-is-built-for-this&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#greylineops-is-built-for-this&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;At &lt;strong&gt;GreylineOps&lt;/strong&gt;, we work exclusively in the defense and compliance space. We understand CMMC not as a checkbox exercise, but as an operational reality for the small and mid-sized businesses that form the backbone of the U.S. defense supply chain.&lt;/p&gt;
+&lt;p&gt;Whether you&amp;rsquo;re figuring out which level applies to your contracts, building toward a C3PAO assessment, or trying to close gaps in an existing compliance program, we&amp;rsquo;re here to help.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The DIB doesn&amp;rsquo;t have time for generic IT support. Neither do you.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/pre-qual/&#34;&gt;Contact GreylineOps&lt;/a&gt; to schedule a CMMC readiness consultation.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;Disclaimer: This post is for informational purposes only and does not constitute legal or compliance advice. CMMC requirements and timelines are subject to change. Consult with a qualified advisor regarding your specific contractual and compliance obligations.&lt;/em&gt;&lt;/p&gt;
+
+      </description>
+    </item>
     
     <item>
       <title>What Is an MSP? Why DIB Small Businesses Need a CMMC-Specialized Provider</title>

@@ -8,41 +8,41 @@
 <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32" />
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
 <link fetchpriority="low" href="/site.webmanifest" rel="manifest" />
-<title>CMMC Levels 1, 2, and 3: Requirements, Differences, and What Small Businesses Must Do – GreylineOps</title>
-  <meta name="description" content="Not all CMMC requirements are the same. Learn the differences between Levels 1, 2, and 3 — and why a specialized MSP is the smart choice for small DIB contractors." /><link rel="canonical" href="http://localhost:1313/blog/cmmc-levels-1-2-and-3-requirements-differences-and-what-small-businesses-must-do/" itemprop="url" />
+<title>DMZ and CMMC Compliance: Do You Need One and What Are the Alternatives? – GreylineOps</title>
+  <meta name="description" content="Learn what a DMZ is, whether it&#39;s required for CMMC compliance, when it makes sense to deploy one, what tools can build it, and which alternatives like network segmentation hold up under CMMC scrutiny." /><link rel="canonical" href="http://localhost:1313/blog/dmz-and-cmmc-compliance-do-you-need-one-and-what-are-the-alternatives/" itemprop="url" />
 
-<meta property="og:title" content="CMMC Levels 1, 2, and 3: Requirements, Differences, and What Small Businesses Must Do">
+<meta property="og:title" content="DMZ and CMMC Compliance: Do You Need One and What Are the Alternatives?">
 <meta
   property="og:description"
   content="
-    Not all CMMC requirements are the same. Learn the differences between Levels 1, 2, and 3 — and why a specialized MSP is the smart choice for small DIB contractors.
+    Learn what a DMZ is, whether it&#39;s required for CMMC compliance, when it makes sense to deploy one, what tools can build it, and which alternatives like network segmentation hold up under CMMC scrutiny.
   ">
 <meta
   property="og:type"
   content="
     article
   ">
-<meta property="og:url" content="http://localhost:1313/blog/cmmc-levels-1-2-and-3-requirements-differences-and-what-small-businesses-must-do/"><meta property="article:section" content="blog">
+<meta property="og:url" content="http://localhost:1313/blog/dmz-and-cmmc-compliance-do-you-need-one-and-what-are-the-alternatives/"><meta property="article:section" content="blog">
 
 <meta
   property="article:published_time"
-  content="2026-04-30T07:55:28-07:00">
+  content="2026-05-06T15:09:15-07:00">
 
 
 <meta
   property="article:modified_time"
-  content="2026-04-30T07:55:28-07:00">
+  content="2026-05-06T15:09:15-07:00">
 
 
 
-  <meta itemprop="name" content="CMMC Levels 1, 2, and 3: Requirements, Differences, and What Small Businesses Must Do">
-  <meta itemprop="description" content="Not all CMMC requirements are the same. Learn the differences between Levels 1, 2, and 3 — and why a specialized MSP is the smart choice for small DIB contractors.">
-  <meta itemprop="datePublished" content="2026-04-30T07:55:28-07:00">
-  <meta itemprop="dateModified" content="2026-04-30T07:55:28-07:00">
-  <meta itemprop="wordCount" content="1846">
+  <meta itemprop="name" content="DMZ and CMMC Compliance: Do You Need One and What Are the Alternatives?">
+  <meta itemprop="description" content="Learn what a DMZ is, whether it&#39;s required for CMMC compliance, when it makes sense to deploy one, what tools can build it, and which alternatives like network segmentation hold up under CMMC scrutiny.">
+  <meta itemprop="datePublished" content="2026-05-06T15:09:15-07:00">
+  <meta itemprop="dateModified" content="2026-05-06T15:09:15-07:00">
+  <meta itemprop="wordCount" content="2016">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="CMMC Levels 1, 2, and 3: Requirements, Differences, and What Small Businesses Must Do">
-  <meta name="twitter:description" content="Not all CMMC requirements are the same. Learn the differences between Levels 1, 2, and 3 — and why a specialized MSP is the smart choice for small DIB contractors.">
+  <meta name="twitter:title" content="DMZ and CMMC Compliance: Do You Need One and What Are the Alternatives?">
+  <meta name="twitter:description" content="Learn what a DMZ is, whether it&#39;s required for CMMC compliance, when it makes sense to deploy one, what tools can build it, and which alternatives like network segmentation hold up under CMMC scrutiny.">
 <link href="/css/compiled/main.css" rel="stylesheet" />
     <link href="/css/variables.css" rel="stylesheet" />
     <link href="/css/custom.css" rel="stylesheet" />
@@ -213,74 +213,86 @@
     </a>
       <button type="button" class="hextra-sidebar-collapsible-button hx:absolute hx:top-1/2 hx:-translate-y-1/2 hx:ltr:right-2 hx:rtl:left-2 hx:shrink-0 hx:cursor-pointer hx:p-0 hx:text-gray-500 hx:dark:text-neutral-400 hx:group-hover:text-gray-900 hx:dark:group-hover:text-gray-50 hx:group-data-[active=true]:text-primary-800 hx:group-data-[active=true]:dark:text-primary-600 hx:hextra-focus-visible-inset" aria-label="Toggle section" aria-expanded="true"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" focusable="false" class="hx:h-[18px] hx:min-w-[18px] hx:rounded-xs hx:p-0.5 hx:hover:bg-gray-800/5 hx:dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="hx:origin-center hx:transition-transform hx:rtl:-rotate-180"></path></svg></button>
   </div><div class="hextra-sidebar-children hx:ltr:pr-0 hx:rtl:pl-0 hx:overflow-hidden">
-        <ul class='hx:relative hx:flex hx:flex-col hx:gap-1 hx:before:absolute hx:before:inset-y-1 hx:before:w-px hx:before:bg-gray-200 hx:before:content-[""] hx:ltr:ml-3 hx:ltr:pl-3 hx:ltr:before:left-0 hx:rtl:mr-3 hx:rtl:pr-3 hx:rtl:before:right-0 hx:dark:before:bg-neutral-800'><li class="hx:flex hx:flex-col "><div class="hextra-sidebar-item hx:group hx:relative hx:flex hx:items-center" data-active="false">
+        <ul class='hx:relative hx:flex hx:flex-col hx:gap-1 hx:before:absolute hx:before:inset-y-1 hx:before:w-px hx:before:bg-gray-200 hx:before:content-[""] hx:ltr:ml-3 hx:ltr:pl-3 hx:ltr:before:left-0 hx:rtl:mr-3 hx:rtl:pr-3 hx:rtl:before:right-0 hx:dark:before:bg-neutral-800'><li class="hx:flex hx:flex-col open"><div class="hextra-sidebar-item hx:group hx:relative hx:flex hx:items-center" data-active="true">
     <a
       class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:grow hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none]
       hx:hextra-focus-visible-inset
-        hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:contrast-more:border hx:contrast-more:border-transparent hx:contrast-more:text-gray-900 hx:contrast-more:hover:border-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:dark:text-gray-50 hx:contrast-more:dark:hover:border-gray-50"
+        hextra-sidebar-active-item hx:bg-primary-100 hx:font-semibold hx:text-primary-800 hx:contrast-more:border hx:contrast-more:border-primary-500 hx:dark:bg-primary-400/10 hx:dark:text-primary-600 hx:contrast-more:dark:border-primary-500"
       href="/blog/dmz-and-cmmc-compliance-do-you-need-one-and-what-are-the-alternatives/"
       
     >
       <span class="hx:min-w-0 [word-break:break-word]">DMZ and CMMC Compliance: Do You Need One and What Are the Alternatives?</span>
     </a>
   </div>
+  
+    <ul class='hx:flex hx:flex-col hx:gap-1 hx:relative hx:before:absolute hx:before:inset-y-1 hx:before:w-px hx:before:bg-gray-200 hx:before:content-[""] hx:dark:before:bg-neutral-800 hx:ltr:pl-3 hx:ltr:before:left-0 hx:rtl:pr-3 hx:rtl:before:right-0 hx:ltr:ml-3 hx:rtl:mr-3'><li>
+              <a
+                href="#what-is-a-dmz"
+                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
+              >What Is a DMZ?</a>
+            </li>
+          <li>
+              <a
+                href="#cmmc-and-network-security-the-compliance-context"
+                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
+              >CMMC and Network Security: The Compliance Context</a>
+            </li>
+          <li>
+              <a
+                href="#is-a-dmz-required-for-cmmc"
+                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
+              >Is a DMZ Required for CMMC?</a>
+            </li>
+          <li>
+              <a
+                href="#when-does-a-dmz-make-sense"
+                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
+              >When Does a DMZ Make Sense?</a>
+            </li>
+          <li>
+              <a
+                href="#hardware-and-software-for-building-a-dmz"
+                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
+              >Hardware and Software for Building a DMZ</a>
+            </li>
+          <li>
+              <a
+                href="#alternatives-to-a-traditional-dmz"
+                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
+              >Alternatives to a Traditional DMZ</a>
+            </li>
+          <li>
+              <a
+                href="#dmz-vs-alternatives-a-cmmc-compliance-comparison"
+                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
+              >DMZ vs. Alternatives: A CMMC Compliance Comparison</a>
+            </li>
+          <li>
+              <a
+                href="#practical-recommendations-for-cmmc-seeking-organizations"
+                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
+              >Practical Recommendations for CMMC-Seeking Organizations</a>
+            </li>
+          <li>
+              <a
+                href="#conclusion"
+                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
+              >Conclusion</a>
+            </li>
+          </ul>
+  
               
-            </li><li class="hx:flex hx:flex-col open"><div class="hextra-sidebar-item hx:group hx:relative hx:flex hx:items-center" data-active="true">
+            </li><li class="hx:flex hx:flex-col "><div class="hextra-sidebar-item hx:group hx:relative hx:flex hx:items-center" data-active="false">
     <a
       class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:grow hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none]
       hx:hextra-focus-visible-inset
-        hextra-sidebar-active-item hx:bg-primary-100 hx:font-semibold hx:text-primary-800 hx:contrast-more:border hx:contrast-more:border-primary-500 hx:dark:bg-primary-400/10 hx:dark:text-primary-600 hx:contrast-more:dark:border-primary-500"
+        hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:contrast-more:border hx:contrast-more:border-transparent hx:contrast-more:text-gray-900 hx:contrast-more:hover:border-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:dark:text-gray-50 hx:contrast-more:dark:hover:border-gray-50"
       href="/blog/cmmc-levels-1-2-and-3-requirements-differences-and-what-small-businesses-must-do/"
       
     >
       <span class="hx:min-w-0 [word-break:break-word]">CMMC Levels 1, 2, and 3: Requirements, Differences, and What Small Businesses Must Do</span>
     </a>
   </div>
-  
-    <ul class='hx:flex hx:flex-col hx:gap-1 hx:relative hx:before:absolute hx:before:inset-y-1 hx:before:w-px hx:before:bg-gray-200 hx:before:content-[""] hx:dark:before:bg-neutral-800 hx:ltr:pl-3 hx:ltr:before:left-0 hx:rtl:pr-3 hx:rtl:before:right-0 hx:ltr:ml-3 hx:rtl:mr-3'><li>
-              <a
-                href="#what-is-cmmc-20"
-                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
-              >What Is CMMC 2.0?</a>
-            </li>
-          <li>
-              <a
-                href="#cmmc-level-1-foundational"
-                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
-              >CMMC Level 1: Foundational</a>
-            </li>
-          <li>
-              <a
-                href="#cmmc-level-2-advanced"
-                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
-              >CMMC Level 2: Advanced</a>
-            </li>
-          <li>
-              <a
-                href="#cmmc-level-3-expert"
-                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
-              >CMMC Level 3: Expert</a>
-            </li>
-          <li>
-              <a
-                href="#so-which-level-do-you-need"
-                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
-              >So Which Level Do You Need?</a>
-            </li>
-          <li>
-              <a
-                href="#why-a-cmmc-specialized-msp-is-the-smart-choice-for-small-dib-businesses"
-                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
-              >Why a CMMC-Specialized MSP Is the Smart Choice for Small DIB Businesses</a>
-            </li>
-          <li>
-              <a
-                href="#greylineops-is-built-for-this"
-                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
-              >GreylineOps Is Built for This</a>
-            </li>
-          </ul>
-  
               
             </li><li class="hx:flex hx:flex-col "><div class="hextra-sidebar-item hx:group hx:relative hx:flex hx:items-center" data-active="false">
     <a
@@ -380,103 +392,103 @@
 <nav class="hextra-toc hx:order-last hx:hidden hx:w-64 hx:shrink-0 hx:xl:block hx:print:hidden hx:px-4" aria-label="Table of contents">
     <div class="hextra-scrollbar hx:sticky hx:top-16 hx:overflow-y-auto hx:pr-4 hx:pt-6 hx:text-sm [hyphens:auto] hx:max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] hx:ltr:-mr-4 hx:rtl:-ml-4"><p class="hx:mb-4 hx:font-semibold hx:tracking-tight">On this page</p><ul>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:font-medium hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#what-is-cmmc-20">What Is CMMC 2.0?
+        <a class="hx:font-medium hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#what-is-a-dmz">What Is a DMZ?
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:font-medium hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#cmmc-level-1-foundational">CMMC Level 1: Foundational
+        <a class="hx:font-medium hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#cmmc-and-network-security-the-compliance-context">CMMC and Network Security: The Compliance Context
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#who-its-for">Who It’s For
+        <a class="hx:font-medium hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#is-a-dmz-required-for-cmmc">Is a DMZ Required for CMMC?
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#whats-required">What’s Required
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#3131--boundary-protection">3.13.1 — Boundary Protection
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#how-youre-assessed">How You’re Assessed
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#3132--security-architecture">3.13.2 — Security Architecture
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#the-bottom-line">The Bottom Line
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#3135--public-access-system-isolation">3.13.5 — Public-Access System Isolation
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:font-medium hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#cmmc-level-2-advanced">CMMC Level 2: Advanced
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#313--cui-flow-control">3.1.3 — CUI Flow Control
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#who-its-for-1">Who It’s For
+        <a class="hx:font-medium hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#when-does-a-dmz-make-sense">When Does a DMZ Make Sense?
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#whats-required-1">What’s Required
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#you-host-publicly-accessible-services">You Host Publicly Accessible Services
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#how-youre-assessed-1">How You’re Assessed
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#you-work-with-external-partners-or-vendors">You Work with External Partners or Vendors
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#the-bottom-line-1">The Bottom Line
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#you-process-cui-on-an-internal-network">You Process CUI on an Internal Network
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:font-medium hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#cmmc-level-3-expert">CMMC Level 3: Expert
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#you-are-pursuing-cmmc-level-2-or-level-3-certification">You Are Pursuing CMMC Level 2 or Level 3 Certification
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#who-its-for-2">Who It’s For
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#you-have-a-mixed-environment-cloud--on-premises">You Have a Mixed Environment (Cloud &#43; On-Premises)
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#whats-required-2">What’s Required
+        <a class="hx:font-medium hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#hardware-and-software-for-building-a-dmz">Hardware and Software for Building a DMZ
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#how-youre-assessed-2">How You’re Assessed
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#hardware-firewalls-recommended-for-cmmc-environments">Hardware Firewalls (Recommended for CMMC Environments)
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#the-bottom-line-2">The Bottom Line
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#software--virtual-firewalls">Software / Virtual Firewalls
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:font-medium hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#so-which-level-do-you-need">So Which Level Do You Need?
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#key-capabilities-to-look-for-cmmc-relevant">Key Capabilities to Look For (CMMC-Relevant)
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:font-medium hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#why-a-cmmc-specialized-msp-is-the-smart-choice-for-small-dib-businesses">Why a CMMC-Specialized MSP Is the Smart Choice for Small DIB Businesses
+        <a class="hx:font-medium hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#alternatives-to-a-traditional-dmz">Alternatives to a Traditional DMZ
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#1-you-dont-know-what-you-dont-know">1. You Don’t Know What You Don’t Know
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#1-network-segmentation-via-vlans">1. Network Segmentation via VLANs
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#2-the-documentation-burden-is-massive">2. The Documentation Burden Is Massive
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#2-zero-trust-network-architecture-ztna">2. Zero Trust Network Architecture (ZTNA)
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#3-assessment-readiness-is-a-skill">3. Assessment Readiness Is a Skill
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#3-micro-segmentation">3. Micro-Segmentation
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#4-the-compliance-landscape-keeps-changing">4. The Compliance Landscape Keeps Changing
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#4-cloud-native-security-groups-and-virtual-networks">4. Cloud-Native Security Groups and Virtual Networks
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#5-the-cost-of-non-compliance-dwarfs-the-cost-of-compliance">5. The Cost of Non-Compliance Dwarfs the Cost of Compliance
+        <a class="hx:font-medium hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#dmz-vs-alternatives-a-cmmc-compliance-comparison">DMZ vs. Alternatives: A CMMC Compliance Comparison
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#6-enclave-solutions-can-reduce-scope-and-cost">6. Enclave Solutions Can Reduce Scope (and Cost)
+        <a class="hx:font-medium hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#practical-recommendations-for-cmmc-seeking-organizations">Practical Recommendations for CMMC-Seeking Organizations
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:font-medium hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#greylineops-is-built-for-this">GreylineOps Is Built for This
+        <a class="hx:font-medium hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#conclusion">Conclusion
         </a>
       </li></ul>
       <div class="hx:mt-8 hx:border-t hx:bg-white hx:pt-8 hx:shadow-[0_-12px_16px_white] hx:dark:bg-dark hx:dark:shadow-[0_-12px_16px_#111] hx:sticky hx:bottom-0 hx:flex hx:flex-col hx:items-start hx:gap-2 hx:pb-8 hx:border-gray-200 hx:dark:border-neutral-800 hx:contrast-more:border-t hx:contrast-more:border-neutral-400 hx:contrast-more:shadow-none hx:contrast-more:dark:border-neutral-400">
@@ -496,178 +508,306 @@
         <div class="hx:mt-1.5 hx:flex hx:items-center hx:gap-1 hx:overflow-hidden hx:text-sm hx:text-gray-500 hx:dark:text-gray-400 hx:contrast-more:text-current">
         <div class="hx:whitespace-nowrap hx:transition-colors hx:min-w-[24px] hx:overflow-hidden hx:text-ellipsis hx:hover:text-gray-900 hx:dark:hover:text-gray-100">
           <a href="/blog/" class="hx:inline-block hx:rounded-sm hx:hextra-focus-visible-inset">Blogs</a>
-        </div><svg class="hx:w-3.5 hx:shrink-0 hx:rtl:-rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg><div class="hx:whitespace-nowrap hx:transition-colors hx:font-medium hx:text-gray-700 hx:contrast-more:font-bold hx:contrast-more:text-current hx:dark:text-gray-100 hx:contrast-more:dark:text-current">CMMC Levels 1, 2, and 3: Requirements, Differences, and What Small Businesses Must Do</div>
+        </div><svg class="hx:w-3.5 hx:shrink-0 hx:rtl:-rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg><div class="hx:whitespace-nowrap hx:transition-colors hx:font-medium hx:text-gray-700 hx:contrast-more:font-bold hx:contrast-more:text-current hx:dark:text-gray-100 hx:contrast-more:dark:text-current">DMZ and CMMC Compliance: Do You Need One and What Are the Alternatives?</div>
   </div>
 
         
         <div class="hx:flex hx:flex-col hx:sm:flex-row hx:items-start hx:sm:items-center hx:sm:justify-between hx:gap-4 hx:mt-2">
-          <h1 class="hx:mb-0 hx:text-4xl hx:font-bold hx:tracking-tight hx:text-slate-900 hx:dark:text-slate-100">CMMC Levels 1, 2, and 3: Requirements, Differences, and What Small Businesses Must Do</h1>
+          <h1 class="hx:mb-0 hx:text-4xl hx:font-bold hx:tracking-tight hx:text-slate-900 hx:dark:text-slate-100">DMZ and CMMC Compliance: Do You Need One and What Are the Alternatives?</h1>
           
         </div>
         
-        <div class="hx:mt-4 hx:mb-16 hx:text-gray-500 hx:dark:text-gray-400 hx:text-sm hx:flex hx:items-center hx:flex-wrap hx:gap-y-2"><span class="hx:mr-1">April 30, 2026</span></div>
+        <div class="hx:mt-4 hx:mb-16 hx:text-gray-500 hx:dark:text-gray-400 hx:text-sm hx:flex hx:items-center hx:flex-wrap hx:gap-y-2"><span class="hx:mr-1">May 6, 2026</span></div>
         <div class="content">
-          <h1>CMMC 2.0 Explained: Which Level Does Your Business Need — and Why It Matters</h1><p><em>Posted by GreylineOps | Cybersecurity &amp; Compliance</em></p>
+          <h1>Does Your Business Need a DMZ for CMMC Compliance? A Complete Guide</h1><h2>What Is a DMZ?<span class="hx:absolute hx:-mt-20" id="what-is-a-dmz"></span>
+    <a href="#what-is-a-dmz" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>A <strong>Demilitarized Zone (DMZ)</strong> in network security is a physical or logical subnetwork that sits between an organization&rsquo;s internal trusted network and an untrusted external network — typically the internet. Think of it as a buffer zone: systems that need to be accessible from the outside world (web servers, email gateways, VPN concentrators) are placed in the DMZ, shielded from the internal network where sensitive data lives.</p>
+<p>The key principle behind a DMZ is <strong>controlled exposure</strong>. If an attacker compromises a server in the DMZ, they still face a second layer of firewall protection before reaching the internal network. This architecture has been a cornerstone of enterprise network security for decades.</p>
+<p>A traditional DMZ is created using <strong>dual-firewall architecture</strong>:</p>
+<ul>
+<li><strong>Outer firewall</strong> — filters traffic between the internet and the DMZ</li>
+<li><strong>Inner firewall</strong> — filters traffic between the DMZ and the internal network</li>
+</ul>
+<p>Any traffic flowing from the internet into the internal network must pass through both firewalls and traverse the DMZ, making lateral movement by attackers significantly harder.</p>
 <hr>
-<p>If your company does business with the Department of Defense — or wants to — you&rsquo;ve probably heard the acronym <strong>CMMC</strong> thrown around more and more. The Cybersecurity Maturity Model Certification (CMMC) 2.0 is the DoD&rsquo;s framework for ensuring that defense contractors and their suppliers protect sensitive federal information. And starting now, it&rsquo;s not optional.</p>
-<p>But here&rsquo;s where a lot of small businesses in the Defense Industrial Base (DIB) get tripped up: <strong>CMMC isn&rsquo;t one-size-fits-all</strong>. There are three distinct levels, each with different requirements, different costs, and different implications for your contracts. Knowing which level applies to you — and what you need to do about it — can mean the difference between winning DoD work and being shut out of it entirely.</p>
-<p>Let&rsquo;s break it down.</p>
+<h2>CMMC and Network Security: The Compliance Context<span class="hx:absolute hx:-mt-20" id="cmmc-and-network-security-the-compliance-context"></span>
+    <a href="#cmmc-and-network-security-the-compliance-context" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>The <strong>Cybersecurity Maturity Model Certification (CMMC)</strong> is a framework developed by the U.S. Department of Defense (DoD) to ensure that Defense Industrial Base (DIB) contractors adequately protect <strong>Federal Contract Information (FCI)</strong> and <strong>Controlled Unclassified Information (CUI)</strong>.</p>
+<p>CMMC 2.0 consists of three levels:</p>
+<ul>
+<li><strong>Level 1 (Foundational):</strong> 17 practices based on FAR 52.204-21</li>
+<li><strong>Level 2 (Advanced):</strong> 110 practices aligned with NIST SP 800-171</li>
+<li><strong>Level 3 (Expert):</strong> 110+ practices, including select NIST SP 800-172 requirements</li>
+</ul>
+<p>Most contractors handling CUI will need to achieve <strong>CMMC Level 2</strong>. The framework doesn&rsquo;t name a DMZ explicitly — but several of its domains make a DMZ highly relevant, if not practically necessary.</p>
 <hr>
-<h2>What Is CMMC 2.0?<span class="hx:absolute hx:-mt-20" id="what-is-cmmc-20"></span>
-    <a href="#what-is-cmmc-20" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>CMMC 2.0 is the DoD&rsquo;s updated certification framework, released in late 2021 as a streamlined evolution of the original CMMC 1.0. Its purpose is straightforward: verify that companies in the defense supply chain have the cybersecurity controls in place to protect <strong>Federal Contract Information (FCI)</strong> and <strong>Controlled Unclassified Information (CUI)</strong>.</p>
-<p>Under CMMC 2.0, the five-level model was simplified to three levels, and the requirements were more closely aligned with established frameworks — specifically <strong>NIST SP 800-171</strong> and, at the highest tier, <strong>NIST SP 800-172</strong>.</p>
-<p>Here&rsquo;s a high-level look at all three levels before we dive into each one:</p>
-<table>
+<h2>Is a DMZ Required for CMMC?<span class="hx:absolute hx:-mt-20" id="is-a-dmz-required-for-cmmc"></span>
+    <a href="#is-a-dmz-required-for-cmmc" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>The short answer: <strong>a DMZ is not explicitly mandated by CMMC</strong>, but the controls that CMMC requires often make deploying one the most straightforward path to compliance.</p>
+<p>Here are the specific NIST SP 800-171 controls (mirrored in CMMC Level 2) that drive DMZ-related decisions:</p>
+<h3>3.13.1 — Boundary Protection<span class="hx:absolute hx:-mt-20" id="3131--boundary-protection"></span>
+    <a href="#3131--boundary-protection" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><blockquote>
+  <p><em>&ldquo;Monitor, control, and protect communications at the external boundaries and key internal boundaries of organizational systems.&rdquo;</em></p>
+
+</blockquote>
+<p>This control is the closest thing to a DMZ requirement. Protecting the boundary between your CUI environment and external networks almost always calls for a segmented architecture — and a DMZ is a well-proven way to achieve it.</p>
+<h3>3.13.2 — Security Architecture<span class="hx:absolute hx:-mt-20" id="3132--security-architecture"></span>
+    <a href="#3132--security-architecture" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><blockquote>
+  <p><em>&ldquo;Employ architectural designs, software development techniques, and systems engineering principles that promote effective information security.&rdquo;</em></p>
+
+</blockquote>
+<p>A DMZ is a recognized architectural design that security assessors and C3PAOs (Certified Third-Party Assessment Organizations) will look favorably upon as evidence of mature security thinking.</p>
+<h3>3.13.5 — Public-Access System Isolation<span class="hx:absolute hx:-mt-20" id="3135--public-access-system-isolation"></span>
+    <a href="#3135--public-access-system-isolation" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><blockquote>
+  <p><em>&ldquo;Implement subnetworks for publicly accessible system components that are physically or logically separated from internal networks.&rdquo;</em></p>
+
+</blockquote>
+<p>This control essentially <strong>describes a DMZ</strong>. If you operate any publicly accessible systems — a web server, a customer portal, a file transfer endpoint — this control requires them to be separated from your internal environment. A DMZ is the canonical implementation.</p>
+<h3>3.1.3 — CUI Flow Control<span class="hx:absolute hx:-mt-20" id="313--cui-flow-control"></span>
+    <a href="#313--cui-flow-control" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><blockquote>
+  <p><em>&ldquo;Control the flow of CUI in accordance with approved authorizations.&rdquo;</em></p>
+
+</blockquote>
+<p>Network segmentation and access control between zones (enforced by DMZ firewall rules) directly satisfies this requirement.</p>
+<p><strong>Bottom line:</strong> If your organization runs any externally facing services and handles CUI, deploying a DMZ is one of the clearest ways to satisfy multiple CMMC Level 2 controls simultaneously.</p>
+<hr>
+<h2>When Does a DMZ Make Sense?<span class="hx:absolute hx:-mt-20" id="when-does-a-dmz-make-sense"></span>
+    <a href="#when-does-a-dmz-make-sense" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>A DMZ is most appropriate — and often essential — in the following scenarios:</p>
+<h3>You Host Publicly Accessible Services<span class="hx:absolute hx:-mt-20" id="you-host-publicly-accessible-services"></span>
+    <a href="#you-host-publicly-accessible-services" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Web servers, email servers, DNS servers, FTP/SFTP endpoints, and VPN gateways all benefit from DMZ placement. These systems face the internet directly; putting them on your internal network creates unacceptable risk.</p>
+<h3>You Work with External Partners or Vendors<span class="hx:absolute hx:-mt-20" id="you-work-with-external-partners-or-vendors"></span>
+    <a href="#you-work-with-external-partners-or-vendors" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>If third parties need access to certain systems, placing those systems in a DMZ limits the access they have to your broader internal environment and CUI.</p>
+<h3>You Process CUI on an Internal Network<span class="hx:absolute hx:-mt-20" id="you-process-cui-on-an-internal-network"></span>
+    <a href="#you-process-cui-on-an-internal-network" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>When your internal network holds CUI, any external-facing system becomes a potential threat vector. A DMZ creates a hard boundary between internet-facing infrastructure and CUI systems.</p>
+<h3>You Are Pursuing CMMC Level 2 or Level 3 Certification<span class="hx:absolute hx:-mt-20" id="you-are-pursuing-cmmc-level-2-or-level-3-certification"></span>
+    <a href="#you-are-pursuing-cmmc-level-2-or-level-3-certification" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Assessors reviewing your System Security Plan (SSP) will scrutinize how you&rsquo;ve addressed boundary protection. A documented DMZ architecture with proper firewall rules and monitoring is strong, auditable evidence.</p>
+<h3>You Have a Mixed Environment (Cloud + On-Premises)<span class="hx:absolute hx:-mt-20" id="you-have-a-mixed-environment-cloud--on-premises"></span>
+    <a href="#you-have-a-mixed-environment-cloud--on-premises" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Hybrid environments benefit from DMZ-like segmentation between on-prem networks, cloud workloads, and external access points.</p>
+<hr>
+<h2>Hardware and Software for Building a DMZ<span class="hx:absolute hx:-mt-20" id="hardware-and-software-for-building-a-dmz"></span>
+    <a href="#hardware-and-software-for-building-a-dmz" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><h3>Hardware Firewalls (Recommended for CMMC Environments)<span class="hx:absolute hx:-mt-20" id="hardware-firewalls-recommended-for-cmmc-environments"></span>
+    <a href="#hardware-firewalls-recommended-for-cmmc-environments" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><table>
   <thead>
       <tr>
-          <th>Level</th>
-          <th>Name</th>
-          <th>Applies To</th>
-          <th>Assessment Type</th>
+          <th>Vendor</th>
+          <th>Product Line</th>
+          <th>Notes</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td>Level 1</td>
-          <td>Foundational</td>
-          <td>FCI handlers</td>
-          <td>Annual self-assessment</td>
+          <td><strong>Palo Alto Networks</strong></td>
+          <td>PA-Series, VM-Series</td>
+          <td>Next-gen firewall with App-ID, deep packet inspection; widely used in CMMC environments</td>
       </tr>
       <tr>
-          <td>Level 2</td>
-          <td>Advanced</td>
-          <td>CUI handlers</td>
-          <td>Third-party assessment (most cases)</td>
+          <td><strong>Fortinet</strong></td>
+          <td>FortiGate</td>
+          <td>Strong price-to-performance; broad CMMC-relevant logging and reporting</td>
       </tr>
       <tr>
-          <td>Level 3</td>
-          <td>Expert</td>
-          <td>High-value CUI</td>
-          <td>Government-led assessment</td>
+          <td><strong>Cisco</strong></td>
+          <td>Firepower (FTD), ASA</td>
+          <td>Mature platform with extensive integrations; common in DoD supply chain</td>
+      </tr>
+      <tr>
+          <td><strong>Juniper</strong></td>
+          <td>SRX Series</td>
+          <td>Scalable, well-suited to larger or more complex architectures</td>
+      </tr>
+      <tr>
+          <td><strong>Sophos</strong></td>
+          <td>XGS Series</td>
+          <td>Good option for SMBs; unified threat management features</td>
+      </tr>
+  </tbody>
+</table>
+<h3>Software / Virtual Firewalls<span class="hx:absolute hx:-mt-20" id="software--virtual-firewalls"></span>
+    <a href="#software--virtual-firewalls" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><table>
+  <thead>
+      <tr>
+          <th>Product</th>
+          <th>Notes</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>pfSense / pfSense Plus</strong></td>
+          <td>Open-source (community) or commercial; capable DMZ support; audit trail depends on configuration</td>
+      </tr>
+      <tr>
+          <td><strong>OPNsense</strong></td>
+          <td>Open-source alternative to pfSense; active development, strong logging</td>
+      </tr>
+      <tr>
+          <td><strong>Cisco FTDv</strong></td>
+          <td>Virtual version of Firepower; suitable for cloud-hosted DMZ environments</td>
+      </tr>
+      <tr>
+          <td><strong>Palo Alto VM-Series</strong></td>
+          <td>Virtual next-gen firewall for AWS, Azure, GCP</td>
+      </tr>
+      <tr>
+          <td><strong>Azure Firewall / AWS Network Firewall</strong></td>
+          <td>Native cloud options for cloud-based DMZ architectures</td>
+      </tr>
+  </tbody>
+</table>
+<h3>Key Capabilities to Look For (CMMC-Relevant)<span class="hx:absolute hx:-mt-20" id="key-capabilities-to-look-for-cmmc-relevant"></span>
+    <a href="#key-capabilities-to-look-for-cmmc-relevant" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li><strong>Stateful packet inspection and deep packet inspection (DPI)</strong></li>
+<li><strong>Comprehensive logging</strong> — CMMC requires audit logs (3.3.1, 3.3.2); your firewall must generate them</li>
+<li><strong>Role-based administration</strong> — aligns with least privilege requirements (3.1.1, 3.1.2)</li>
+<li><strong>Intrusion Detection/Prevention (IDS/IPS)</strong> — supports 3.14.6 and 3.14.7</li>
+<li><strong>Encrypted management interfaces</strong> — avoids transmitting credentials in the clear</li>
+</ul>
+<hr>
+<h2>Alternatives to a Traditional DMZ<span class="hx:absolute hx:-mt-20" id="alternatives-to-a-traditional-dmz"></span>
+    <a href="#alternatives-to-a-traditional-dmz" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>If a full dual-firewall DMZ isn&rsquo;t feasible — due to cost, infrastructure constraints, or a cloud-first architecture — there are alternatives. Each has trade-offs from a CMMC compliance perspective.</p>
+<h3>1. Network Segmentation via VLANs<span class="hx:absolute hx:-mt-20" id="1-network-segmentation-via-vlans"></span>
+    <a href="#1-network-segmentation-via-vlans" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p><strong>What it is:</strong> VLANs (Virtual Local Area Networks) logically separate network traffic at the switch layer without requiring separate physical hardware. You can create a &ldquo;CUI segment,&rdquo; a &ldquo;general IT segment,&rdquo; and a &ldquo;guest/DMZ segment&rdquo; on the same physical infrastructure.</p>
+<p><strong>CMMC relevance:</strong> Segmentation via VLANs can satisfy boundary protection and CUI flow control requirements — <em>if</em> it is properly enforced with inter-VLAN routing rules and access control lists (ACLs).</p>
+<p><strong>Why it may be recommended:</strong></p>
+<ul>
+<li>Lower cost than dedicated firewall hardware</li>
+<li>Widely supported by enterprise switches (Cisco, Juniper, HP/Aruba)</li>
+<li>Can be sufficient for smaller organizations with limited external-facing services</li>
+</ul>
+<p><strong>Why it may fall short:</strong></p>
+<ul>
+<li>VLANs alone are not a security boundary — they are a traffic separation mechanism. Without enforced inter-VLAN firewall rules, a VLAN misconfiguration or a trunk port vulnerability can allow lateral movement.</li>
+<li>Assessors may require evidence that VLAN segmentation is enforced at Layer 3, not just Layer 2.</li>
+<li>Does not provide the same depth-in-defense as a dual-firewall DMZ.</li>
+</ul>
+<hr>
+<h3>2. Zero Trust Network Architecture (ZTNA)<span class="hx:absolute hx:-mt-20" id="2-zero-trust-network-architecture-ztna"></span>
+    <a href="#2-zero-trust-network-architecture-ztna" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p><strong>What it is:</strong> Zero Trust is a security model built on the principle of &ldquo;never trust, always verify.&rdquo; Rather than assuming anything inside the network perimeter is safe, every user, device, and connection is continuously authenticated and authorized.</p>
+<p><strong>CMMC relevance:</strong> Zero Trust directly aligns with several CMMC Level 2 (and Level 3) principles, including least privilege (3.1.1), multi-factor authentication (3.5.3), and controlled access (3.1.2). NIST SP 800-207 provides the government&rsquo;s Zero Trust guidance.</p>
+<p><strong>Why it is recommended:</strong></p>
+<ul>
+<li>Eliminates implicit trust based on network location — highly effective against insider threats and lateral movement</li>
+<li>Well-aligned with modern remote-work environments and cloud-hosted CUI systems</li>
+<li>Increasingly viewed favorably by DoD and C3PAOs as a forward-looking architecture</li>
+<li>Products like <strong>Zscaler Private Access</strong>, <strong>Cloudflare Access</strong>, <strong>Microsoft Entra (Azure AD)</strong>, and <strong>Palo Alto Prisma Access</strong> provide Zero Trust capabilities at scale</li>
+</ul>
+<p><strong>Why it may fall short as a standalone replacement:</strong></p>
+<ul>
+<li>Does not inherently replace the need for boundary protection on the <em>network</em> layer — ZTNA controls identity and access, but doesn&rsquo;t isolate workloads the way a DMZ does</li>
+<li>Implementation complexity is high; misconfigured Zero Trust policies can create gaps</li>
+<li>May still need to be paired with network-level segmentation to satisfy 3.13.1 and 3.13.5 fully</li>
+</ul>
+<hr>
+<h3>3. Micro-Segmentation<span class="hx:absolute hx:-mt-20" id="3-micro-segmentation"></span>
+    <a href="#3-micro-segmentation" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p><strong>What it is:</strong> Micro-segmentation applies granular firewall policies at the workload or application level, rather than at the network perimeter. Software-defined networking (SDN) tools enforce rules between individual servers or services.</p>
+<p><strong>CMMC relevance:</strong> Strong alignment with CUI isolation and least-privilege access. Particularly useful in virtualized and containerized environments.</p>
+<p><strong>Why it is recommended:</strong></p>
+<ul>
+<li>More granular than VLANs — policies follow the workload, not the network segment</li>
+<li>Tools like <strong>VMware NSX</strong>, <strong>Illumio</strong>, and <strong>Guardicore</strong> provide strong visibility and enforcement</li>
+<li>Difficult for attackers to move laterally even if they compromise one workload</li>
+</ul>
+<p><strong>Why it may fall short:</strong></p>
+<ul>
+<li>High implementation and operational complexity</li>
+<li>Requires mature inventory and asset management practices — you can&rsquo;t segment what you can&rsquo;t see</li>
+<li>May not satisfy the &ldquo;subnetworks for publicly accessible systems&rdquo; requirement in 3.13.5 without additional boundary controls</li>
+</ul>
+<hr>
+<h3>4. Cloud-Native Security Groups and Virtual Networks<span class="hx:absolute hx:-mt-20" id="4-cloud-native-security-groups-and-virtual-networks"></span>
+    <a href="#4-cloud-native-security-groups-and-virtual-networks" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p><strong>What it is:</strong> In cloud environments (AWS, Azure, GCP), security groups, virtual private clouds (VPCs), and network security groups (NSGs) can replicate DMZ-like segmentation without physical hardware.</p>
+<p><strong>CMMC relevance:</strong> Cloud-based segmentation can satisfy boundary protection requirements <em>if</em> it is configured with the same rigor as an on-premises DMZ. The <strong>FedRAMP</strong> authorization status of the cloud platform also factors into CMMC assessments.</p>
+<p><strong>Why it is recommended:</strong></p>
+<ul>
+<li>Native to cloud environments; no additional hardware cost</li>
+<li>Infrastructure-as-code (IaC) enables auditable, repeatable configurations</li>
+<li>Supports centralized logging to SIEM tools</li>
+</ul>
+<p><strong>Why it may fall short:</strong></p>
+<ul>
+<li>Misconfiguration is the leading cause of cloud security incidents — a poorly configured security group is worse than no segmentation at all</li>
+<li>Shared responsibility model means you must understand exactly what the cloud provider secures vs. what you are responsible for</li>
+<li>Assessors will scrutinize cloud configurations carefully; documentation must be thorough</li>
+</ul>
+<hr>
+<h2>DMZ vs. Alternatives: A CMMC Compliance Comparison<span class="hx:absolute hx:-mt-20" id="dmz-vs-alternatives-a-cmmc-compliance-comparison"></span>
+    <a href="#dmz-vs-alternatives-a-cmmc-compliance-comparison" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><table>
+  <thead>
+      <tr>
+          <th>Approach</th>
+          <th>CMMC 3.13.1</th>
+          <th>CMMC 3.13.5</th>
+          <th>Ease of Assessment</th>
+          <th>Recommended For</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Dual-Firewall DMZ</strong></td>
+          <td>✅ Strong</td>
+          <td>✅ Strong</td>
+          <td>High (well-understood)</td>
+          <td>Most on-prem environments with external services</td>
+      </tr>
+      <tr>
+          <td><strong>VLAN Segmentation</strong></td>
+          <td>⚠️ Partial</td>
+          <td>⚠️ Partial</td>
+          <td>Moderate</td>
+          <td>Small orgs with no external-facing services</td>
+      </tr>
+      <tr>
+          <td><strong>Zero Trust (ZTNA)</strong></td>
+          <td>⚠️ Partial</td>
+          <td>❌ Not direct</td>
+          <td>Moderate</td>
+          <td>Remote-first, cloud-heavy environments</td>
+      </tr>
+      <tr>
+          <td><strong>Micro-Segmentation</strong></td>
+          <td>✅ Strong</td>
+          <td>⚠️ Partial</td>
+          <td>Low (complex)</td>
+          <td>Virtualized/containerized environments</td>
+      </tr>
+      <tr>
+          <td><strong>Cloud Security Groups</strong></td>
+          <td>✅ Strong</td>
+          <td>✅ Strong</td>
+          <td>Moderate</td>
+          <td>Cloud-hosted CUI environments</td>
       </tr>
   </tbody>
 </table>
 <hr>
-<h2>CMMC Level 1: Foundational<span class="hx:absolute hx:-mt-20" id="cmmc-level-1-foundational"></span>
-    <a href="#cmmc-level-1-foundational" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><h3>Who It&rsquo;s For<span class="hx:absolute hx:-mt-20" id="who-its-for"></span>
-    <a href="#who-its-for" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Level 1 applies to any company that handles <strong>Federal Contract Information (FCI)</strong> — information provided by or generated for the government under a contract, but not intended for public release. If you make widgets for a DoD prime contractor, process government purchase orders, or provide basic support services to federal agencies, you likely fall into this category.</p>
-<p>FCI is less sensitive than CUI, but it still requires protection. Think of it as the baseline — the cybersecurity hygiene every contractor should already have.</p>
-<h3>What&rsquo;s Required<span class="hx:absolute hx:-mt-20" id="whats-required"></span>
-    <a href="#whats-required" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Level 1 maps directly to the <strong>17 practices outlined in FAR Clause 52.204-21</strong> (&ldquo;Basic Safeguarding of Covered Contractor Information Systems&rdquo;). These are foundational controls grouped under six domains:</p>
-<ul>
-<li><strong>Access Control</strong> – Limit system access to authorized users and devices</li>
-<li><strong>Identification &amp; Authentication</strong> – Authenticate the identity of users, devices, and processes</li>
-<li><strong>Media Protection</strong> – Sanitize or destroy information system media before disposal</li>
-<li><strong>Physical Protection</strong> – Limit physical access to organizational systems</li>
-<li><strong>System &amp; Communications Protection</strong> – Monitor and control communications at external boundaries</li>
-<li><strong>System &amp; Information Integrity</strong> – Identify, report, and correct system flaws in a timely manner</li>
-</ul>
-<h3>How You&rsquo;re Assessed<span class="hx:absolute hx:-mt-20" id="how-youre-assessed"></span>
-    <a href="#how-youre-assessed" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Level 1 allows for <strong>annual self-assessment</strong>. Your leadership signs an attestation confirming compliance and submits it to the <strong>Supplier Performance Risk System (SPRS)</strong>. No third-party auditor is required — but the attestation carries legal weight. Submitting a false attestation can expose you to liability under the False Claims Act.</p>
-<h3>The Bottom Line<span class="hx:absolute hx:-mt-20" id="the-bottom-line"></span>
-    <a href="#the-bottom-line" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Level 1 is the floor, not the ceiling. If you&rsquo;re doing any DoD work at all, these 17 practices are non-negotiable. The good news: most of these controls represent solid basic security hygiene that your business should have regardless of compliance requirements.</p>
-<hr>
-<h2>CMMC Level 2: Advanced<span class="hx:absolute hx:-mt-20" id="cmmc-level-2-advanced"></span>
-    <a href="#cmmc-level-2-advanced" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><h3>Who It&rsquo;s For<span class="hx:absolute hx:-mt-20" id="who-its-for-1"></span>
-    <a href="#who-its-for-1" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Level 2 applies to companies that handle <strong>Controlled Unclassified Information (CUI)</strong> — a broad category of sensitive government data that, while not classified, still requires protection by law, regulation, or policy. CUI includes things like:</p>
-<ul>
-<li>Technical data and engineering drawings</li>
-<li>Export-controlled information (EAR/ITAR)</li>
-<li>Personally Identifiable Information (PII)</li>
-<li>Procurement and acquisition-sensitive data</li>
-<li>Law enforcement sensitive information
-The vast majority of companies in the DIB that are actively working on defense programs will fall into <strong>Level 2</strong>. If your contract includes a DFARS 252.204-7012 clause, you&rsquo;re almost certainly handling CUI and need to meet Level 2 requirements.</li>
-</ul>
-<h3>What&rsquo;s Required<span class="hx:absolute hx:-mt-20" id="whats-required-1"></span>
-    <a href="#whats-required-1" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Level 2 maps to the <strong>110 security practices defined in NIST SP 800-171</strong>, organized across 14 domains:</p>
-<ol>
-<li>Access Control</li>
-<li>Awareness and Training</li>
-<li>Audit and Accountability</li>
-<li>Configuration Management</li>
-<li>Identification and Authentication</li>
-<li>Incident Response</li>
-<li>Maintenance</li>
-<li>Media Protection</li>
-<li>Personnel Security</li>
-<li>Physical Protection</li>
-<li>Risk Assessment</li>
-<li>Security Assessment</li>
-<li>System and Communications Protection</li>
-<li>System and Information Integrity
-This is a serious, comprehensive security program. We&rsquo;re talking about requirements like multi-factor authentication across all systems, detailed audit logging, documented incident response plans, vulnerability scanning, configuration baselines, controlled use of removable media, and more.</li>
+<h2>Practical Recommendations for CMMC-Seeking Organizations<span class="hx:absolute hx:-mt-20" id="practical-recommendations-for-cmmc-seeking-organizations"></span>
+    <a href="#practical-recommendations-for-cmmc-seeking-organizations" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><ol>
+<li>
+<p><strong>Conduct a Scope Assessment First.</strong> Before deciding on a DMZ or alternative, define your CUI boundary. What systems process, store, or transmit CUI? Scoping tightly reduces complexity and cost.</p>
+</li>
+<li>
+<p><strong>If You Have Externally Facing Systems, Deploy a DMZ.</strong> Control 3.13.5 is hard to satisfy any other way. A DMZ with a well-documented firewall ruleset is the gold standard and will hold up under C3PAO assessment.</p>
+</li>
+<li>
+<p><strong>Layer Your Controls.</strong> A DMZ and Zero Trust are not mutually exclusive. Many mature CMMC environments use a DMZ for network-level boundary protection <em>and</em> Zero Trust for identity and access management.</p>
+</li>
+<li>
+<p><strong>Document Everything.</strong> Your System Security Plan (SSP) must describe your network architecture in detail. Diagrams, firewall rulesets, and change management logs are all evidence an assessor will request.</p>
+</li>
+<li>
+<p><strong>Log and Monitor the DMZ.</strong> A DMZ without logging doesn&rsquo;t satisfy 3.3.1 and 3.3.2. Ensure your firewall sends logs to a SIEM or centralized log management system.</p>
+</li>
+<li>
+<p><strong>Engage a C3PAO or CMMC Registered Practitioner Early.</strong> Architecture decisions made before an assessment are far easier and cheaper to adjust than findings discovered during one.</p>
+</li>
 </ol>
-<p>For many small businesses, going from minimal security to full NIST 800-171 compliance is a significant undertaking — one that requires months of planning, implementation, and documentation work.</p>
-<h3>How You&rsquo;re Assessed<span class="hx:absolute hx:-mt-20" id="how-youre-assessed-1"></span>
-    <a href="#how-youre-assessed-1" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>For <strong>most CUI contractors</strong>, Level 2 requires a <strong>triennial third-party assessment</strong> by a <strong>Certified Third-Party Assessor Organization (C3PAO)</strong>. This isn&rsquo;t a checkbox exercise — it&rsquo;s a rigorous on-site (or remote) audit of your environment, policies, and processes.</p>
-<p>There is a narrow exception: certain non-prioritized programs may allow self-assessment at Level 2. But for any program the DoD deems critical, a C3PAO assessment is mandatory. Don&rsquo;t assume you qualify for the exception without confirming it with your contracting officer.</p>
-<p>You&rsquo;ll also need to maintain a <strong>System Security Plan (SSP)</strong> and a <strong>Plan of Action &amp; Milestones (POA&amp;M)</strong> documenting any gaps and your remediation timeline.</p>
-<h3>The Bottom Line<span class="hx:absolute hx:-mt-20" id="the-bottom-line-1"></span>
-    <a href="#the-bottom-line-1" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Level 2 is where the heavy lifting is for most small defense contractors. The requirements are substantial, the documentation burden is real, and a failed C3PAO assessment can cost you contracts. This is the level where working with a specialized MSP pays the largest dividends.</p>
+<h2>Conclusion<span class="hx:absolute hx:-mt-20" id="conclusion"></span>
+    <a href="#conclusion" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>A DMZ is not a checkbox in the CMMC framework — it is a proven architectural pattern that directly satisfies multiple critical controls around boundary protection, CUI isolation, and access control. While alternatives like Zero Trust, micro-segmentation, and VLAN-based separation have their place, they rarely offer the same combination of simplicity, auditability, and assessor familiarity as a properly deployed DMZ.</p>
+<p>For most organizations in the Defense Industrial Base that operate any externally facing services and handle CUI, <strong>a DMZ should be a foundational element of your CMMC compliance architecture</strong> — not an afterthought.</p>
 <hr>
-<h2>CMMC Level 3: Expert<span class="hx:absolute hx:-mt-20" id="cmmc-level-3-expert"></span>
-    <a href="#cmmc-level-3-expert" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><h3>Who It&rsquo;s For<span class="hx:absolute hx:-mt-20" id="who-its-for-2"></span>
-    <a href="#who-its-for-2" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Level 3 is reserved for companies supporting the DoD&rsquo;s <strong>highest-priority programs</strong> — those involving the most sensitive CUI, particularly where advanced persistent threats (APTs), including nation-state actors, are a realistic concern. We&rsquo;re talking about prime contractors and subcontractors working on cutting-edge weapons systems, sensitive R&amp;D programs, or critical national security infrastructure.</p>
-<p>If your work involves this tier, you&rsquo;ll know it. Your contracting officer will tell you explicitly, and your contracts will reflect it.</p>
-<h3>What&rsquo;s Required<span class="hx:absolute hx:-mt-20" id="whats-required-2"></span>
-    <a href="#whats-required-2" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Level 3 builds on all 110 practices from Level 2 and adds <strong>24 additional practices from NIST SP 800-172</strong>, which is specifically designed to provide enhanced protections against APTs. These additional controls include:</p>
-<ul>
-<li>Advanced threat hunting and detection capabilities</li>
-<li>More rigorous configuration and change management</li>
-<li>Enhanced supply chain risk management</li>
-<li>Penetration testing requirements</li>
-<li>Advanced security operations capabilities</li>
-<li>More stringent incident response and recovery procedures
-This level essentially requires a mature, well-funded security operation — it&rsquo;s well beyond what most small businesses can build internally without significant investment.</li>
-</ul>
-<h3>How You&rsquo;re Assessed<span class="hx:absolute hx:-mt-20" id="how-youre-assessed-2"></span>
-    <a href="#how-youre-assessed-2" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Level 3 assessments are conducted by the <strong>Defense Contract Management Agency (DCMA)</strong>&rsquo;s Defense Industrial Base Cybersecurity Assessment Center (DIBCAC). This is a government-led assessment — no C3PAO involved. The bar is correspondingly higher, and the scrutiny is more intense.</p>
-<h3>The Bottom Line<span class="hx:absolute hx:-mt-20" id="the-bottom-line-2"></span>
-    <a href="#the-bottom-line-2" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Most small businesses in the DIB won&rsquo;t need Level 3. But if your work takes you there, you&rsquo;ll need a partner with deep expertise in both the technical requirements and the assessment process. Half-measures won&rsquo;t cut it.</p>
-<hr>
-<h2>So Which Level Do You Need?<span class="hx:absolute hx:-mt-20" id="so-which-level-do-you-need"></span>
-    <a href="#so-which-level-do-you-need" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>Here&rsquo;s a quick decision framework:</p>
-<ul>
-<li><strong>&ldquo;We provide goods or services to the DoD but don&rsquo;t handle sensitive technical data.&rdquo;</strong> → Likely <strong>Level 1</strong></li>
-<li><strong>&ldquo;Our contracts include DFARS 252.204-7012, and we receive or generate technical drawings, specs, or other sensitive program data.&rdquo;</strong> → Almost certainly <strong>Level 2</strong></li>
-<li><strong>&ldquo;We&rsquo;re working on a program that DCMA or our contracting officer has specifically flagged for heightened security requirements.&rdquo;</strong> → Potentially <strong>Level 3</strong>
-When in doubt, review your contract language carefully and consult with your contracting officer. Getting this wrong — either under-preparing or over-investing — has real business consequences.</li>
-</ul>
-<hr>
-<h2>Why a CMMC-Specialized MSP Is the Smart Choice for Small DIB Businesses<span class="hx:absolute hx:-mt-20" id="why-a-cmmc-specialized-msp-is-the-smart-choice-for-small-dib-businesses"></span>
-    <a href="#why-a-cmmc-specialized-msp-is-the-smart-choice-for-small-dib-businesses" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>Understanding the levels is one thing. Getting there is another.</p>
-<p>Most small businesses in the defense supply chain aren&rsquo;t cybersecurity companies. You make parts, provide services, do engineering work — that&rsquo;s your core competency. Building a CMMC-compliant IT environment from scratch requires expertise that most small businesses simply don&rsquo;t have in-house.</p>
-<p>Here&rsquo;s why partnering with an MSP that <strong>specializes in CMMC</strong> makes sense:</p>
-<h3>1. You Don&rsquo;t Know What You Don&rsquo;t Know<span class="hx:absolute hx:-mt-20" id="1-you-dont-know-what-you-dont-know"></span>
-    <a href="#1-you-dont-know-what-you-dont-know" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>CMMC compliance isn&rsquo;t just about checking boxes — it&rsquo;s about understanding the <em>intent</em> behind each control and implementing it in a way that will hold up under assessment. A general-purpose IT provider can deploy software. A CMMC-specialized MSP knows which configurations will satisfy an assessor, which documentation is required, and where the common pitfalls are.</p>
-<h3>2. The Documentation Burden Is Massive<span class="hx:absolute hx:-mt-20" id="2-the-documentation-burden-is-massive"></span>
-    <a href="#2-the-documentation-burden-is-massive" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>A compliant SSP for a Level 2 environment can run dozens of pages. Your POA&amp;M needs to be accurate, credible, and maintainable. Policies and procedures need to exist, be current, and reflect your actual operations. A specialized MSP does this work every day — it&rsquo;s not new territory.</p>
-<h3>3. Assessment Readiness Is a Skill<span class="hx:absolute hx:-mt-20" id="3-assessment-readiness-is-a-skill"></span>
-    <a href="#3-assessment-readiness-is-a-skill" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Passing a C3PAO assessment isn&rsquo;t just about being technically compliant — it&rsquo;s about being able to demonstrate compliance. That means having the right evidence, understanding what assessors look for, and being prepared to walk through your environment confidently. An MSP that lives in this space has seen assessments from every angle.</p>
-<h3>4. The Compliance Landscape Keeps Changing<span class="hx:absolute hx:-mt-20" id="4-the-compliance-landscape-keeps-changing"></span>
-    <a href="#4-the-compliance-landscape-keeps-changing" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>CMMC 2.0 rules continue to be refined, DFARS clauses get updated, and CUI categories evolve. A specialized MSP stays current so you don&rsquo;t have to. When something changes that affects your compliance posture, you hear about it from your provider — not six months later when you&rsquo;re in the middle of an assessment.</p>
-<h3>5. The Cost of Non-Compliance Dwarfs the Cost of Compliance<span class="hx:absolute hx:-mt-20" id="5-the-cost-of-non-compliance-dwarfs-the-cost-of-compliance"></span>
-    <a href="#5-the-cost-of-non-compliance-dwarfs-the-cost-of-compliance" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Losing a DoD contract — or being excluded from future work — because of a failed assessment is a devastating business outcome. Investing in proper compliance is almost always the more economical path, especially when you can spread the cost over a managed services engagement rather than building everything internally.</p>
-<h3>6. Enclave Solutions Can Reduce Scope (and Cost)<span class="hx:absolute hx:-mt-20" id="6-enclave-solutions-can-reduce-scope-and-cost"></span>
-    <a href="#6-enclave-solutions-can-reduce-scope-and-cost" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>One of the most effective strategies for small businesses is using a <strong>CMMC-compliant enclave</strong> — a segregated, pre-certified environment for handling CUI — rather than trying to make your entire IT environment compliant. A specialized MSP can architect this for you, often significantly reducing the scope and cost of your assessment.</p>
-<hr>
-<h2>GreylineOps Is Built for This<span class="hx:absolute hx:-mt-20" id="greylineops-is-built-for-this"></span>
-    <a href="#greylineops-is-built-for-this" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>At <strong>GreylineOps</strong>, we work exclusively in the defense and compliance space. We understand CMMC not as a checkbox exercise, but as an operational reality for the small and mid-sized businesses that form the backbone of the U.S. defense supply chain.</p>
-<p>Whether you&rsquo;re figuring out which level applies to your contracts, building toward a C3PAO assessment, or trying to close gaps in an existing compliance program, we&rsquo;re here to help.</p>
-<p><strong>The DIB doesn&rsquo;t have time for generic IT support. Neither do you.</strong></p>
-<p><a href="/pre-qual/">Contact GreylineOps</a> to schedule a CMMC readiness consultation.</p>
-<hr>
-<p><em>Disclaimer: This post is for informational purposes only and does not constitute legal or compliance advice. CMMC requirements and timelines are subject to change. Consult with a qualified advisor regarding your specific contractual and compliance obligations.</em></p>
+<p><em>This post is intended for informational purposes. Organizations should work with a qualified CMMC Registered Practitioner Organization (RPO) or C3PAO to evaluate their specific compliance posture.</em></p>
 
         </div><div class="hx:mt-16"></div><div class="hx:mb-8 hx:flex hx:items-center hx:border-t hx:pt-8 hx:border-gray-200 hx:dark:border-neutral-800 hx:contrast-more:border-neutral-400 hx:dark:contrast-more:border-neutral-400 hx:print:hidden"><a
-        href="/blog/greylineops-msp-blog-post/"
-        title="What Is an MSP? Why DIB Small Businesses Need a CMMC-Specialized Provider"
+        href="/blog/cmmc-levels-1-2-and-3-requirements-differences-and-what-small-businesses-must-do/"
+        title="CMMC Levels 1, 2, and 3: Requirements, Differences, and What Small Businesses Must Do"
         class="hx:flex hx:max-w-[50%] hx:items-center hx:gap-1 hx:py-4 hx:text-base hx:font-medium hx:text-gray-600 hx:transition-colors [word-break:break-word] hx:hover:text-primary-600 hx:dark:text-gray-300 hx:md:text-lg hx:ltr:pr-4 hx:rtl:pl-4"
-      ><svg class="hx:inline hx:h-5 hx:shrink-0 hx:ltr:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>What Is an MSP? Why DIB Small Businesses Need a CMMC-Specialized Provider</a><a
-        href="/blog/dmz-and-cmmc-compliance-do-you-need-one-and-what-are-the-alternatives/"
-        title="DMZ and CMMC Compliance: Do You Need One and What Are the Alternatives?"
-        class="hx:flex hx:max-w-[50%] hx:items-center hx:gap-1 hx:py-4 hx:text-base hx:font-medium hx:text-gray-600 hx:transition-colors [word-break:break-word] hx:hover:text-primary-600 hx:dark:text-gray-300 hx:md:text-lg hx:ltr:ml-auto hx:ltr:pl-4 hx:ltr:text-right hx:rtl:mr-auto hx:rtl:pr-4 hx:rtl:text-left"
-      >DMZ and CMMC Compliance: Do You Need One and What Are the Alternatives?<svg class="hx:inline hx:h-5 hx:shrink-0 hx:rtl:-rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg></a></div></main>
+      ><svg class="hx:inline hx:h-5 hx:shrink-0 hx:ltr:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>CMMC Levels 1, 2, and 3: Requirements, Differences, and What Small Businesses Must Do</a></div></main>
     </article>
   </div>
 
