@@ -3,15 +3,12 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/blog/</loc>
-    <lastmod>2026-05-06T16:08:15-07:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/blog/edr-cmmc-compliance-blog/</loc>
-    <lastmod>2026-05-06T16:08:15-07:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2026-05-06T16:08:15-07:00</lastmod>
+    <lastmod>2026-05-06T15:09:15-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/dmz-and-cmmc-compliance-do-you-need-one-and-what-are-the-alternatives/</loc>
+    <lastmod>2026-05-06T15:09:15-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2026-05-06T15:09:15-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/cmmc-levels-1-2-and-3-requirements-differences-and-what-small-businesses-must-do/</loc>

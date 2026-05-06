@@ -23,10 +23,10 @@ params:
 
 menu:
   main:
-    - identifier: services
-      name: Services
-      pageRef: /services
-      weight: 1
+    #  - identifier: services
+    #    name: Services
+    #    pageRef: /services
+    #    weight: 1
     #    - identifier: python
     #      name: Python ↗
     #      url: https://python.org
