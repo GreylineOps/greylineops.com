@@ -246,4 +246,4 @@ For most organizations in the Defense Industrial Base that operate any externall
 
 ---
 
-_This post is intended for informational purposes. Organizations should work with a qualified CMMC Registered Practitioner Organization (RPO) or C3PAO to evaluate their specific compliance posture._
+_This post is for informational purposes. CMMC requirements and assessment standards continue to evolve. If you're ready to evaluate your specific compliance posture, [GreylineOps](https://GreylineOPS.com) is a CMMC-specialized RPO built for small DIB businesses — [reach out for a readiness consultation](/pre-qual/) and we'll help you figure out exactly where you stand._

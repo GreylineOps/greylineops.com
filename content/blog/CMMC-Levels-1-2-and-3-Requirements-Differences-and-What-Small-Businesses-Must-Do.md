@@ -199,4 +199,4 @@ Whether you're figuring out which level applies to your contracts, building towa
 
 ---
 
-_Disclaimer: This post is for informational purposes only and does not constitute legal or compliance advice. CMMC requirements and timelines are subject to change. Consult with a qualified advisor regarding your specific contractual and compliance obligations._
+_This post is for informational purposes. CMMC requirements and assessment standards continue to evolve. If you're ready to evaluate your specific compliance posture, [GreylineOps](https://GreylineOPS.com) is a CMMC-specialized RPO built for small DIB businesses — [reach out for a readiness consultation](/pre-qual/) and we'll help you figure out exactly where you stand._
