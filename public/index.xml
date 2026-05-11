@@ -5,7 +5,7 @@
     <description>Recent content on GreylineOps</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 06 May 2026 15:09:15 -0700</lastBuildDate>
+    <lastBuildDate>Thu, 07 May 2026 10:00:15 -0700</lastBuildDate>
     
 	  <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
@@ -13,6 +13,173 @@
       
       
     
+    
+    <item>
+      <title>EDR and CMMC Compliance: What It Is, Why It Matters, and What to Use</title>
+      <link>http://localhost:1313/blog/edr-cmmc-compliance-blog/</link>
+      <pubDate>Thu, 07 May 2026 10:00:15 -0700</pubDate>
+      
+      <guid>http://localhost:1313/blog/edr-cmmc-compliance-blog/</guid>
+      <description>
+        
+        
+        &lt;h1&gt;What Is an EDR — and Do You Need One for CMMC Compliance?&lt;/h1&gt;&lt;p&gt;If you&amp;rsquo;ve been working through CMMC requirements, you&amp;rsquo;ve probably hit the controls around incident response, system monitoring, and malware protection and thought: &lt;em&gt;how exactly am I supposed to satisfy all of this?&lt;/em&gt; For most of those controls, the answer starts with an EDR.&lt;/p&gt;
+&lt;p&gt;This post breaks down what an EDR is, how it works, which platforms are worth considering, and exactly where it maps to CMMC Level 2 and Level 3 requirements.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;What Is an EDR?&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;what-is-an-edr&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#what-is-an-edr&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Endpoint Detection and Response (EDR)&lt;/strong&gt; is a category of security software that monitors endpoints — laptops, desktops, servers — for suspicious activity, detects threats in real time, and gives you the tools to investigate and respond to them.&lt;/p&gt;
+&lt;p&gt;The &amp;ldquo;endpoint&amp;rdquo; part means it runs directly on your devices. The &amp;ldquo;detection and response&amp;rdquo; part means it goes well beyond what traditional antivirus does. Old-school antivirus compares files against a list of known bad signatures. If a threat isn&amp;rsquo;t on the list, it gets through. EDR watches &lt;em&gt;behavior&lt;/em&gt; instead — how processes are running, what files they&amp;rsquo;re touching, what network connections they&amp;rsquo;re making — and flags activity that looks suspicious even if it&amp;rsquo;s never been seen before.&lt;/p&gt;
+&lt;p&gt;Think of it this way: traditional antivirus is a wanted poster on the wall. EDR is a security camera with an analyst watching the feed.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;What Does an EDR Actually Do?&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;what-does-an-edr-actually-do&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#what-does-an-edr-actually-do&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Most enterprise-grade EDR platforms cover the same core set of capabilities:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Continuous monitoring.&lt;/strong&gt; The agent running on each endpoint records process activity, file system changes, registry modifications, network connections, and user behavior — constantly, in the background.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Threat detection.&lt;/strong&gt; The platform analyzes that telemetry against behavioral rules, threat intelligence feeds, and machine learning models to identify malicious or anomalous activity.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Alerting and investigation.&lt;/strong&gt; When something suspicious is detected, security analysts get an alert with context — a full timeline of what happened, what process triggered the detection, what files were touched, what accounts were involved. This is what makes EDR so much more useful than traditional antivirus for incident response.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Containment and response.&lt;/strong&gt; Most EDR platforms let you take action directly from the console — isolate a compromised endpoint from the network, kill a malicious process, roll back changes made by ransomware, or collect forensic evidence for a post-incident review.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Threat hunting.&lt;/strong&gt; More mature deployments use EDR data proactively — analysts can query historical telemetry across all endpoints to look for indicators of compromise that automated detection might have missed.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;EDR and CMMC: Where the Controls Line Up&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;edr-and-cmmc-where-the-controls-line-up&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#edr-and-cmmc-where-the-controls-line-up&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;CMMC Level 2 is built on NIST SP 800-171, and several of its 110 controls point directly at the capabilities an EDR provides. Level 3 raises the bar further with requirements from NIST SP 800-172, particularly around advanced threat detection.&lt;/p&gt;
+&lt;p&gt;Here are the controls that EDR directly supports:&lt;/p&gt;
+&lt;h3&gt;System and Information Integrity&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;system-and-information-integrity&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#system-and-information-integrity&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;3.14.1 — Identify, report, and correct system flaws in a timely manner.&lt;/strong&gt;
+EDR continuously scans for vulnerabilities, misconfigurations, and software flaws. Many platforms integrate with patch management workflows so you can correlate vulnerability data with your endpoint inventory.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3.14.2 — Provide protection from malicious code at appropriate locations.&lt;/strong&gt;
+This is where EDR replaces or supplements traditional antivirus. Modern EDR uses behavioral detection and AI-based analysis to catch threats that signature-based tools miss — including fileless malware, living-off-the-land attacks, and zero-day exploits.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3.14.3 — Monitor system security alerts and advisories.&lt;/strong&gt;
+EDR platforms subscribe to threat intelligence feeds and can automatically cross-reference activity on your endpoints against known indicators of compromise (IOCs) from current threat actors.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3.14.6 — Monitor organizational systems to detect attacks and indicators of potential attacks.&lt;/strong&gt;
+This is perhaps the most direct EDR requirement in the entire framework. Real-time behavioral monitoring of endpoints is exactly what EDR is built for. Without it, satisfying this control is nearly impossible at any meaningful level of rigor.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3.14.7 — Identify unauthorized use of organizational systems.&lt;/strong&gt;
+EDR captures detailed user and process activity, making it possible to detect insider threats, account misuse, and unauthorized software execution.&lt;/p&gt;
+&lt;h3&gt;Audit and Accountability&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;audit-and-accountability&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#audit-and-accountability&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;3.3.1 / 3.3.2 — Create, protect, and retain system audit logs.&lt;/strong&gt;
+EDR generates extensive, tamper-resistant logs of endpoint activity. Most platforms can forward this telemetry to a SIEM for centralized retention and analysis — which is what assessors expect to see.&lt;/p&gt;
+&lt;h3&gt;Incident Response&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;incident-response&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#incident-response&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;3.6.1 / 3.6.2 — Establish and maintain incident handling capability; track, document, and report incidents.&lt;/strong&gt;
+When something happens, EDR is often the primary source of forensic evidence. The timeline it provides — what was executed, by whom, in what sequence — is what makes a coherent incident report possible.&lt;/p&gt;
+&lt;h3&gt;CMMC Level 3 (NIST SP 800-172)&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;cmmc-level-3-nist-sp-800-172&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#cmmc-level-3-nist-sp-800-172&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Level 3 adds requirements around &lt;strong&gt;advanced threat hunting&lt;/strong&gt;, &lt;strong&gt;enhanced monitoring&lt;/strong&gt;, and &lt;strong&gt;proactive threat detection&lt;/strong&gt; — all of which presuppose a mature EDR deployment. If you&amp;rsquo;re operating at Level 3, you&amp;rsquo;re not just running EDR; you&amp;rsquo;re expected to have analysts actively working the data it produces.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;EDR Platforms Worth Considering&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;edr-platforms-worth-considering&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#edr-platforms-worth-considering&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Not all EDR tools are built the same, and the right choice depends on your environment size, internal security maturity, and whether you&amp;rsquo;re working with an MSP or managing security in-house.&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Platform&lt;/th&gt;
+          &lt;th&gt;Best For&lt;/th&gt;
+          &lt;th&gt;Key Notes&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;CrowdStrike Falcon&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Mid-size to large organizations, high-threat environments&lt;/td&gt;
+          &lt;td&gt;Industry-leading detection; cloud-native; widely used in defense supply chain; strong CMMC track record&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Microsoft Defender for Endpoint&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Microsoft 365 environments&lt;/td&gt;
+          &lt;td&gt;Deeply integrated with Azure AD and Intune; included in M365 Business Premium; strong choice for SMBs already on Microsoft stack&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;SentinelOne&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Organizations wanting autonomous response&lt;/td&gt;
+          &lt;td&gt;Strong AI-based detection and automated remediation; good for teams with limited analyst capacity&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Huntress&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Small businesses, MSP-delivered&lt;/td&gt;
+          &lt;td&gt;Purpose-built for SMBs; managed threat hunting overlay on top of Windows Defender; strong value for DIB contractors&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Palo Alto Cortex XDR&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Complex, hybrid environments&lt;/td&gt;
+          &lt;td&gt;Extends detection across endpoints, network, and cloud; higher complexity and cost&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Sophos Intercept X&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;SMBs with managed service needs&lt;/td&gt;
+          &lt;td&gt;Strong ransomware protection; easy to manage; good price-to-capability ratio&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;A few notes for small DIB businesses specifically:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Microsoft Defender for Endpoint + Huntress&lt;/strong&gt; is a popular and cost-effective combination for small contractors. You get solid baseline EDR from Microsoft and add managed threat hunting from Huntress, which fills the analyst gap that most small organizations have.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;CrowdStrike&lt;/strong&gt; is the gold standard in many defense environments and is widely recognized by C3PAOs. If budget allows, it&amp;rsquo;s hard to argue with.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Whatever you choose, make sure it integrates with your SIEM or log management platform.&lt;/strong&gt; EDR that doesn&amp;rsquo;t feed into centralized logging creates gaps in your 3.3.1/3.3.2 compliance.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;EDR vs. Antivirus: A Quick Comparison&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;edr-vs-antivirus-a-quick-comparison&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#edr-vs-antivirus-a-quick-comparison&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Capability&lt;/th&gt;
+          &lt;th&gt;Traditional Antivirus&lt;/th&gt;
+          &lt;th&gt;EDR&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Signature-based detection&lt;/td&gt;
+          &lt;td&gt;✅ Yes&lt;/td&gt;
+          &lt;td&gt;✅ Yes&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Behavioral/AI detection&lt;/td&gt;
+          &lt;td&gt;❌ No&lt;/td&gt;
+          &lt;td&gt;✅ Yes&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Fileless malware detection&lt;/td&gt;
+          &lt;td&gt;❌ No&lt;/td&gt;
+          &lt;td&gt;✅ Yes&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Endpoint telemetry and logging&lt;/td&gt;
+          &lt;td&gt;❌ Limited&lt;/td&gt;
+          &lt;td&gt;✅ Extensive&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Threat hunting capability&lt;/td&gt;
+          &lt;td&gt;❌ No&lt;/td&gt;
+          &lt;td&gt;✅ Yes&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Incident response tools&lt;/td&gt;
+          &lt;td&gt;❌ No&lt;/td&gt;
+          &lt;td&gt;✅ Yes&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;CMMC 3.14.6 compliance support&lt;/td&gt;
+          &lt;td&gt;❌ Insufficient&lt;/td&gt;
+          &lt;td&gt;✅ Strong&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;The bottom line: for CMMC Level 2 or Level 3, traditional antivirus alone is not enough. Assessors reviewing your System Security Plan (SSP) will look for evidence of behavioral monitoring, real-time alerting, and documented incident detection capability. Antivirus doesn&amp;rsquo;t provide that. EDR does.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;Practical Recommendations&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;practical-recommendations&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#practical-recommendations&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;1. Don&amp;rsquo;t treat EDR as a standalone tool.&lt;/strong&gt;
+EDR is most powerful when it feeds into a centralized log management system or SIEM. The logs it generates need to be retained, protected, and reviewable — which is a compliance requirement, not just good practice.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2. Managed EDR is often the right call for small businesses.&lt;/strong&gt;
+Running EDR effectively requires someone watching the alerts. If you don&amp;rsquo;t have an in-house security analyst, look for a managed EDR solution (like Huntress) or work with an MSP that provides EDR monitoring as part of their service package.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3. Document your EDR deployment in your SSP.&lt;/strong&gt;
+Your System Security Plan needs to describe how you detect and respond to threats. Your EDR platform, its configuration, how alerts are handled, and how incidents are escalated should all be documented. An assessor will ask.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;4. Test your incident response process.&lt;/strong&gt;
+EDR gives you the tools to detect and respond. But if you&amp;rsquo;ve never actually walked through an incident response scenario, you won&amp;rsquo;t know if your process works until it&amp;rsquo;s too late. Tabletop exercises are expected at Level 2 and above.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;5. Align your EDR selection with your broader Microsoft or cloud environment.&lt;/strong&gt;
+If you&amp;rsquo;re already running Microsoft 365 Business Premium, Defender for Endpoint is included. If you&amp;rsquo;re building a CMMC-compliant enclave in Azure, that integration becomes even more valuable. Don&amp;rsquo;t pay twice for capabilities you already have.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;The Bottom Line&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;the-bottom-line&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#the-bottom-line&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;An EDR isn&amp;rsquo;t optional for CMMC Level 2 compliance — it&amp;rsquo;s the practical answer to a cluster of controls that simply can&amp;rsquo;t be satisfied with basic antivirus and manual processes. At Level 3, it&amp;rsquo;s the foundation for the advanced threat detection capabilities the framework explicitly requires.&lt;/p&gt;
+&lt;p&gt;The good news is that the market for EDR has matured significantly, and there are solid options at every price point. The right choice depends on your environment, your internal capacity, and whether you&amp;rsquo;re working with an MSP that can manage and monitor the platform on your behalf.&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re not sure where your current endpoint security posture stands relative to CMMC requirements, that&amp;rsquo;s exactly the kind of gap a readiness assessment can surface — before an assessor does.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;This post is for informational purposes. CMMC requirements and assessment standards continue to evolve. If you&amp;rsquo;re ready to evaluate your specific compliance posture, &lt;a href=&#34;https://GreylineOPS.com&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GreylineOps&lt;/a&gt; is a CMMC-specialized RPO built for small DIB businesses — &lt;a href=&#34;http://localhost:1313/pre-qual/&#34;&gt;reach out for a readiness consultation&lt;/a&gt; and we&amp;rsquo;ll help you figure out exactly where you stand.&lt;/em&gt;&lt;/p&gt;
+
+      </description>
+    </item>
     
     <item>
       <title>DMZ and CMMC Compliance: Do You Need One and What Are the Alternatives?</title>

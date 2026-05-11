@@ -27,7 +27,7 @@ GreylineOps delivers managed security and CMMC compliance for small businesses i
 
 {{< card link="/pre-qual/" title="Start your CMMC assessment" >}}
 
-{{< card link="/offerings/incident-response" title="See how we work" >}}
+{{< card link="/self-assessment/our-process/" title="See how we work" >}}
 
 {{< /hextra/feature-grid >}}
 
