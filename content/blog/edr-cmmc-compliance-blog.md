@@ -1,5 +1,5 @@
 ---
-date: "2026-05-07T08:00:15-07:00"
+date: "2026-05-07T10:00:15-07:00"
 title: "EDR and CMMC Compliance: What It Is, Why It Matters, and What to Use"
 description: "Learn what Endpoint Detection and Response (EDR) is, how it works, which platforms are worth considering, and why it's essentially required for CMMC Level 2 and Level 3 compliance."
 ---
