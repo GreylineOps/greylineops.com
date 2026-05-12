@@ -5,7 +5,7 @@
     <description>Recent content in Blogs on GreylineOps</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 07 May 2026 10:00:15 -0700</lastBuildDate>
+    <lastBuildDate>Tue, 12 May 2026 07:35:24 -0700</lastBuildDate>
     
 	  <atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,6 +14,133 @@
         
       
     
+    
+    <item>
+      <title>How to Prepare for a C3PAO Assessment: What Small DIB Businesses Need to Know</title>
+      <link>http://localhost:1313/blog/prepare-for-a-c3pao-assessment/</link>
+      <pubDate>Tue, 12 May 2026 07:35:24 -0700</pubDate>
+      
+      <guid>http://localhost:1313/blog/prepare-for-a-c3pao-assessment/</guid>
+      <description>
+        
+        
+        &lt;h1&gt;How to Prepare for a C3PAO Assessment: What Small DIB Businesses Need to Know&lt;/h1&gt;&lt;p&gt;&lt;em&gt;Posted by GreylineOps | CMMC Compliance for DIB Small Businesses&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;You&amp;rsquo;ve done the work. You&amp;rsquo;ve implemented security controls, built out your network, trained your staff. Now a Certified Third-Party Assessment Organization (C3PAO) is coming to verify all of it — and the outcome of that assessment will determine whether you keep your DoD contracts.&lt;/p&gt;
+&lt;p&gt;A lot of small businesses treat a C3PAO assessment like a pop quiz. It isn&amp;rsquo;t. It&amp;rsquo;s a structured, evidence-based audit, and the businesses that pass aren&amp;rsquo;t necessarily the ones with the best security — they&amp;rsquo;re the ones who can &lt;em&gt;prove&lt;/em&gt; they have good security. That&amp;rsquo;s a meaningful distinction, and missing it is one of the most common reasons small DIB contractors come out of assessments with findings they didn&amp;rsquo;t expect.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s what you actually need to know before an assessor walks through the door.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;What a C3PAO Assessment Actually Is&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;what-a-c3pao-assessment-actually-is&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#what-a-c3pao-assessment-actually-is&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;A C3PAO assessment is a formal audit of your compliance with the 110 security practices in NIST SP 800-171, which map directly to CMMC Level 2. Assessors from the C3PAO will review your environment — either on-site, remotely, or both — and evaluate whether each practice is fully implemented, partially implemented, or not implemented.&lt;/p&gt;
+&lt;p&gt;The result feeds into your SPRS score, which sits in a government database your contracting officers can see. A passing assessment earns you a CMMC Level 2 certification, valid for three years. A failed one can cost you contract eligibility until remediation is complete.&lt;/p&gt;
+&lt;p&gt;Assessors aren&amp;rsquo;t looking to catch you off guard — but they are thorough. They&amp;rsquo;ll interview staff, review documentation, test configurations, and look for consistency between what your policies say and what your systems actually do.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;The Six Things Assessors Are Really Evaluating&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;the-six-things-assessors-are-really-evaluating&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#the-six-things-assessors-are-really-evaluating&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Understanding the lens assessors use makes preparation much more focused.&lt;/p&gt;
+&lt;h3&gt;1. Does your documentation match reality?&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;1-does-your-documentation-match-reality&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#1-does-your-documentation-match-reality&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Your System Security Plan (SSP) describes how your organization implements each CMMC control. If your SSP says multi-factor authentication is enforced on all remote access, assessors will verify that in your environment. Inconsistencies between documented controls and actual configurations are the fastest way to generate findings.&lt;/p&gt;
+&lt;p&gt;Before an assessment, walk through your SSP line by line and confirm that every claim reflects current reality — not your aspirational state or how things were set up six months ago.&lt;/p&gt;
+&lt;h3&gt;2. Can your staff explain what they do?&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;2-can-your-staff-explain-what-they-do&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2-can-your-staff-explain-what-they-do&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Assessors routinely interview employees — not just IT staff, but the people who handle CUI day-to-day. They&amp;rsquo;ll ask how users report a security incident, what they do when they receive a suspicious email, how they handle CUI on removable media.&lt;/p&gt;
+&lt;p&gt;If your staff can&amp;rsquo;t answer basic questions about your security practices, that&amp;rsquo;s a finding — even if the technical controls are correctly configured. Security awareness training needs to be real, documented, and recent.&lt;/p&gt;
+&lt;h3&gt;3. Is your CUI boundary clearly defined?&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;3-is-your-cui-boundary-clearly-defined&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#3-is-your-cui-boundary-clearly-defined&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Before an assessment, you need to know exactly which systems store, process, or transmit CUI. That&amp;rsquo;s your assessment scope. If your CUI boundary is vague or poorly documented, assessors will interpret it broadly — which means more systems get reviewed and more controls need to be demonstrated.&lt;/p&gt;
+&lt;p&gt;A tight, well-documented CUI boundary backed by a solid network diagram is one of the most impactful things you can do before your assessment.&lt;/p&gt;
+&lt;h3&gt;4. Are your logs actually capturing what they should?&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;4-are-your-logs-actually-capturing-what-they-should&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#4-are-your-logs-actually-capturing-what-they-should&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;CMMC Level 2 requires audit logging across your environment (controls 3.3.1 and 3.3.2). Assessors will check that logs exist, that they&amp;rsquo;re being retained for the required period, and that someone is actually reviewing them. A SIEM or centralized log management system with documented review procedures is what assessors want to see here.&lt;/p&gt;
+&lt;h3&gt;5. Do your policies exist — and are they current?&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;5-do-your-policies-exist--and-are-they-current&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#5-do-your-policies-exist--and-are-they-current&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Written policies for access control, incident response, configuration management, media handling, and more are not optional at Level 2. But policies that haven&amp;rsquo;t been reviewed in two years, or that reference systems you no longer use, create problems. Assessors look at version history and review dates. Stale policies signal that your program isn&amp;rsquo;t being actively managed.&lt;/p&gt;
+&lt;h3&gt;6. Is your POA&amp;amp;M honest?&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;6-is-your-poam-honest&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#6-is-your-poam-honest&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Your Plan of Action and Milestones (POA&amp;amp;M) documents any security gaps you haven&amp;rsquo;t yet remediated. A POA&amp;amp;M with open items isn&amp;rsquo;t automatically a failure — assessors expect some items to be in progress. What they don&amp;rsquo;t want to see is a POA&amp;amp;M that&amp;rsquo;s clearly been left untouched, or one that omits obvious gaps you haven&amp;rsquo;t acknowledged.&lt;/p&gt;
+&lt;p&gt;An honest, actively maintained POA&amp;amp;M with realistic target dates signals a mature compliance program. An empty POA&amp;amp;M in a complex environment raises immediate questions.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;A Pre-Assessment Checklist&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;a-pre-assessment-checklist&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#a-pre-assessment-checklist&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Use this as a starting point — not a substitute for a formal gap assessment, but a practical way to identify obvious problems before your assessment begins.&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Area&lt;/th&gt;
+          &lt;th&gt;What to Verify&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;SSP&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Current, complete, reviewed within 12 months&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;CUI boundary&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Documented with network diagrams; systems clearly scoped&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;MFA&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Enforced on all CUI systems and remote access&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Audit logging&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Enabled on all in-scope systems; logs retained per policy&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Incident response plan&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Written, tested, staff aware of their roles&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Access reviews&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Completed recently; terminated users removed&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Configuration baselines&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Documented and applied to in-scope systems&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Media handling&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Policy exists; staff can describe the process&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Vulnerability scanning&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Scans run regularly; results documented and tracked&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;POA&amp;amp;M&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Open items tracked with owners and realistic dates&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Security awareness training&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Completed by all staff; records retained&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h2&gt;Common Mistakes That Generate Findings&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;common-mistakes-that-generate-findings&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#common-mistakes-that-generate-findings&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Scope creep from poor CUI boundary documentation.&lt;/strong&gt; If you can&amp;rsquo;t demonstrate that CUI is confined to a specific set of systems, assessors may treat your entire environment as in scope. Every additional system means more controls to demonstrate.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Technical controls without written procedures.&lt;/strong&gt; MFA is configured — great. But if there&amp;rsquo;s no written policy describing how access is provisioned and reviewed, that&amp;rsquo;s still a finding. Controls need both a technical implementation and a documented process.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Policies that don&amp;rsquo;t reflect actual operations.&lt;/strong&gt; A remote access policy that references a VPN solution you replaced 18 months ago, or a media handling procedure that no one actually follows, fails the consistency test.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Logging without review.&lt;/strong&gt; Collecting logs is one requirement. Reviewing them on a defined schedule and documenting that review is another. Many organizations have the first and miss the second.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;POA&amp;amp;M gaps for known issues.&lt;/strong&gt; If there are controls you haven&amp;rsquo;t fully implemented, assessors will find them. It&amp;rsquo;s far better to have those documented in your POA&amp;amp;M with a remediation plan than to have them surface as surprises.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;Timing: How Far Out Should You Start Preparing?&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;timing-how-far-out-should-you-start-preparing&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#timing-how-far-out-should-you-start-preparing&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;A meaningful C3PAO readiness effort for a small DIB business — one that closes real gaps rather than just organizing paperwork — typically takes 90 to 180 days depending on your starting point. That includes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A gap assessment against all 110 NIST 800-171 practices&lt;/li&gt;
+&lt;li&gt;Remediation of critical findings (MFA gaps, logging gaps, access control issues)&lt;/li&gt;
+&lt;li&gt;Documentation development or updates (SSP, policies, POA&amp;amp;M)&lt;/li&gt;
+&lt;li&gt;Staff training and awareness activities&lt;/li&gt;
+&lt;li&gt;A mock assessment or internal review before the real one
+Starting this process one month before an assessment is a recipe for findings. Starting it six months out gives you room to fix what you find.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2&gt;The Role of a Specialized MSP&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;the-role-of-a-specialized-msp&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#the-role-of-a-specialized-msp&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;For most small businesses in the DIB, this level of preparation isn&amp;rsquo;t something you can do on the side of your regular operations. The documentation alone — a complete SSP, properly maintained POA&amp;amp;M, and the full library of supporting policies — is a substantial undertaking. Add technical remediation, staff training, and evidence collection, and you&amp;rsquo;re looking at a significant investment of time and expertise.&lt;/p&gt;
+&lt;p&gt;A CMMC-specialized MSP handles this work as a core part of what they do. They&amp;rsquo;ve been through C3PAO assessments from multiple angles and know what assessors look for, how to document controls effectively, and how to structure your environment to minimize findings. That experience has real value when the stakes are contract eligibility.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;The Bottom Line&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;the-bottom-line&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#the-bottom-line&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;A C3PAO assessment isn&amp;rsquo;t something you prepare for the week before it happens. It&amp;rsquo;s the final step of a compliance program that needs to be running — and documented — over time. The businesses that sail through assessments are the ones that built their programs with the assessment in mind from the start: honest documentation, consistent processes, and evidence that their controls are working in practice, not just on paper.&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re not sure where you stand, a CMMC gap assessment is the right first step. It tells you exactly what you need to fix and how long it will realistically take to get there.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;This post is for informational purposes. CMMC requirements and assessment standards continue to evolve. If you&amp;rsquo;re ready to evaluate your specific compliance posture, &lt;a href=&#34;https://GreylineOPS.com&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GreylineOps&lt;/a&gt; is a CMMC-specialized RPO built for small DIB businesses — &lt;a href=&#34;http://localhost:1313/pre-qual/&#34;&gt;reach out for a readiness consultation&lt;/a&gt; and we&amp;rsquo;ll help you figure out exactly where you stand.&lt;/em&gt;&lt;/p&gt;
+
+      </description>
+    </item>
     
     <item>
       <title>EDR and CMMC Compliance: What It Is, Why It Matters, and What to Use</title>

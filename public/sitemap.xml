@@ -3,12 +3,15 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/blog/</loc>
-    <lastmod>2026-05-07T10:00:15-07:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/blog/edr-cmmc-compliance-blog/</loc>
-    <lastmod>2026-05-07T10:00:15-07:00</lastmod>
+    <lastmod>2026-05-12T07:35:24-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-05-12T07:35:24-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/prepare-for-a-c3pao-assessment/</loc>
+    <lastmod>2026-05-12T07:35:24-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/edr-cmmc-compliance-blog/</loc>
     <lastmod>2026-05-07T10:00:15-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/dmz-and-cmmc-compliance-do-you-need-one-and-what-are-the-alternatives/</loc>
