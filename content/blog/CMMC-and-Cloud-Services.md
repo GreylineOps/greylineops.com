@@ -1,5 +1,5 @@
 ---
-date: "2026-05-13T09:00:00-07:00"
+date: "2026-05-13T01:00:00-07:00"
 title: "CMMC and Cloud Services: What FedRAMP, Shared Responsibility, and CUI in the Cloud Actually Mean for Small DIB Businesses"
 description: "Using cloud services to store or process CUI? Here's what CMMC actually requires, how FedRAMP fits in, what 'shared responsibility' means in practice, and the common mistakes small DIB contractors make."
 ---
